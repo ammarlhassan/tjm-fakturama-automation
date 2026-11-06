@@ -1,0 +1,141 @@
+{
+  "id": "5b741b93-09d8-47f5-b391-6c48801a3b80",
+  "workspace": "integration",
+  "mode": "live",
+  "stage": "NEEDS_REVIEW",
+  "last_verified_stage": "EXTRACTED",
+  "external_reference": null,
+  "revision": 1,
+  "review": {
+    "code": "EXTRACTION_REVIEW",
+    "message": "Independent readings or deterministic validation did not reconcile",
+    "findings": [
+      {
+        "field": "items",
+        "code": "ROW_COUNT_DISAGREEMENT",
+        "ocr": 0,
+        "vision": 2
+      },
+      {
+        "field": "customer.telephone",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": "+49 30 55501420",
+        "vision": "+49 30 5550 1420"
+      },
+      {
+        "field": "items.0.sku",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "FRESH-B-CHAIR"
+      },
+      {
+        "field": "items.0.description",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "Ergonomic Desk Chair"
+      },
+      {
+        "field": "items.0.quantity",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "2"
+      },
+      {
+        "field": "items.0.unit",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "pcs"
+      },
+      {
+        "field": "items.0.unit_net",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "250.00"
+      },
+      {
+        "field": "items.0.discount_percent",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "10"
+      },
+      {
+        "field": "items.0.vat_percent",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "19"
+      },
+      {
+        "field": "items.0.printed_net",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "450.00"
+      },
+      {
+        "field": "items.1.sku",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "FRESH-B-MAT"
+      },
+      {
+        "field": "items.1.description",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "Anti-Fatigue Desk Mat"
+      },
+      {
+        "field": "items.1.quantity",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "3"
+      },
+      {
+        "field": "items.1.unit",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "pcs"
+      },
+      {
+        "field": "items.1.unit_net",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "40.00"
+      },
+      {
+        "field": "items.1.discount_percent",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "0"
+      },
+      {
+        "field": "items.1.vat_percent",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "9"
+      },
+      {
+        "field": "items.1.printed_net",
+        "code": "EXTRACTION_DISAGREEMENT",
+        "ocr": null,
+        "vision": "120.00"
+      },
+      {
+        "field": "source",
+        "code": "EXTRACTION_ISSUE",
+        "message": "No complete independently parsed item rows"
+      }
+    ],
+    "resolved": false
+  },
+  "validation": {
+    "findings": [],
+    "computed": {
+      "net": "541.50",
+      "vat": "91.49",
+      "gross": "632.99"
+    },
+    "profile": "eur-net-vat-group-half-up-v1"
+  },
+  "receipt": null,
+  "created_at": "2026-11-05 07:48:23.772990",
+  "updated_at": "2026-11-05 07:52:10.963450"
+}

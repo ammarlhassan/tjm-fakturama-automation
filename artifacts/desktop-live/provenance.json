@@ -1,0 +1,11 @@
+{
+  "mode": "live Gemini plus real Fakturama",
+  "official_sample": false,
+  "source_changes": [
+    ".com email",
+    "ACCEPT reference"
+  ],
+  "operator_review_revisions": 2,
+  "unattended_acceptance": false,
+  "notes": "Required one application launch and one address-binding fix/reconciliation during engineering. Separate clean and controlled recovery cases are recorded independently."
+}

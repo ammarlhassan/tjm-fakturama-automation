@@ -1,0 +1,345 @@
+{
+  "order_date": "2026-07-14",
+  "external_reference": "BENCH-30-EXISTING-1-R1",
+  "currency": "EUR",
+  "customer": {
+    "company": "Northstar Office GmbH",
+    "first_name": "Marta",
+    "last_name": "Klein",
+    "alias": "NORTHSTAR-BERLIN",
+    "email": "marta.klein@example.com",
+    "telephone": "+49 30 5550 1420",
+    "source_customer_id": "CUST-1007",
+    "billing": {
+      "recipient": "Northstar Office GmbH",
+      "additional_name": null,
+      "street": "Friedrichstrasse 88",
+      "postcode": "10117",
+      "city": "Berlin",
+      "country": "Germany"
+    },
+    "delivery": {
+      "recipient": "Northstar Office Warehouse",
+      "additional_name": null,
+      "street": "Beusselstrasse 44",
+      "postcode": "10553",
+      "city": "Berlin",
+      "country": "Germany"
+    }
+  },
+  "payment": {
+    "method": "Bank Transfer",
+    "status": "PAID",
+    "payment_date": "2026-07-18"
+  },
+  "items": [
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "10",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "10.00"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "11",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "4.40"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "12",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "21.60"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "13",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "13.00"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "14",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "5.60"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "15",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "27.00"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "16",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "16.00"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "17",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "6.80"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "18",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "32.40"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "19",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "19.00"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "20",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "8.00"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "21",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "37.80"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "22",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "22.00"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "23",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "9.20"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "24",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "43.20"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "25",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "25.00"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "26",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "10.40"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "27",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "48.60"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "28",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "28.00"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "29",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "11.60"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "30",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "54.00"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "31",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "31.00"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "32",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "12.80"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "33",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "59.40"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "34",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "34.00"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "35",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "14.00"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "36",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "64.80"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "37",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "37.00"
+    },
+    {
+      "sku": "CHR-ERG-01",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "38",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "15.20"
+    },
+    {
+      "sku": "MAT-DESK-02",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "39",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "70.20"
+    }
+  ],
+  "totals": {
+    "net": "792.00",
+    "vat": "150.48",
+    "gross": "942.48"
+  },
+  "document_discount_percent": null,
+  "shipping_net": null,
+  "shipping_vat_percent": null
+}

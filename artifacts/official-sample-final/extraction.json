@@ -1,0 +1,3076 @@
+{
+  "extraction": {
+    "order": {
+      "order_date": "2026-07-14",
+      "external_reference": "WEB-2026-0714-A17",
+      "currency": "EUR",
+      "customer": {
+        "company": "Northstar Office GmbH",
+        "first_name": "Marta",
+        "last_name": "Klein",
+        "alias": "NORTHSTAR-BERLIN",
+        "email": "marta.klein@example.test",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": "CUST-1007",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment": {
+        "method": "Bank Transfer",
+        "status": "PAID",
+        "payment_date": "2026-07-18"
+      },
+      "items": [
+        {
+          "sku": "CHR-ERG-01",
+          "description": "Ergonomic Desk Chair",
+          "quantity": "2",
+          "unit": "pcs",
+          "unit_net": "250.00",
+          "discount_percent": "10",
+          "vat_percent": "19",
+          "printed_net": "450.00"
+        },
+        {
+          "sku": "MAT-DESK-02",
+          "description": "Anti-Fatigue Desk Mat",
+          "quantity": "3",
+          "unit": "pcs",
+          "unit_net": "40.00",
+          "discount_percent": "0",
+          "vat_percent": "19",
+          "printed_net": "120.00"
+        }
+      ],
+      "totals": {
+        "net": "570.00",
+        "vat": "108.30",
+        "gross": "678.30"
+      },
+      "document_discount_percent": null,
+      "shipping_net": null,
+      "shipping_vat_percent": null
+    },
+    "evidence": [
+      {
+        "field": "external_reference",
+        "raw_text": "WEB-2026-0714-A17",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "order_date",
+        "raw_text": "2026-07-14",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.source_customer_id",
+        "raw_text": "CUST-1007",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "currency",
+        "raw_text": "EUR",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.company",
+        "raw_text": "Northstar Office GmbH",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.alias",
+        "raw_text": "NORTHSTAR-BERLIN",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.first_name",
+        "raw_text": "Marta",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.last_name",
+        "raw_text": "Klein",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.email",
+        "raw_text": "marta.klein@example.test",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.telephone",
+        "raw_text": "+49 30 5550 1420",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.recipient",
+        "raw_text": "Northstar Office GmbH",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.street",
+        "raw_text": "Friedrichstrasse 88",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.postcode",
+        "raw_text": "10117",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.city",
+        "raw_text": "Berlin",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.country",
+        "raw_text": "Germany",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.recipient",
+        "raw_text": "Northstar Office Warehouse",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.street",
+        "raw_text": "Beusselstrasse 44",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.postcode",
+        "raw_text": "10553",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.city",
+        "raw_text": "Berlin",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.country",
+        "raw_text": "Germany",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "payment.method",
+        "raw_text": "Bank Transfer",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "payment.status",
+        "raw_text": "PAID",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "payment.payment_date",
+        "raw_text": "2026-07-18",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.sku",
+        "raw_text": "CHR-ERG-01",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.description",
+        "raw_text": "Ergonomic Desk Chair",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.quantity",
+        "raw_text": "2",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.unit",
+        "raw_text": "pcs",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.unit_net",
+        "raw_text": "250.00",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.discount_percent",
+        "raw_text": "10%",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.vat_percent",
+        "raw_text": "19%",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.printed_net",
+        "raw_text": "450.00",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.sku",
+        "raw_text": "MAT-DESK-02",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.description",
+        "raw_text": "Anti-Fatigue Desk Mat",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.quantity",
+        "raw_text": "3",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.unit",
+        "raw_text": "pcs",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.unit_net",
+        "raw_text": "40.00",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.discount_percent",
+        "raw_text": "0%",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.vat_percent",
+        "raw_text": "19%",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.printed_net",
+        "raw_text": "120.00",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "totals.net",
+        "raw_text": "570.00",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "totals.vat",
+        "raw_text": "108.30",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "totals.gross",
+        "raw_text": "678.30",
+        "engine": "vision",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      }
+    ],
+    "issues": []
+  },
+  "independent": {
+    "order": {
+      "order_date": "2026-07-14",
+      "external_reference": "WEB-2026-0714-A17",
+      "currency": "EUR",
+      "customer": {
+        "company": "Northstar Office GmbH",
+        "first_name": "Marta",
+        "last_name": "Klein",
+        "alias": "NORTHSTAR-BERLIN",
+        "email": "marta.klein@example.test",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": "CUST-1007",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment": {
+        "method": "Bank Transfer",
+        "status": "PAID",
+        "payment_date": "2026-07-18"
+      },
+      "items": [
+        {
+          "sku": "CHR-ERG-01",
+          "description": "Ergonomic Desk Chair",
+          "quantity": "2",
+          "unit": "pcs",
+          "unit_net": "250.00",
+          "discount_percent": "10",
+          "vat_percent": "19",
+          "printed_net": "450.00"
+        },
+        {
+          "sku": "MAT-DESK-02",
+          "description": "Anti-Fatigue Desk Mat",
+          "quantity": "3",
+          "unit": "pcs",
+          "unit_net": "40.00",
+          "discount_percent": "0",
+          "vat_percent": "19",
+          "printed_net": "120.00"
+        }
+      ],
+      "totals": {
+        "net": "570.00",
+        "vat": "108.30",
+        "gross": "678.30"
+      },
+      "document_discount_percent": null,
+      "shipping_net": null,
+      "shipping_vat_percent": null
+    },
+    "evidence": [
+      {
+        "field": "customer.contact",
+        "raw_text": "Marta Klein",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 599,
+            "y": 461,
+            "width": 115,
+            "height": 29
+          }
+        ],
+        "confidence": 0.99877,
+        "artifact": null
+      },
+      {
+        "field": "customer.company",
+        "raw_text": "Northstar Office GmbH",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 89,
+            "y": 470,
+            "width": 230,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99974,
+        "artifact": null
+      },
+      {
+        "field": "customer.alias",
+        "raw_text": "NORTHSTAR-BERLIN",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 90,
+            "y": 537,
+            "width": 193,
+            "height": 23
+          }
+        ],
+        "confidence": 0.99997,
+        "artifact": null
+      },
+      {
+        "field": "customer.email",
+        "raw_text": "marta.klein@example.test",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 602,
+            "y": 517,
+            "width": 241,
+            "height": 26
+          }
+        ],
+        "confidence": 0.99998,
+        "artifact": null
+      },
+      {
+        "field": "customer.telephone",
+        "raw_text": "+49 30 5550 1420",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 603,
+            "y": 571,
+            "width": 170,
+            "height": 26
+          }
+        ],
+        "confidence": 0.98698,
+        "artifact": null
+      },
+      {
+        "field": "customer.source_customer_id",
+        "raw_text": "CUST-1007",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 616,
+            "y": 296,
+            "width": 110,
+            "height": 27
+          }
+        ],
+        "confidence": 0.99999,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing",
+        "raw_text": "Northstar Office GmbH\nFriedrichstrasse 88\n10117 Berlin\nGermany\nPAYMENT",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 89,
+            "y": 711,
+            "width": 196,
+            "height": 26
+          },
+          {
+            "x": 89,
+            "y": 739,
+            "width": 157,
+            "height": 23
+          },
+          {
+            "x": 88,
+            "y": 763,
+            "width": 109,
+            "height": 27
+          },
+          {
+            "x": 87,
+            "y": 789,
+            "width": 85,
+            "height": 32
+          },
+          {
+            "x": 66,
+            "y": 896,
+            "width": 101,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99914,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery",
+        "raw_text": "Northstar Office Warehouse\nBeusselstrasse 44\n10553 Berlin\nGermany",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 601,
+            "y": 710,
+            "width": 234,
+            "height": 26
+          },
+          {
+            "x": 603,
+            "y": 739,
+            "width": 147,
+            "height": 23
+          },
+          {
+            "x": 602,
+            "y": 763,
+            "width": 107,
+            "height": 27
+          },
+          {
+            "x": 600,
+            "y": 789,
+            "width": 86,
+            "height": 32
+          }
+        ],
+        "confidence": 0.97589,
+        "artifact": null
+      },
+      {
+        "field": "currency",
+        "raw_text": "EUR",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 832,
+            "y": 295,
+            "width": 52,
+            "height": 30
+          }
+        ],
+        "confidence": 0.99989,
+        "artifact": null
+      },
+      {
+        "field": "order_date",
+        "raw_text": "2026-07-14",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 370,
+            "y": 296,
+            "width": 114,
+            "height": 27
+          }
+        ],
+        "confidence": 1.0,
+        "artifact": null
+      },
+      {
+        "field": "external_reference",
+        "raw_text": "WEB-2026-0714-A17",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 90,
+            "y": 298,
+            "width": 204,
+            "height": 23
+          }
+        ],
+        "confidence": 0.99998,
+        "artifact": null
+      },
+      {
+        "field": "payment.method",
+        "raw_text": "Bank Transfer",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 90,
+            "y": 967,
+            "width": 140,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99913,
+        "artifact": null
+      },
+      {
+        "field": "payment.status",
+        "raw_text": "PAID",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 510,
+            "y": 964,
+            "width": 61,
+            "height": 29
+          }
+        ],
+        "confidence": 0.99974,
+        "artifact": null
+      },
+      {
+        "field": "payment.payment_date",
+        "raw_text": "2026-07-18",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 760,
+            "y": 965,
+            "width": 112,
+            "height": 27
+          }
+        ],
+        "confidence": 0.99999,
+        "artifact": null
+      },
+      {
+        "field": "totals.net",
+        "raw_text": "EUR 570.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 176,
+            "y": 1456,
+            "width": 129,
+            "height": 27
+          }
+        ],
+        "confidence": 0.99992,
+        "artifact": null
+      },
+      {
+        "field": "totals.vat",
+        "raw_text": "EUR 108.30",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 513,
+            "y": 1456,
+            "width": 128,
+            "height": 27
+          }
+        ],
+        "confidence": 0.99991,
+        "artifact": null
+      },
+      {
+        "field": "totals.gross",
+        "raw_text": "EUR 678.30",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 851,
+            "y": 1457,
+            "width": 127,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99982,
+        "artifact": null
+      },
+      {
+        "field": "items.0.sku",
+        "raw_text": "1 CHR-ERG-01 Ergonomic Desk Chair 2 pcs 250.00 10% 19% 450.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 84,
+            "y": 1156,
+            "width": 15,
+            "height": 20
+          },
+          {
+            "x": 139,
+            "y": 1154,
+            "width": 98,
+            "height": 24
+          },
+          {
+            "x": 268,
+            "y": 1153,
+            "width": 158,
+            "height": 26
+          },
+          {
+            "x": 579,
+            "y": 1155,
+            "width": 18,
+            "height": 24
+          },
+          {
+            "x": 630,
+            "y": 1152,
+            "width": 35,
+            "height": 26
+          },
+          {
+            "x": 709,
+            "y": 1153,
+            "width": 57,
+            "height": 26
+          },
+          {
+            "x": 817,
+            "y": 1153,
+            "width": 41,
+            "height": 26
+          },
+          {
+            "x": 891,
+            "y": 1153,
+            "width": 41,
+            "height": 27
+          },
+          {
+            "x": 984,
+            "y": 1153,
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99952,
+        "artifact": null
+      },
+      {
+        "field": "items.0.description",
+        "raw_text": "1 CHR-ERG-01 Ergonomic Desk Chair 2 pcs 250.00 10% 19% 450.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 84,
+            "y": 1156,
+            "width": 15,
+            "height": 20
+          },
+          {
+            "x": 139,
+            "y": 1154,
+            "width": 98,
+            "height": 24
+          },
+          {
+            "x": 268,
+            "y": 1153,
+            "width": 158,
+            "height": 26
+          },
+          {
+            "x": 579,
+            "y": 1155,
+            "width": 18,
+            "height": 24
+          },
+          {
+            "x": 630,
+            "y": 1152,
+            "width": 35,
+            "height": 26
+          },
+          {
+            "x": 709,
+            "y": 1153,
+            "width": 57,
+            "height": 26
+          },
+          {
+            "x": 817,
+            "y": 1153,
+            "width": 41,
+            "height": 26
+          },
+          {
+            "x": 891,
+            "y": 1153,
+            "width": 41,
+            "height": 27
+          },
+          {
+            "x": 984,
+            "y": 1153,
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99952,
+        "artifact": null
+      },
+      {
+        "field": "items.0.quantity",
+        "raw_text": "1 CHR-ERG-01 Ergonomic Desk Chair 2 pcs 250.00 10% 19% 450.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 84,
+            "y": 1156,
+            "width": 15,
+            "height": 20
+          },
+          {
+            "x": 139,
+            "y": 1154,
+            "width": 98,
+            "height": 24
+          },
+          {
+            "x": 268,
+            "y": 1153,
+            "width": 158,
+            "height": 26
+          },
+          {
+            "x": 579,
+            "y": 1155,
+            "width": 18,
+            "height": 24
+          },
+          {
+            "x": 630,
+            "y": 1152,
+            "width": 35,
+            "height": 26
+          },
+          {
+            "x": 709,
+            "y": 1153,
+            "width": 57,
+            "height": 26
+          },
+          {
+            "x": 817,
+            "y": 1153,
+            "width": 41,
+            "height": 26
+          },
+          {
+            "x": 891,
+            "y": 1153,
+            "width": 41,
+            "height": 27
+          },
+          {
+            "x": 984,
+            "y": 1153,
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99952,
+        "artifact": null
+      },
+      {
+        "field": "items.0.unit",
+        "raw_text": "1 CHR-ERG-01 Ergonomic Desk Chair 2 pcs 250.00 10% 19% 450.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 84,
+            "y": 1156,
+            "width": 15,
+            "height": 20
+          },
+          {
+            "x": 139,
+            "y": 1154,
+            "width": 98,
+            "height": 24
+          },
+          {
+            "x": 268,
+            "y": 1153,
+            "width": 158,
+            "height": 26
+          },
+          {
+            "x": 579,
+            "y": 1155,
+            "width": 18,
+            "height": 24
+          },
+          {
+            "x": 630,
+            "y": 1152,
+            "width": 35,
+            "height": 26
+          },
+          {
+            "x": 709,
+            "y": 1153,
+            "width": 57,
+            "height": 26
+          },
+          {
+            "x": 817,
+            "y": 1153,
+            "width": 41,
+            "height": 26
+          },
+          {
+            "x": 891,
+            "y": 1153,
+            "width": 41,
+            "height": 27
+          },
+          {
+            "x": 984,
+            "y": 1153,
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99952,
+        "artifact": null
+      },
+      {
+        "field": "items.0.unit_net",
+        "raw_text": "1 CHR-ERG-01 Ergonomic Desk Chair 2 pcs 250.00 10% 19% 450.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 84,
+            "y": 1156,
+            "width": 15,
+            "height": 20
+          },
+          {
+            "x": 139,
+            "y": 1154,
+            "width": 98,
+            "height": 24
+          },
+          {
+            "x": 268,
+            "y": 1153,
+            "width": 158,
+            "height": 26
+          },
+          {
+            "x": 579,
+            "y": 1155,
+            "width": 18,
+            "height": 24
+          },
+          {
+            "x": 630,
+            "y": 1152,
+            "width": 35,
+            "height": 26
+          },
+          {
+            "x": 709,
+            "y": 1153,
+            "width": 57,
+            "height": 26
+          },
+          {
+            "x": 817,
+            "y": 1153,
+            "width": 41,
+            "height": 26
+          },
+          {
+            "x": 891,
+            "y": 1153,
+            "width": 41,
+            "height": 27
+          },
+          {
+            "x": 984,
+            "y": 1153,
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99952,
+        "artifact": null
+      },
+      {
+        "field": "items.0.discount_percent",
+        "raw_text": "1 CHR-ERG-01 Ergonomic Desk Chair 2 pcs 250.00 10% 19% 450.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 84,
+            "y": 1156,
+            "width": 15,
+            "height": 20
+          },
+          {
+            "x": 139,
+            "y": 1154,
+            "width": 98,
+            "height": 24
+          },
+          {
+            "x": 268,
+            "y": 1153,
+            "width": 158,
+            "height": 26
+          },
+          {
+            "x": 579,
+            "y": 1155,
+            "width": 18,
+            "height": 24
+          },
+          {
+            "x": 630,
+            "y": 1152,
+            "width": 35,
+            "height": 26
+          },
+          {
+            "x": 709,
+            "y": 1153,
+            "width": 57,
+            "height": 26
+          },
+          {
+            "x": 817,
+            "y": 1153,
+            "width": 41,
+            "height": 26
+          },
+          {
+            "x": 891,
+            "y": 1153,
+            "width": 41,
+            "height": 27
+          },
+          {
+            "x": 984,
+            "y": 1153,
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99952,
+        "artifact": null
+      },
+      {
+        "field": "items.0.vat_percent",
+        "raw_text": "1 CHR-ERG-01 Ergonomic Desk Chair 2 pcs 250.00 10% 19% 450.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 84,
+            "y": 1156,
+            "width": 15,
+            "height": 20
+          },
+          {
+            "x": 139,
+            "y": 1154,
+            "width": 98,
+            "height": 24
+          },
+          {
+            "x": 268,
+            "y": 1153,
+            "width": 158,
+            "height": 26
+          },
+          {
+            "x": 579,
+            "y": 1155,
+            "width": 18,
+            "height": 24
+          },
+          {
+            "x": 630,
+            "y": 1152,
+            "width": 35,
+            "height": 26
+          },
+          {
+            "x": 709,
+            "y": 1153,
+            "width": 57,
+            "height": 26
+          },
+          {
+            "x": 817,
+            "y": 1153,
+            "width": 41,
+            "height": 26
+          },
+          {
+            "x": 891,
+            "y": 1153,
+            "width": 41,
+            "height": 27
+          },
+          {
+            "x": 984,
+            "y": 1153,
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99952,
+        "artifact": null
+      },
+      {
+        "field": "items.0.printed_net",
+        "raw_text": "1 CHR-ERG-01 Ergonomic Desk Chair 2 pcs 250.00 10% 19% 450.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 84,
+            "y": 1156,
+            "width": 15,
+            "height": 20
+          },
+          {
+            "x": 139,
+            "y": 1154,
+            "width": 98,
+            "height": 24
+          },
+          {
+            "x": 268,
+            "y": 1153,
+            "width": 158,
+            "height": 26
+          },
+          {
+            "x": 579,
+            "y": 1155,
+            "width": 18,
+            "height": 24
+          },
+          {
+            "x": 630,
+            "y": 1152,
+            "width": 35,
+            "height": 26
+          },
+          {
+            "x": 709,
+            "y": 1153,
+            "width": 57,
+            "height": 26
+          },
+          {
+            "x": 817,
+            "y": 1153,
+            "width": 41,
+            "height": 26
+          },
+          {
+            "x": 891,
+            "y": 1153,
+            "width": 41,
+            "height": 27
+          },
+          {
+            "x": 984,
+            "y": 1153,
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "confidence": 0.99952,
+        "artifact": null
+      },
+      {
+        "field": "items.1.sku",
+        "raw_text": "2 MAT-DESK-02 Anti-Fatigue Desk Mat 3 pcs 40.00 0% 19% 120.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 83,
+            "y": 1218,
+            "width": 17,
+            "height": 21
+          },
+          {
+            "x": 133,
+            "y": 1217,
+            "width": 110,
+            "height": 23
+          },
+          {
+            "x": 268,
+            "y": 1217,
+            "width": 161,
+            "height": 23
+          },
+          {
+            "x": 579,
+            "y": 1218,
+            "width": 16,
+            "height": 21
+          },
+          {
+            "x": 629,
+            "y": 1213,
+            "width": 36,
+            "height": 26
+          },
+          {
+            "x": 713,
+            "y": 1216,
+            "width": 49,
+            "height": 25
+          },
+          {
+            "x": 821,
+            "y": 1217,
+            "width": 32,
+            "height": 23
+          },
+          {
+            "x": 892,
+            "y": 1217,
+            "width": 39,
+            "height": 23
+          },
+          {
+            "x": 984,
+            "y": 1216,
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99922,
+        "artifact": null
+      },
+      {
+        "field": "items.1.description",
+        "raw_text": "2 MAT-DESK-02 Anti-Fatigue Desk Mat 3 pcs 40.00 0% 19% 120.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 83,
+            "y": 1218,
+            "width": 17,
+            "height": 21
+          },
+          {
+            "x": 133,
+            "y": 1217,
+            "width": 110,
+            "height": 23
+          },
+          {
+            "x": 268,
+            "y": 1217,
+            "width": 161,
+            "height": 23
+          },
+          {
+            "x": 579,
+            "y": 1218,
+            "width": 16,
+            "height": 21
+          },
+          {
+            "x": 629,
+            "y": 1213,
+            "width": 36,
+            "height": 26
+          },
+          {
+            "x": 713,
+            "y": 1216,
+            "width": 49,
+            "height": 25
+          },
+          {
+            "x": 821,
+            "y": 1217,
+            "width": 32,
+            "height": 23
+          },
+          {
+            "x": 892,
+            "y": 1217,
+            "width": 39,
+            "height": 23
+          },
+          {
+            "x": 984,
+            "y": 1216,
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99922,
+        "artifact": null
+      },
+      {
+        "field": "items.1.quantity",
+        "raw_text": "2 MAT-DESK-02 Anti-Fatigue Desk Mat 3 pcs 40.00 0% 19% 120.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 83,
+            "y": 1218,
+            "width": 17,
+            "height": 21
+          },
+          {
+            "x": 133,
+            "y": 1217,
+            "width": 110,
+            "height": 23
+          },
+          {
+            "x": 268,
+            "y": 1217,
+            "width": 161,
+            "height": 23
+          },
+          {
+            "x": 579,
+            "y": 1218,
+            "width": 16,
+            "height": 21
+          },
+          {
+            "x": 629,
+            "y": 1213,
+            "width": 36,
+            "height": 26
+          },
+          {
+            "x": 713,
+            "y": 1216,
+            "width": 49,
+            "height": 25
+          },
+          {
+            "x": 821,
+            "y": 1217,
+            "width": 32,
+            "height": 23
+          },
+          {
+            "x": 892,
+            "y": 1217,
+            "width": 39,
+            "height": 23
+          },
+          {
+            "x": 984,
+            "y": 1216,
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99922,
+        "artifact": null
+      },
+      {
+        "field": "items.1.unit",
+        "raw_text": "2 MAT-DESK-02 Anti-Fatigue Desk Mat 3 pcs 40.00 0% 19% 120.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 83,
+            "y": 1218,
+            "width": 17,
+            "height": 21
+          },
+          {
+            "x": 133,
+            "y": 1217,
+            "width": 110,
+            "height": 23
+          },
+          {
+            "x": 268,
+            "y": 1217,
+            "width": 161,
+            "height": 23
+          },
+          {
+            "x": 579,
+            "y": 1218,
+            "width": 16,
+            "height": 21
+          },
+          {
+            "x": 629,
+            "y": 1213,
+            "width": 36,
+            "height": 26
+          },
+          {
+            "x": 713,
+            "y": 1216,
+            "width": 49,
+            "height": 25
+          },
+          {
+            "x": 821,
+            "y": 1217,
+            "width": 32,
+            "height": 23
+          },
+          {
+            "x": 892,
+            "y": 1217,
+            "width": 39,
+            "height": 23
+          },
+          {
+            "x": 984,
+            "y": 1216,
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99922,
+        "artifact": null
+      },
+      {
+        "field": "items.1.unit_net",
+        "raw_text": "2 MAT-DESK-02 Anti-Fatigue Desk Mat 3 pcs 40.00 0% 19% 120.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 83,
+            "y": 1218,
+            "width": 17,
+            "height": 21
+          },
+          {
+            "x": 133,
+            "y": 1217,
+            "width": 110,
+            "height": 23
+          },
+          {
+            "x": 268,
+            "y": 1217,
+            "width": 161,
+            "height": 23
+          },
+          {
+            "x": 579,
+            "y": 1218,
+            "width": 16,
+            "height": 21
+          },
+          {
+            "x": 629,
+            "y": 1213,
+            "width": 36,
+            "height": 26
+          },
+          {
+            "x": 713,
+            "y": 1216,
+            "width": 49,
+            "height": 25
+          },
+          {
+            "x": 821,
+            "y": 1217,
+            "width": 32,
+            "height": 23
+          },
+          {
+            "x": 892,
+            "y": 1217,
+            "width": 39,
+            "height": 23
+          },
+          {
+            "x": 984,
+            "y": 1216,
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99922,
+        "artifact": null
+      },
+      {
+        "field": "items.1.discount_percent",
+        "raw_text": "2 MAT-DESK-02 Anti-Fatigue Desk Mat 3 pcs 40.00 0% 19% 120.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 83,
+            "y": 1218,
+            "width": 17,
+            "height": 21
+          },
+          {
+            "x": 133,
+            "y": 1217,
+            "width": 110,
+            "height": 23
+          },
+          {
+            "x": 268,
+            "y": 1217,
+            "width": 161,
+            "height": 23
+          },
+          {
+            "x": 579,
+            "y": 1218,
+            "width": 16,
+            "height": 21
+          },
+          {
+            "x": 629,
+            "y": 1213,
+            "width": 36,
+            "height": 26
+          },
+          {
+            "x": 713,
+            "y": 1216,
+            "width": 49,
+            "height": 25
+          },
+          {
+            "x": 821,
+            "y": 1217,
+            "width": 32,
+            "height": 23
+          },
+          {
+            "x": 892,
+            "y": 1217,
+            "width": 39,
+            "height": 23
+          },
+          {
+            "x": 984,
+            "y": 1216,
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99922,
+        "artifact": null
+      },
+      {
+        "field": "items.1.vat_percent",
+        "raw_text": "2 MAT-DESK-02 Anti-Fatigue Desk Mat 3 pcs 40.00 0% 19% 120.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 83,
+            "y": 1218,
+            "width": 17,
+            "height": 21
+          },
+          {
+            "x": 133,
+            "y": 1217,
+            "width": 110,
+            "height": 23
+          },
+          {
+            "x": 268,
+            "y": 1217,
+            "width": 161,
+            "height": 23
+          },
+          {
+            "x": 579,
+            "y": 1218,
+            "width": 16,
+            "height": 21
+          },
+          {
+            "x": 629,
+            "y": 1213,
+            "width": 36,
+            "height": 26
+          },
+          {
+            "x": 713,
+            "y": 1216,
+            "width": 49,
+            "height": 25
+          },
+          {
+            "x": 821,
+            "y": 1217,
+            "width": 32,
+            "height": 23
+          },
+          {
+            "x": 892,
+            "y": 1217,
+            "width": 39,
+            "height": 23
+          },
+          {
+            "x": 984,
+            "y": 1216,
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99922,
+        "artifact": null
+      },
+      {
+        "field": "items.1.printed_net",
+        "raw_text": "2 MAT-DESK-02 Anti-Fatigue Desk Mat 3 pcs 40.00 0% 19% 120.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 83,
+            "y": 1218,
+            "width": 17,
+            "height": 21
+          },
+          {
+            "x": 133,
+            "y": 1217,
+            "width": 110,
+            "height": 23
+          },
+          {
+            "x": 268,
+            "y": 1217,
+            "width": 161,
+            "height": 23
+          },
+          {
+            "x": 579,
+            "y": 1218,
+            "width": 16,
+            "height": 21
+          },
+          {
+            "x": 629,
+            "y": 1213,
+            "width": 36,
+            "height": 26
+          },
+          {
+            "x": 713,
+            "y": 1216,
+            "width": 49,
+            "height": 25
+          },
+          {
+            "x": 821,
+            "y": 1217,
+            "width": 32,
+            "height": 23
+          },
+          {
+            "x": 892,
+            "y": 1217,
+            "width": 39,
+            "height": 23
+          },
+          {
+            "x": 984,
+            "y": 1216,
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "confidence": 0.99922,
+        "artifact": null
+      }
+    ],
+    "issues": []
+  },
+  "ocr": {
+    "engine": "rapidocr",
+    "version": "3.10.0",
+    "width": 1156,
+    "height": 1620,
+    "words": [
+      {
+        "text": "TJM Labs | Automation Assessment",
+        "box": {
+          "x": 68,
+          "y": 29,
+          "width": 345,
+          "height": 26
+        },
+        "confidence": 0.96007,
+        "line": "0"
+      },
+      {
+        "text": "SYNTHETIC TEST DATA",
+        "box": {
+          "x": 915,
+          "y": 34,
+          "width": 172,
+          "height": 20
+        },
+        "confidence": 0.99809,
+        "line": "1"
+      },
+      {
+        "text": "SALES ORDER INPUT",
+        "box": {
+          "x": 68,
+          "y": 132,
+          "width": 432,
+          "height": 39
+        },
+        "confidence": 0.97179,
+        "line": "2"
+      },
+      {
+        "text": "PAID",
+        "box": {
+          "x": 992,
+          "y": 129,
+          "width": 56,
+          "height": 29
+        },
+        "confidence": 0.99963,
+        "line": "3"
+      },
+      {
+        "text": "Source document - extract all transaction values from this image",
+        "box": {
+          "x": 67,
+          "y": 179,
+          "width": 526,
+          "height": 25
+        },
+        "confidence": 0.99683,
+        "line": "4"
+      },
+      {
+        "text": "ORDER",
+        "box": {
+          "x": 67,
+          "y": 223,
+          "width": 73,
+          "height": 25
+        },
+        "confidence": 0.99995,
+        "line": "5"
+      },
+      {
+        "text": "EXTERNAL REFERENCE",
+        "box": {
+          "x": 90,
+          "y": 273,
+          "width": 147,
+          "height": 17
+        },
+        "confidence": 0.99977,
+        "line": "6"
+      },
+      {
+        "text": "ORDER DATE",
+        "box": {
+          "x": 371,
+          "y": 271,
+          "width": 92,
+          "height": 21
+        },
+        "confidence": 0.99966,
+        "line": "7"
+      },
+      {
+        "text": "CUSTOMER ID",
+        "box": {
+          "x": 616,
+          "y": 270,
+          "width": 99,
+          "height": 23
+        },
+        "confidence": 0.99955,
+        "line": "8"
+      },
+      {
+        "text": "CURRENCY",
+        "box": {
+          "x": 834,
+          "y": 271,
+          "width": 77,
+          "height": 21
+        },
+        "confidence": 0.99996,
+        "line": "9"
+      },
+      {
+        "text": "WEB-2026-0714-A17",
+        "box": {
+          "x": 90,
+          "y": 298,
+          "width": 204,
+          "height": 23
+        },
+        "confidence": 0.99998,
+        "line": "10"
+      },
+      {
+        "text": "2026-07-14",
+        "box": {
+          "x": 370,
+          "y": 296,
+          "width": 114,
+          "height": 27
+        },
+        "confidence": 1.0,
+        "line": "11"
+      },
+      {
+        "text": "CUST-1007",
+        "box": {
+          "x": 616,
+          "y": 296,
+          "width": 110,
+          "height": 27
+        },
+        "confidence": 0.99999,
+        "line": "12"
+      },
+      {
+        "text": "EUR",
+        "box": {
+          "x": 832,
+          "y": 295,
+          "width": 52,
+          "height": 30
+        },
+        "confidence": 0.99989,
+        "line": "13"
+      },
+      {
+        "text": "CUSTOMER AND CONTACT",
+        "box": {
+          "x": 69,
+          "y": 398,
+          "width": 249,
+          "height": 23
+        },
+        "confidence": 0.99917,
+        "line": "14"
+      },
+      {
+        "text": "COMPANY",
+        "box": {
+          "x": 89,
+          "y": 445,
+          "width": 75,
+          "height": 21
+        },
+        "confidence": 0.99998,
+        "line": "15"
+      },
+      {
+        "text": "CONTACT NAME",
+        "box": {
+          "x": 602,
+          "y": 436,
+          "width": 113,
+          "height": 23
+        },
+        "confidence": 0.99627,
+        "line": "16"
+      },
+      {
+        "text": "Northstar Office GmbH",
+        "box": {
+          "x": 89,
+          "y": 470,
+          "width": 230,
+          "height": 25
+        },
+        "confidence": 0.99974,
+        "line": "17"
+      },
+      {
+        "text": "Marta Klein",
+        "box": {
+          "x": 599,
+          "y": 461,
+          "width": 115,
+          "height": 29
+        },
+        "confidence": 0.99877,
+        "line": "18"
+      },
+      {
+        "text": "EMAIL",
+        "box": {
+          "x": 601,
+          "y": 489,
+          "width": 51,
+          "height": 25
+        },
+        "confidence": 0.99977,
+        "line": "19"
+      },
+      {
+        "text": "CUSTOMER ALIAS",
+        "box": {
+          "x": 90,
+          "y": 510,
+          "width": 119,
+          "height": 20
+        },
+        "confidence": 0.99991,
+        "line": "20"
+      },
+      {
+        "text": "marta.klein@example.test",
+        "box": {
+          "x": 602,
+          "y": 517,
+          "width": 241,
+          "height": 26
+        },
+        "confidence": 0.99998,
+        "line": "21"
+      },
+      {
+        "text": "NORTHSTAR-BERLIN",
+        "box": {
+          "x": 90,
+          "y": 537,
+          "width": 193,
+          "height": 23
+        },
+        "confidence": 0.99997,
+        "line": "22"
+      },
+      {
+        "text": "PHONE",
+        "box": {
+          "x": 602,
+          "y": 545,
+          "width": 55,
+          "height": 22
+        },
+        "confidence": 0.99993,
+        "line": "23"
+      },
+      {
+        "text": "+49 30 5550 1420",
+        "box": {
+          "x": 603,
+          "y": 571,
+          "width": 170,
+          "height": 26
+        },
+        "confidence": 0.98698,
+        "line": "24"
+      },
+      {
+        "text": "ADDRESSES",
+        "box": {
+          "x": 67,
+          "y": 628,
+          "width": 114,
+          "height": 23
+        },
+        "confidence": 0.99993,
+        "line": "25"
+      },
+      {
+        "text": "BILLING ADDRESS",
+        "box": {
+          "x": 89,
+          "y": 676,
+          "width": 121,
+          "height": 20
+        },
+        "confidence": 0.99994,
+        "line": "26"
+      },
+      {
+        "text": "DELIVERY ADDRESS",
+        "box": {
+          "x": 603,
+          "y": 676,
+          "width": 131,
+          "height": 20
+        },
+        "confidence": 0.98673,
+        "line": "27"
+      },
+      {
+        "text": "Northstar Office GmbH",
+        "box": {
+          "x": 89,
+          "y": 711,
+          "width": 196,
+          "height": 26
+        },
+        "confidence": 0.99914,
+        "line": "28"
+      },
+      {
+        "text": "Northstar Office Warehouse",
+        "box": {
+          "x": 601,
+          "y": 710,
+          "width": 234,
+          "height": 26
+        },
+        "confidence": 0.97589,
+        "line": "29"
+      },
+      {
+        "text": "Friedrichstrasse 88",
+        "box": {
+          "x": 89,
+          "y": 739,
+          "width": 157,
+          "height": 23
+        },
+        "confidence": 0.99986,
+        "line": "30"
+      },
+      {
+        "text": "Beusselstrasse 44",
+        "box": {
+          "x": 603,
+          "y": 739,
+          "width": 147,
+          "height": 23
+        },
+        "confidence": 0.99979,
+        "line": "31"
+      },
+      {
+        "text": "10117 Berlin",
+        "box": {
+          "x": 88,
+          "y": 763,
+          "width": 109,
+          "height": 27
+        },
+        "confidence": 0.99981,
+        "line": "32"
+      },
+      {
+        "text": "10553 Berlin",
+        "box": {
+          "x": 602,
+          "y": 763,
+          "width": 107,
+          "height": 27
+        },
+        "confidence": 0.99993,
+        "line": "33"
+      },
+      {
+        "text": "Germany",
+        "box": {
+          "x": 87,
+          "y": 789,
+          "width": 85,
+          "height": 32
+        },
+        "confidence": 0.99996,
+        "line": "34"
+      },
+      {
+        "text": "Germany",
+        "box": {
+          "x": 600,
+          "y": 789,
+          "width": 86,
+          "height": 32
+        },
+        "confidence": 0.99996,
+        "line": "35"
+      },
+      {
+        "text": "PAYMENT",
+        "box": {
+          "x": 66,
+          "y": 896,
+          "width": 101,
+          "height": 24
+        },
+        "confidence": 0.99991,
+        "line": "36"
+      },
+      {
+        "text": "PAYMENT METHOD",
+        "box": {
+          "x": 89,
+          "y": 940,
+          "width": 133,
+          "height": 20
+        },
+        "confidence": 0.97968,
+        "line": "37"
+      },
+      {
+        "text": "PAID STATUS",
+        "box": {
+          "x": 511,
+          "y": 938,
+          "width": 95,
+          "height": 24
+        },
+        "confidence": 0.99889,
+        "line": "38"
+      },
+      {
+        "text": "PAYMENT DATE",
+        "box": {
+          "x": 761,
+          "y": 940,
+          "width": 109,
+          "height": 20
+        },
+        "confidence": 0.99991,
+        "line": "39"
+      },
+      {
+        "text": "Bank Transfer",
+        "box": {
+          "x": 90,
+          "y": 967,
+          "width": 140,
+          "height": 24
+        },
+        "confidence": 0.99913,
+        "line": "40"
+      },
+      {
+        "text": "PAID",
+        "box": {
+          "x": 510,
+          "y": 964,
+          "width": 61,
+          "height": 29
+        },
+        "confidence": 0.99974,
+        "line": "41"
+      },
+      {
+        "text": "2026-07-18",
+        "box": {
+          "x": 760,
+          "y": 965,
+          "width": 112,
+          "height": 27
+        },
+        "confidence": 0.99999,
+        "line": "42"
+      },
+      {
+        "text": "ITEMS",
+        "box": {
+          "x": 67,
+          "y": 1062,
+          "width": 65,
+          "height": 25
+        },
+        "confidence": 0.99979,
+        "line": "43"
+      },
+      {
+        "text": "#",
+        "box": {
+          "x": 83,
+          "y": 1103,
+          "width": 17,
+          "height": 19
+        },
+        "confidence": 0.98599,
+        "line": "44"
+      },
+      {
+        "text": "SKU",
+        "box": {
+          "x": 172,
+          "y": 1104,
+          "width": 33,
+          "height": 19
+        },
+        "confidence": 0.99939,
+        "line": "45"
+      },
+      {
+        "text": "Description",
+        "box": {
+          "x": 373,
+          "y": 1101,
+          "width": 79,
+          "height": 21
+        },
+        "confidence": 0.99999,
+        "line": "46"
+      },
+      {
+        "text": "Qty",
+        "box": {
+          "x": 570,
+          "y": 1101,
+          "width": 33,
+          "height": 23
+        },
+        "confidence": 0.99947,
+        "line": "47"
+      },
+      {
+        "text": "Unit",
+        "box": {
+          "x": 628,
+          "y": 1101,
+          "width": 38,
+          "height": 23
+        },
+        "confidence": 0.99993,
+        "line": "48"
+      },
+      {
+        "text": "Disc.",
+        "box": {
+          "x": 817,
+          "y": 1102,
+          "width": 40,
+          "height": 22
+        },
+        "confidence": 0.99975,
+        "line": "49"
+      },
+      {
+        "text": "VAT",
+        "box": {
+          "x": 892,
+          "y": 1102,
+          "width": 37,
+          "height": 22
+        },
+        "confidence": 0.99996,
+        "line": "50"
+      },
+      {
+        "text": "1",
+        "box": {
+          "x": 84,
+          "y": 1156,
+          "width": 15,
+          "height": 20
+        },
+        "confidence": 0.99979,
+        "line": "51"
+      },
+      {
+        "text": "CHR-ERG-01",
+        "box": {
+          "x": 139,
+          "y": 1154,
+          "width": 98,
+          "height": 24
+        },
+        "confidence": 0.99997,
+        "line": "52"
+      },
+      {
+        "text": "Ergonomic Desk Chair",
+        "box": {
+          "x": 268,
+          "y": 1153,
+          "width": 158,
+          "height": 26
+        },
+        "confidence": 0.99988,
+        "line": "53"
+      },
+      {
+        "text": "2",
+        "box": {
+          "x": 579,
+          "y": 1155,
+          "width": 18,
+          "height": 24
+        },
+        "confidence": 0.99994,
+        "line": "54"
+      },
+      {
+        "text": "pcs",
+        "box": {
+          "x": 630,
+          "y": 1152,
+          "width": 35,
+          "height": 26
+        },
+        "confidence": 0.99952,
+        "line": "55"
+      },
+      {
+        "text": "250.00",
+        "box": {
+          "x": 709,
+          "y": 1153,
+          "width": 57,
+          "height": 26
+        },
+        "confidence": 0.99999,
+        "line": "56"
+      },
+      {
+        "text": "10%",
+        "box": {
+          "x": 817,
+          "y": 1153,
+          "width": 41,
+          "height": 26
+        },
+        "confidence": 0.99997,
+        "line": "57"
+      },
+      {
+        "text": "19%",
+        "box": {
+          "x": 891,
+          "y": 1153,
+          "width": 41,
+          "height": 27
+        },
+        "confidence": 0.99997,
+        "line": "58"
+      },
+      {
+        "text": "450.00",
+        "box": {
+          "x": 984,
+          "y": 1153,
+          "width": 60,
+          "height": 25
+        },
+        "confidence": 0.99999,
+        "line": "59"
+      },
+      {
+        "text": "2",
+        "box": {
+          "x": 83,
+          "y": 1218,
+          "width": 17,
+          "height": 21
+        },
+        "confidence": 0.99995,
+        "line": "60"
+      },
+      {
+        "text": "MAT-DESK-02",
+        "box": {
+          "x": 133,
+          "y": 1217,
+          "width": 110,
+          "height": 23
+        },
+        "confidence": 0.99998,
+        "line": "61"
+      },
+      {
+        "text": "Anti-Fatigue Desk Mat",
+        "box": {
+          "x": 268,
+          "y": 1217,
+          "width": 161,
+          "height": 23
+        },
+        "confidence": 0.99991,
+        "line": "62"
+      },
+      {
+        "text": "3",
+        "box": {
+          "x": 579,
+          "y": 1218,
+          "width": 16,
+          "height": 21
+        },
+        "confidence": 0.99995,
+        "line": "63"
+      },
+      {
+        "text": "pcs",
+        "box": {
+          "x": 629,
+          "y": 1213,
+          "width": 36,
+          "height": 26
+        },
+        "confidence": 0.99978,
+        "line": "64"
+      },
+      {
+        "text": "40.00",
+        "box": {
+          "x": 713,
+          "y": 1216,
+          "width": 49,
+          "height": 25
+        },
+        "confidence": 0.99922,
+        "line": "65"
+      },
+      {
+        "text": "0%",
+        "box": {
+          "x": 821,
+          "y": 1217,
+          "width": 32,
+          "height": 23
+        },
+        "confidence": 0.99988,
+        "line": "66"
+      },
+      {
+        "text": "19%",
+        "box": {
+          "x": 892,
+          "y": 1217,
+          "width": 39,
+          "height": 23
+        },
+        "confidence": 0.99994,
+        "line": "67"
+      },
+      {
+        "text": "120.00",
+        "box": {
+          "x": 984,
+          "y": 1216,
+          "width": 60,
+          "height": 24
+        },
+        "confidence": 0.99999,
+        "line": "68"
+      },
+      {
+        "text": "NET TOTAL",
+        "box": {
+          "x": 197,
+          "y": 1418,
+          "width": 87,
+          "height": 21
+        },
+        "confidence": 0.94756,
+        "line": "69"
+      },
+      {
+        "text": "VAT TOTAL",
+        "box": {
+          "x": 534,
+          "y": 1418,
+          "width": 86,
+          "height": 21
+        },
+        "confidence": 0.95114,
+        "line": "70"
+      },
+      {
+        "text": "GROSS TOTAL",
+        "box": {
+          "x": 863,
+          "y": 1417,
+          "width": 103,
+          "height": 23
+        },
+        "confidence": 0.99567,
+        "line": "71"
+      },
+      {
+        "text": "EUR 570.00",
+        "box": {
+          "x": 176,
+          "y": 1456,
+          "width": 129,
+          "height": 27
+        },
+        "confidence": 0.99992,
+        "line": "72"
+      },
+      {
+        "text": "EUR 108.30",
+        "box": {
+          "x": 513,
+          "y": 1456,
+          "width": 128,
+          "height": 27
+        },
+        "confidence": 0.99991,
+        "line": "73"
+      },
+      {
+        "text": "EUR 678.30",
+        "box": {
+          "x": 851,
+          "y": 1457,
+          "width": 127,
+          "height": 24
+        },
+        "confidence": 0.99982,
+        "line": "74"
+      },
+      {
+        "text": "All data is synthetic | Prices are net | Dates: YYYY-MM-DD | Currency: EUR",
+        "box": {
+          "x": 68,
+          "y": 1552,
+          "width": 475,
+          "height": 20
+        },
+        "confidence": 0.96709,
+        "line": "75"
+      },
+      {
+        "text": "WEB-2026-0714-A17",
+        "box": {
+          "x": 953,
+          "y": 1552,
+          "width": 135,
+          "height": 20
+        },
+        "confidence": 0.99998,
+        "line": "76"
+      }
+    ],
+    "elapsed_seconds": 1.413550799996301
+  },
+  "disagreements": [],
+  "attempts": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "response_id": "9Vjsas7rHe-cxN8Pl8usmQI",
+      "usage": {
+        "promptTokenCount": 1332,
+        "candidatesTokenCount": 2370,
+        "totalTokenCount": 3702,
+        "cachedContentTokenCount": 657,
+        "promptTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1092
+          },
+          {
+            "modality": "TEXT",
+            "tokenCount": 240
+          }
+        ],
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 118
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 539
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "elapsed_seconds": 17.061924200002977,
+      "prompt_version": "literal-independent-v1",
+      "schema_version": "order-v1",
+      "field_path_normalizations": [
+        {
+          "original": "order.external_reference",
+          "canonical": "external_reference"
+        },
+        {
+          "original": "order.order_date",
+          "canonical": "order_date"
+        },
+        {
+          "original": "order.customer.source_customer_id",
+          "canonical": "customer.source_customer_id"
+        },
+        {
+          "original": "order.currency",
+          "canonical": "currency"
+        },
+        {
+          "original": "order.customer.company",
+          "canonical": "customer.company"
+        },
+        {
+          "original": "order.customer.alias",
+          "canonical": "customer.alias"
+        },
+        {
+          "original": "order.customer.first_name",
+          "canonical": "customer.first_name"
+        },
+        {
+          "original": "order.customer.email",
+          "canonical": "customer.email"
+        },
+        {
+          "original": "order.customer.telephone",
+          "canonical": "customer.telephone"
+        },
+        {
+          "original": "order.customer.billing.recipient",
+          "canonical": "customer.billing.recipient"
+        },
+        {
+          "original": "order.customer.billing.street",
+          "canonical": "customer.billing.street"
+        },
+        {
+          "original": "order.customer.billing.postcode",
+          "canonical": "customer.billing.postcode"
+        },
+        {
+          "original": "order.customer.billing.city",
+          "canonical": "customer.billing.city"
+        },
+        {
+          "original": "order.customer.billing.country",
+          "canonical": "customer.billing.country"
+        },
+        {
+          "original": "order.customer.delivery.recipient",
+          "canonical": "customer.delivery.recipient"
+        },
+        {
+          "original": "order.customer.delivery.street",
+          "canonical": "customer.delivery.street"
+        },
+        {
+          "original": "order.customer.delivery.postcode",
+          "canonical": "customer.delivery.postcode"
+        },
+        {
+          "original": "order.customer.delivery.city",
+          "canonical": "customer.delivery.city"
+        },
+        {
+          "original": "order.customer.delivery.country",
+          "canonical": "customer.delivery.country"
+        },
+        {
+          "original": "order.payment.method",
+          "canonical": "payment.method"
+        },
+        {
+          "original": "order.payment.status",
+          "canonical": "payment.status"
+        },
+        {
+          "original": "order.payment.payment_date",
+          "canonical": "payment.payment_date"
+        },
+        {
+          "original": "order.items.0.sku",
+          "canonical": "items.0.sku"
+        },
+        {
+          "original": "order.items.0.description",
+          "canonical": "items.0.description"
+        },
+        {
+          "original": "order.items.0.quantity",
+          "canonical": "items.0.quantity"
+        },
+        {
+          "original": "order.items.0.unit",
+          "canonical": "items.0.unit"
+        },
+        {
+          "original": "order.items.0.unit_net",
+          "canonical": "items.0.unit_net"
+        },
+        {
+          "original": "order.items.0.discount_percent",
+          "canonical": "items.0.discount_percent"
+        },
+        {
+          "original": "order.items.0.vat_percent",
+          "canonical": "items.0.vat_percent"
+        },
+        {
+          "original": "order.items.0.printed_net",
+          "canonical": "items.0.printed_net"
+        },
+        {
+          "original": "order.items.1.sku",
+          "canonical": "items.1.sku"
+        },
+        {
+          "original": "order.items.1.description",
+          "canonical": "items.1.description"
+        },
+        {
+          "original": "order.items.1.quantity",
+          "canonical": "items.1.quantity"
+        },
+        {
+          "original": "order.items.1.unit",
+          "canonical": "items.1.unit"
+        },
+        {
+          "original": "order.items.1.unit_net",
+          "canonical": "items.1.unit_net"
+        },
+        {
+          "original": "order.items.1.discount_percent",
+          "canonical": "items.1.discount_percent"
+        },
+        {
+          "original": "order.items.1.vat_percent",
+          "canonical": "items.1.vat_percent"
+        },
+        {
+          "original": "order.items.1.printed_net",
+          "canonical": "items.1.printed_net"
+        },
+        {
+          "original": "order.totals.net",
+          "canonical": "totals.net"
+        },
+        {
+          "original": "order.totals.vat",
+          "canonical": "totals.vat"
+        },
+        {
+          "original": "order.totals.gross",
+          "canonical": "totals.gross"
+        }
+      ],
+      "transport_attempt_count": 3,
+      "transport_attempts": [
+        {
+          "attempt": 1,
+          "http_status": 503,
+          "seconds": 3.1416915000008885
+        },
+        {
+          "attempt": 2,
+          "http_status": 503,
+          "seconds": 2.13218020000204
+        },
+        {
+          "attempt": 3,
+          "http_status": 200,
+          "seconds": 8.08847770000284
+        }
+      ],
+      "cache_hit": true
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "response_id": "Q2LsauilILaP28oPlejO6A4",
+      "usage": {
+        "promptTokenCount": 1332,
+        "candidatesTokenCount": 2401,
+        "totalTokenCount": 3733,
+        "cachedContentTokenCount": 657,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 240
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1092
+          }
+        ],
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 118
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 539
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "elapsed_seconds": 6.508275499996671,
+      "prompt_version": "literal-independent-v1",
+      "schema_version": "order-v1",
+      "field_path_normalizations": [
+        {
+          "original": "order.external_reference",
+          "canonical": "external_reference"
+        },
+        {
+          "original": "order.order_date",
+          "canonical": "order_date"
+        },
+        {
+          "original": "order.customer.source_customer_id",
+          "canonical": "customer.source_customer_id"
+        },
+        {
+          "original": "order.currency",
+          "canonical": "currency"
+        },
+        {
+          "original": "order.customer.company",
+          "canonical": "customer.company"
+        },
+        {
+          "original": "order.customer.alias",
+          "canonical": "customer.alias"
+        },
+        {
+          "original": "order.customer.first_name",
+          "canonical": "customer.first_name"
+        },
+        {
+          "original": "order.customer.last_name",
+          "canonical": "customer.last_name"
+        },
+        {
+          "original": "order.customer.email",
+          "canonical": "customer.email"
+        },
+        {
+          "original": "order.customer.telephone",
+          "canonical": "customer.telephone"
+        },
+        {
+          "original": "order.customer.billing.recipient",
+          "canonical": "customer.billing.recipient"
+        },
+        {
+          "original": "order.customer.billing.street",
+          "canonical": "customer.billing.street"
+        },
+        {
+          "original": "order.customer.billing.postcode",
+          "canonical": "customer.billing.postcode"
+        },
+        {
+          "original": "order.customer.billing.city",
+          "canonical": "customer.billing.city"
+        },
+        {
+          "original": "order.customer.billing.country",
+          "canonical": "customer.billing.country"
+        },
+        {
+          "original": "order.customer.delivery.recipient",
+          "canonical": "customer.delivery.recipient"
+        },
+        {
+          "original": "order.customer.delivery.street",
+          "canonical": "customer.delivery.street"
+        },
+        {
+          "original": "order.customer.delivery.postcode",
+          "canonical": "customer.delivery.postcode"
+        },
+        {
+          "original": "order.customer.delivery.city",
+          "canonical": "customer.delivery.city"
+        },
+        {
+          "original": "order.customer.delivery.country",
+          "canonical": "customer.delivery.country"
+        },
+        {
+          "original": "order.payment.method",
+          "canonical": "payment.method"
+        },
+        {
+          "original": "order.payment.status",
+          "canonical": "payment.status"
+        },
+        {
+          "original": "order.payment.payment_date",
+          "canonical": "payment.payment_date"
+        },
+        {
+          "original": "order.items.0.sku",
+          "canonical": "items.0.sku"
+        },
+        {
+          "original": "order.items.0.description",
+          "canonical": "items.0.description"
+        },
+        {
+          "original": "order.items.0.quantity",
+          "canonical": "items.0.quantity"
+        },
+        {
+          "original": "order.items.0.unit",
+          "canonical": "items.0.unit"
+        },
+        {
+          "original": "order.items.0.unit_net",
+          "canonical": "items.0.unit_net"
+        },
+        {
+          "original": "order.items.0.discount_percent",
+          "canonical": "items.0.discount_percent"
+        },
+        {
+          "original": "order.items.0.vat_percent",
+          "canonical": "items.0.vat_percent"
+        },
+        {
+          "original": "order.items.0.printed_net",
+          "canonical": "items.0.printed_net"
+        },
+        {
+          "original": "order.items.1.sku",
+          "canonical": "items.1.sku"
+        },
+        {
+          "original": "order.items.1.description",
+          "canonical": "items.1.description"
+        },
+        {
+          "original": "order.items.1.quantity",
+          "canonical": "items.1.quantity"
+        },
+        {
+          "original": "order.items.1.unit",
+          "canonical": "items.1.unit"
+        },
+        {
+          "original": "order.items.1.unit_net",
+          "canonical": "items.1.unit_net"
+        },
+        {
+          "original": "order.items.1.discount_percent",
+          "canonical": "items.1.discount_percent"
+        },
+        {
+          "original": "order.items.1.vat_percent",
+          "canonical": "items.1.vat_percent"
+        },
+        {
+          "original": "order.items.1.printed_net",
+          "canonical": "items.1.printed_net"
+        },
+        {
+          "original": "order.totals.net",
+          "canonical": "totals.net"
+        },
+        {
+          "original": "order.totals.vat",
+          "canonical": "totals.vat"
+        },
+        {
+          "original": "order.totals.gross",
+          "canonical": "totals.gross"
+        }
+      ],
+      "transport_attempt_count": 1,
+      "transport_attempts": [
+        {
+          "attempt": 1,
+          "http_status": 200,
+          "seconds": 6.4941744999960065
+        }
+      ]
+    }
+  ],
+  "cache_key": "9ac2f3825ace8fec69d4b18b4cce4fe620c7b43dd81547b7d47488dc1f2c0318"
+}

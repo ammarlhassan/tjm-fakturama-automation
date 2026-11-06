@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:34:42.699594"
+  }
+]

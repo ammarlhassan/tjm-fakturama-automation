@@ -1,0 +1,24 @@
+{
+  "demonstrations": [
+    {
+      "name": "simulated-complete",
+      "stage": "SUCCEEDED",
+      "mode": "SIMULATION",
+      "report": "simulated-complete/report.html"
+    },
+    {
+      "name": "simulated-recovery",
+      "stage": "SUCCEEDED",
+      "mode": "SIMULATION",
+      "report": "simulated-recovery/report.html"
+    },
+    {
+      "name": "ambiguous-input",
+      "stage": "NEEDS_REVIEW",
+      "mode": "SIMULATION / reviewed extraction",
+      "report": "ambiguous-input/report.html"
+    }
+  ],
+  "live_desktop": false,
+  "live_vision": false
+}

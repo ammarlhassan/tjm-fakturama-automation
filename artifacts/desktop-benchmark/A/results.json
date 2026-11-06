@@ -1,0 +1,36 @@
+{
+  "status": "stopped_for_review",
+  "mode": "REAL FAKTURAMA DESKTOP",
+  "input_provenance": "Explicit synthetic expected data; no extraction/API time included",
+  "master_cardinality": "Two unique SKUs per document, repeated across 2/10/30 rows",
+  "temperature": "Fakturama warm; new adapter per job, same Python process; first case marks process first-use",
+  "cold_fakturama": "Not measured; do not interpret first-use as application cold start",
+  "summary": {
+    "attempted": 1,
+    "verified": 0,
+    "reviewed": 1,
+    "p50_seconds": 39.60764629999903,
+    "p95_seconds": 39.60764629999903,
+    "verified_orders_per_hour_during_measured_execution": 0.0,
+    "matrix_wall_seconds": 39.60764629999903
+  },
+  "measurements": [
+    {
+      "case": "2-existing-1-A",
+      "job_id": "1e7928d9-2191-4dfd-9fcc-2a31cfe84b47",
+      "lines": 2,
+      "masters": "existing",
+      "run": 1,
+      "process_first_use": true,
+      "seconds": 39.60764629999903,
+      "verified": false,
+      "review": {
+        "code": "TABLE_EXPORT_PROFILE_UNKNOWN",
+        "message": "Clipboard column count differs from the observed visible table"
+      },
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": null
+    }
+  ]
+}

@@ -1,0 +1,914 @@
+[
+  {
+    "id": 1446,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:43:04.133762"
+  },
+  {
+    "id": 1447,
+    "stage": "VALIDATED",
+    "action": "benchmark_expected_source",
+    "status": "observed",
+    "data": {
+      "fixture": "C:\\Users\\ammar\\OneDrive\\Desktop\\TJM\\artifacts\\desktop-benchmark\\F2\\10-existing-1-F2\\expected.json",
+      "live_extraction": false
+    },
+    "timestamp": "2026-11-05T13:43:04.144946"
+  },
+  {
+    "id": 1448,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T13:43:04.661500"
+  },
+  {
+    "id": 1449,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Northstar Office GmbH, Marta Klein"
+      ],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T13:43:10.835016"
+  },
+  {
+    "id": 1450,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T13:43:18.142822"
+  },
+  {
+    "id": 1451,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000027",
+      "kind": "Order",
+      "external_reference": "BENCH-10-EXISTING-1-F2",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T13:43:30.160572"
+  },
+  {
+    "id": 1452,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000027"
+    },
+    "timestamp": "2026-11-05T13:43:30.180125"
+  },
+  {
+    "id": 1453,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000001"
+    },
+    "timestamp": "2026-11-05T13:43:34.939491"
+  },
+  {
+    "id": 1454,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:44:17.993269"
+  },
+  {
+    "id": 1455,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:44:18.005151"
+  },
+  {
+    "id": 1456,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:44:29.643570"
+  },
+  {
+    "id": 1457,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:44:35.558811"
+  },
+  {
+    "id": 1458,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:44:35.574778"
+  },
+  {
+    "id": 1459,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:44:47.271558"
+  },
+  {
+    "id": 1460,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:44:53.076356"
+  },
+  {
+    "id": 1461,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:45:01.392069"
+  },
+  {
+    "id": 1462,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:45:01.404932"
+  },
+  {
+    "id": 1463,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:45:22.568007"
+  },
+  {
+    "id": 1464,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:2",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:45:28.472832"
+  },
+  {
+    "id": 1465,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:2",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:45:36.846564"
+  },
+  {
+    "id": 1466,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:2",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:45:36.861710"
+  },
+  {
+    "id": 1467,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:2",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:45:58.008222"
+  },
+  {
+    "id": 1468,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:3",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:46:04.043684"
+  },
+  {
+    "id": 1469,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:3",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:46:12.334111"
+  },
+  {
+    "id": 1470,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:3",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:46:12.356369"
+  },
+  {
+    "id": 1471,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:3",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:46:23.956651"
+  },
+  {
+    "id": 1472,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:4",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:46:29.882667"
+  },
+  {
+    "id": 1473,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:4",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:46:38.277462"
+  },
+  {
+    "id": 1474,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:4",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:46:38.299211"
+  },
+  {
+    "id": 1475,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:4",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:46:59.623448"
+  },
+  {
+    "id": 1476,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:5",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:47:05.594029"
+  },
+  {
+    "id": 1477,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:5",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:47:13.799299"
+  },
+  {
+    "id": 1478,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:5",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:47:13.825422"
+  },
+  {
+    "id": 1479,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:5",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:47:35.309408"
+  },
+  {
+    "id": 1480,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:6",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:47:41.154844"
+  },
+  {
+    "id": 1481,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:6",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:47:49.305863"
+  },
+  {
+    "id": 1482,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:6",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:47:49.331610"
+  },
+  {
+    "id": 1483,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:6",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:48:01.039846"
+  },
+  {
+    "id": 1484,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:7",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:48:06.955336"
+  },
+  {
+    "id": 1485,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:7",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:48:15.309102"
+  },
+  {
+    "id": 1486,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:7",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:48:15.329828"
+  },
+  {
+    "id": 1487,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:7",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:48:36.879059"
+  },
+  {
+    "id": 1488,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:8",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:48:42.776837"
+  },
+  {
+    "id": 1489,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:8",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:48:50.945382"
+  },
+  {
+    "id": 1490,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:8",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:48:50.957299"
+  },
+  {
+    "id": 1491,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:8",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:49:12.373593"
+  },
+  {
+    "id": 1492,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:9",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:49:18.319127"
+  },
+  {
+    "id": 1493,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:9",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:49:26.457257"
+  },
+  {
+    "id": 1494,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:9",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:49:26.468384"
+  },
+  {
+    "id": 1495,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:9",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:49:38.359093"
+  },
+  {
+    "id": 1496,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:49:38.376813"
+  },
+  {
+    "id": 1497,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000027"
+    },
+    "timestamp": "2026-11-05T13:49:46.254114"
+  },
+  {
+    "id": 1498,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:49:49.130372"
+  },
+  {
+    "id": 1499,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000027"
+    },
+    "timestamp": "2026-11-05T13:50:15.927069"
+  },
+  {
+    "id": 1500,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000027",
+        "kind": "Order",
+        "external_reference": "BENCH-10-EXISTING-1-F2",
+        "currency": "EUR",
+        "displayed_item_subtotal": "113.32",
+        "net_is_derived": false,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "10",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "10"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "10.1",
+            "discount_percent": "5.00",
+            "vat_percent": "19.00",
+            "printed_net": "4.8"
+          },
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "10.2",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "18.36"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "10.3",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "10.3"
+          },
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "10.4",
+            "discount_percent": "5.00",
+            "vat_percent": "19.00",
+            "printed_net": "4.94"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "10.5",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "18.9"
+          },
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "10.6",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "10.6"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "10.7",
+            "discount_percent": "5.00",
+            "vat_percent": "19.00",
+            "printed_net": "5.08"
+          },
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "10.8",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "19.44"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "10.9",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "10.9"
+          }
+        ],
+        "totals": {
+          "net": "113.32",
+          "vat": "21.53",
+          "gross": "134.85"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [
+          "Northstar Office GmbH has already ordered 19 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001, INV000002, INV000003, INV000004, ...\r\nTotal volume: 8.923,56 €"
+        ],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true,
+        "documents_row": {
+          "column0": "ICON_ORDER",
+          "document": "PO000027",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-10-EXISTING-1-F2",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "134.85",
+          "printed": "null"
+        }
+      }
+    },
+    "timestamp": "2026-11-05T13:50:15.930074"
+  },
+  {
+    "id": 1501,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000027"
+    },
+    "timestamp": "2026-11-05T13:50:19.674930"
+  },
+  {
+    "id": 1502,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000027",
+      "kind": "Invoice",
+      "external_reference": "BENCH-10-EXISTING-1-F2",
+      "currency": null,
+      "displayed_item_subtotal": "113.32",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "113.32",
+        "vat": "21.53",
+        "gross": "134.85"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000027",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000027",
+        "invoice_number": "INV000027",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [
+        "Northstar Office GmbH has already ordered 19 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001, INV000002, INV000003, INV000004, ...\r\nTotal volume: 8.923,56 €"
+      ],
+      "state": "open",
+      "payment_method": "Bank Transfer",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T13:50:41.079514"
+  },
+  {
+    "id": 1503,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000027",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T13:50:41.103644"
+  },
+  {
+    "id": 1504,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T13:50:41.103644"
+  },
+  {
+    "id": 1505,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:50:48.408799"
+  },
+  {
+    "id": 1506,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000027"
+    },
+    "timestamp": "2026-11-05T13:51:05.565003"
+  },
+  {
+    "id": 1507,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:51:07.370781"
+  },
+  {
+    "id": 1508,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000027",
+      "invoice_number": "INV000027",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000027",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-10-EXISTING-1-F2",
+          "state": "COMMAND_CHECKED",
+          "total": "134.85",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000027",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-10-EXISTING-1-F2",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "134.85",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T13:52:18.287194"
+  },
+  {
+    "id": 1509,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000027"
+    },
+    "timestamp": "2026-11-05T13:52:18.309195"
+  },
+  {
+    "id": 1510,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:52:18.419797"
+  }
+]

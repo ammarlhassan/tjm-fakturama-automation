@@ -1,0 +1,128 @@
+{
+  "mode": "later read-only audit of saved records; not a recording of creation",
+  "audits": "Final official job d3798f87 PO000001/INV000001, read after it completed",
+  "workspace": "official-final",
+  "financial_documents_modified": false,
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+  },
+  "documents": {
+    "order": {
+      "number": "PO000001",
+      "state": "open",
+      "document_date": "2026-07-14",
+      "gross": "678.30",
+      "documents_row": {
+        "column0": "ICON_ORDER",
+        "document": "PO000001",
+        "date": "Tue Jul 14 00:00:00 EEST 2026",
+        "name": "Northstar Office GmbH",
+        "custref": "WEB-2026-0714-A17",
+        "state": "COMMAND_ORDER_PENDING",
+        "total": "678.3",
+        "printed": "null"
+      },
+      "row_findings": []
+    },
+    "invoice": {
+      "number": "INV000001",
+      "state": "paid",
+      "document_date": "2026-11-05",
+      "gross": "678.30",
+      "documents_row": {
+        "column0": "ICON_INVOICE",
+        "document": "INV000001",
+        "date": "Thu Nov 05 00:00:00 EET 2026",
+        "name": "Northstar Office GmbH",
+        "custref": "WEB-2026-0714-A17",
+        "state": "COMMAND_CHECKED",
+        "total": "678.3",
+        "printed": "null"
+      },
+      "row_findings": []
+    }
+  },
+  "documents_list_evidence": [
+    "audit-documents-orders.png"
+  ],
+  "documents_list_invoice_evidence": [
+    "audit-documents-invoices.png"
+  ],
+  "contact": {
+    "mechanism": "reopened_saved_contact",
+    "customer_id": "CUST000001",
+    "email": null,
+    "telephone": "+49 30 5550 1420",
+    "evidence": [
+      "saved-contact.png"
+    ]
+  },
+  "contact_delivery": {
+    "address_type": "Delivery address",
+    "additional_name": "Northstar Office Warehouse",
+    "street": "Beusselstrasse 44",
+    "postcode": "10553",
+    "city": "Berlin",
+    "evidence": [
+      "audit-contact-delivery.png"
+    ]
+  },
+  "contact_miscellaneous": {
+    "alias": "NORTHSTAR-BERLIN",
+    "discount": "0%",
+    "net_or_gross": "Net",
+    "payment": "Bank Transfer",
+    "evidence": [
+      "audit-contact-miscellaneous.png"
+    ]
+  },
+  "payment": {
+    "name": "Bank Transfer",
+    "description": "Bank Transfer",
+    "code": "Credit transfer",
+    "account": "",
+    "cash_discount": "0%",
+    "discount_days": "0",
+    "net_days": "0",
+    "evidence": [
+      "audit-payment.png"
+    ]
+  },
+  "vats": [
+    {
+      "name": "VAT 19%",
+      "value": "19%",
+      "code": "S (Standard rate)",
+      "evidence": [
+        "audit-vat-19.png"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "item_number": "CHR-ERG-01",
+      "name": "Ergonomic Desk Chair",
+      "description": "Ergonomic Desk Chair",
+      "price_gross": "297,50 €",
+      "cost_price_net": "0,00 €",
+      "vat": "VAT 19%",
+      "stock": "0,00",
+      "evidence": [
+        "audit-product-CHR-ERG-01.png"
+      ]
+    },
+    {
+      "item_number": "MAT-DESK-02",
+      "name": "Anti-Fatigue Desk Mat",
+      "description": "Anti-Fatigue Desk Mat",
+      "price_gross": "47,60 €",
+      "cost_price_net": "0,00 €",
+      "vat": "VAT 19%",
+      "stock": "0,00",
+      "evidence": [
+        "audit-product-MAT-DESK-02.png"
+      ]
+    }
+  ]
+}

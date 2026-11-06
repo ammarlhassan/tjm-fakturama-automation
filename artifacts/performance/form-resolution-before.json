@@ -1,0 +1,17 @@
+{
+  "operation": "read-only document-form resolution",
+  "samples_seconds": [
+    1.2251162999996268,
+    1.2096716000000924,
+    1.2204582000003938,
+    1.210483700000168,
+    1.207476399999905,
+    1.24006559999998,
+    1.237019700000019,
+    1.2282157999998162
+  ],
+  "median_seconds": 1.2227872500000103,
+  "document_number": "PO000003",
+  "profile": "Windows 1920x1200 at 125% DPI",
+  "writes_to_fakturama": false
+}

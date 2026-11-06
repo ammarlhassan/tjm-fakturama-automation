@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1402,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:29:30.766819"
+  },
+  {
+    "id": 1403,
+    "stage": "VALIDATED",
+    "action": "benchmark_expected_source",
+    "status": "observed",
+    "data": {
+      "fixture": "C:\\Users\\ammar\\OneDrive\\Desktop\\TJM\\artifacts\\desktop-benchmark\\F1\\10-existing-1-F1\\expected.json",
+      "live_extraction": false
+    },
+    "timestamp": "2026-11-05T13:29:30.778451"
+  },
+  {
+    "id": 1404,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T13:29:31.277146"
+  },
+  {
+    "id": 1405,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Northstar Office GmbH, Marta Klein",
+        "INV000026",
+        "PO000026"
+      ],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T13:29:42.432120"
+  },
+  {
+    "id": 1406,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T13:29:49.754354"
+  },
+  {
+    "id": 1407,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000027",
+      "kind": "Order",
+      "external_reference": "BENCH-10-EXISTING-1-F1",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T13:30:01.616041"
+  },
+  {
+    "id": 1408,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000027"
+    },
+    "timestamp": "2026-11-05T13:30:01.632000"
+  },
+  {
+    "id": 1409,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000001"
+    },
+    "timestamp": "2026-11-05T13:30:06.350471"
+  },
+  {
+    "id": 1410,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:30:49.386643"
+  },
+  {
+    "id": 1411,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:30:49.402339"
+  },
+  {
+    "id": 1412,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:31:01.333638"
+  },
+  {
+    "id": 1413,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:31:07.342760"
+  },
+  {
+    "id": 1414,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:31:07.360816"
+  },
+  {
+    "id": 1415,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:31:19.151346"
+  },
+  {
+    "id": 1416,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:31:25.108878"
+  },
+  {
+    "id": 1417,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:31:33.539871"
+  },
+  {
+    "id": 1418,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:31:33.555891"
+  },
+  {
+    "id": 1419,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:31:54.639232"
+  },
+  {
+    "id": 1420,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:2",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:32:00.605725"
+  },
+  {
+    "id": 1421,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:2",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:32:08.722123"
+  },
+  {
+    "id": 1422,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:2",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:32:08.735901"
+  },
+  {
+    "id": 1423,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:2",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:32:29.880180"
+  },
+  {
+    "id": 1424,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:3",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:32:35.677238"
+  },
+  {
+    "id": 1425,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:3",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:32:43.993150"
+  },
+  {
+    "id": 1426,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:3",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:32:44.005266"
+  },
+  {
+    "id": 1427,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:3",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:32:55.477722"
+  },
+  {
+    "id": 1428,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:4",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:33:01.328405"
+  },
+  {
+    "id": 1429,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:4",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:33:09.467703"
+  },
+  {
+    "id": 1430,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:4",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:33:09.488810"
+  },
+  {
+    "id": 1431,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:4",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:33:30.557209"
+  },
+  {
+    "id": 1432,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:5",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:33:36.446289"
+  },
+  {
+    "id": 1433,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:5",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:33:44.584552"
+  },
+  {
+    "id": 1434,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:5",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:33:44.610554"
+  },
+  {
+    "id": 1435,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:5",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:34:05.811066"
+  },
+  {
+    "id": 1436,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:6",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:34:11.850168"
+  },
+  {
+    "id": 1437,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:6",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:34:19.997893"
+  },
+  {
+    "id": 1438,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:6",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T13:34:20.014014"
+  },
+  {
+    "id": 1439,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:6",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:34:31.668409"
+  },
+  {
+    "id": 1440,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:7",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:34:37.605025"
+  },
+  {
+    "id": 1441,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:7",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T13:34:45.937666"
+  },
+  {
+    "id": 1442,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:7",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T13:34:45.951877"
+  },
+  {
+    "id": 1443,
+    "stage": "NEEDS_REVIEW",
+    "action": "review_required",
+    "status": "observed",
+    "data": {
+      "code": "TABLE_COLUMNS_CLIPPED",
+      "message": "Visible table headers do not cover the copied columns; resize the pane or dialog"
+    },
+    "timestamp": "2026-11-05T13:34:49.286592"
+  }
+]

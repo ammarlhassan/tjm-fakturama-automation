@@ -1,0 +1,16 @@
+{
+  "official_sample": false,
+  "source_changes": [
+    "email .test to .com",
+    "external reference COMPAT-2026-0714-A17"
+  ],
+  "desktop": "real Fakturama 2.2.0",
+  "extraction": "reviewed fixture, not a live LLM response",
+  "operator_review_revisions": 22,
+  "unattended_acceptance": false,
+  "status": "SUCCEEDED",
+  "documents_created": {
+    "order": "PO000001",
+    "invoice": "INV000001"
+  }
+}

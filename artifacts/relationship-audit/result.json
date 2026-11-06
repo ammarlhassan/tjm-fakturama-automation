@@ -1,0 +1,42 @@
+{
+  "tree_labels": [
+    "This transaction",
+    "Northstar Office GmbH",
+    "Invoices",
+    "Orders"
+  ],
+  "read_only_form_resolution_seconds": [
+    2.0839733000002525,
+    2.104886400000396,
+    2.1099732000002405,
+    2.1593493999998827,
+    2.1025690999995277,
+    2.1373329999996713,
+    2.1231189999998605,
+    2.17473820000032
+  ],
+  "financial_documents_modified": false,
+  "transaction_rows": [
+    {
+      "column0": "ICON_INVOICE",
+      "document": "INV000004",
+      "date": "Wed Nov 04 00:00:00 EET 2026",
+      "name": "Northstar Office GmbH",
+      "custref": "CLEAN-WIN-2026-C17",
+      "state": "COMMAND_CHECKED",
+      "total": "678.3",
+      "printed": "null"
+    },
+    {
+      "column0": "ICON_ORDER",
+      "document": "PO000004",
+      "date": "Tue Jul 14 00:00:00 EEST 2026",
+      "name": "Northstar Office GmbH",
+      "custref": "CLEAN-WIN-2026-C17",
+      "state": "COMMAND_ORDER_PENDING",
+      "total": "678.3",
+      "printed": "null"
+    }
+  ],
+  "saved_group_contains_pair": true
+}

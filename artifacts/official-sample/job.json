@@ -1,0 +1,112 @@
+{
+  "id": "ed419e30-f254-433b-ab8d-438ba2cd3c31",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "stage": "SUCCEEDED",
+  "last_verified_stage": "SUCCEEDED",
+  "external_reference": "WEB-2026-0714-A17",
+  "revision": 7,
+  "review": null,
+  "validation": {
+    "findings": [],
+    "computed": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "profile": "eur-net-vat-group-half-up-v1"
+  },
+  "receipt": {
+    "job_id": "ed419e30-f254-433b-ab8d-438ba2cd3c31",
+    "workspace": "integration",
+    "mode": "reviewed-live",
+    "order_number": "PO000011",
+    "invoice_number": "INV000011",
+    "debtor_number": "CUST000001",
+    "order_date": "2026-07-14",
+    "invoice_date": "2026-11-05",
+    "invoice_service_date": "2026-11-05",
+    "source_order_state": "open",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000011",
+      "invoice_number": "INV000011",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000011",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "WEB-2026-0714-A17",
+          "state": "COMMAND_CHECKED",
+          "total": "678.3",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000011",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "WEB-2026-0714-A17",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "678.3",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000011",
+        "invoice_number": "INV000011"
+      }
+    },
+    "external_reference": "WEB-2026-0714-A17",
+    "currency": "EUR",
+    "extraction_provenance": {
+      "attempts": [
+        {
+          "provider": "replay",
+          "origin": "Manual transcription of visible PDF page 3; NOT an API recording",
+          "recording": "sample.reviewed.json",
+          "usage": {},
+          "elapsed_seconds": 0
+        }
+      ],
+      "source_revision": 7,
+      "desktop_adapter": "live"
+    },
+    "totals": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "678.30",
+    "verified_at": "2026-11-05T10:10:34.073193Z",
+    "evidence": [
+      "final-verification.png",
+      "saved-contact.png"
+    ],
+    "warnings": [
+      {
+        "code": "SOURCE_EMAIL_NOT_PERSISTED",
+        "field": "customer.email",
+        "source_value": "marta.klein@example.test",
+        "persisted_value": "marta.klein@example.com",
+        "persisted_state": "different_existing_value",
+        "policy": "flag-reserved-domain",
+        "message": "The source email marta.klein@example.test uses the reserved .test domain and was not persisted; the saved contact holds a different existing value, marta.klein@example.com. The source is unchanged. This run does not establish complete source-field agreement."
+      }
+    ],
+    "source_field_agreement": false,
+    "build": {
+      "package_version": "0.1.0",
+      "source_sha256": "56112a9fdf5f7bc8f0c20fae5784cb1354fb914fa17626cc942ca2f6b36f8a3f"
+    }
+  },
+  "created_at": "2026-11-04 14:59:05.725730",
+  "updated_at": "2026-11-05 10:10:34.079500"
+}

@@ -1,0 +1,254 @@
+{
+  "mode": "SIMULATION",
+  "desktop_throughput": "NOT MEASURED",
+  "cold_process": "NOT MEASURED",
+  "samples": 27,
+  "verified": 27,
+  "p50_seconds": 0.2755938000045717,
+  "p95_seconds": 0.7997025099582971,
+  "measurements": [
+    {
+      "lines": 2,
+      "masters": "new",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.2059351997449994,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 2,
+      "masters": "new",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.18990729982033372,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 2,
+      "masters": "new",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.17886490002274513,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 2,
+      "masters": "existing",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.13083120016381145,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 2,
+      "masters": "existing",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.15065480023622513,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 2,
+      "masters": "existing",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.13112320005893707,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 2,
+      "masters": "mixed",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.1500294995494187,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 2,
+      "masters": "mixed",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.15951320016756654,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 2,
+      "masters": "mixed",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.1436590002849698,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "new",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.34780009975656867,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "new",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.3449144000187516,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "new",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.3502222001552582,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "existing",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.25018690014258027,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "existing",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.2413884000852704,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "existing",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.23423360008746386,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "mixed",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.2745860000140965,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "mixed",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.2911722999997437,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 10,
+      "masters": "mixed",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.2755938000045717,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "new",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.8044632999226451,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "new",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.7885940000414848,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "new",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.819354500155896,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "existing",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.4817897002212703,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "existing",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.48574130004271865,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "existing",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.467370199970901,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "mixed",
+      "run": 1,
+      "process_temperature": "warm",
+      "seconds": 0.6455761999823153,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "mixed",
+      "run": 2,
+      "process_temperature": "warm",
+      "seconds": 0.6441156002692878,
+      "verified": true,
+      "review": null
+    },
+    {
+      "lines": 30,
+      "masters": "mixed",
+      "run": 3,
+      "process_temperature": "warm",
+      "seconds": 0.6628173999488354,
+      "verified": true,
+      "review": null
+    }
+  ]
+}

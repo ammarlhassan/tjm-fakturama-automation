@@ -1,0 +1,9 @@
+[INFO] 2026-11-05 10:34:44,058 [RapidOCR] base.py:23: Using engine_name: onnxruntime
+[INFO] 2026-11-05 10:34:44,131 [RapidOCR] download_file.py:60: File exists and is valid: C:\Users\ammar\AppData\Local\TJM-ImageToCash\environment\Lib\site-packages\rapidocr\models\PP-OCRv6_det_small.onnx
+[INFO] 2026-11-05 10:34:44,131 [RapidOCR] main.py:63: Using C:\Users\ammar\AppData\Local\TJM-ImageToCash\environment\Lib\site-packages\rapidocr\models\PP-OCRv6_det_small.onnx
+[INFO] 2026-11-05 10:34:45,539 [RapidOCR] base.py:23: Using engine_name: onnxruntime
+[INFO] 2026-11-05 10:34:45,543 [RapidOCR] download_file.py:60: File exists and is valid: C:\Users\ammar\AppData\Local\TJM-ImageToCash\environment\Lib\site-packages\rapidocr\models\ch_ppocr_mobile_v2.0_cls_mobile.onnx
+[INFO] 2026-11-05 10:34:45,543 [RapidOCR] main.py:63: Using C:\Users\ammar\AppData\Local\TJM-ImageToCash\environment\Lib\site-packages\rapidocr\models\ch_ppocr_mobile_v2.0_cls_mobile.onnx
+[INFO] 2026-11-05 10:34:45,680 [RapidOCR] base.py:23: Using engine_name: onnxruntime
+[INFO] 2026-11-05 10:34:45,731 [RapidOCR] download_file.py:60: File exists and is valid: C:\Users\ammar\AppData\Local\TJM-ImageToCash\environment\Lib\site-packages\rapidocr\models\PP-OCRv6_rec_small.onnx
+[INFO] 2026-11-05 10:34:45,731 [RapidOCR] main.py:63: Using C:\Users\ammar\AppData\Local\TJM-ImageToCash\environment\Lib\site-packages\rapidocr\models\PP-OCRv6_rec_small.onnx

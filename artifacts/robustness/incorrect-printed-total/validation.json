@@ -1,0 +1,17 @@
+{
+  "findings": [
+    {
+      "code": "TOTAL_MISMATCH",
+      "field": "totals.gross",
+      "message": "Source and calculated totals differ",
+      "expected": "678.30",
+      "observed": "678.31"
+    }
+  ],
+  "computed": {
+    "net": "570.00",
+    "vat": "108.30",
+    "gross": "678.30"
+  },
+  "profile": "eur-net-vat-group-half-up-v1"
+}

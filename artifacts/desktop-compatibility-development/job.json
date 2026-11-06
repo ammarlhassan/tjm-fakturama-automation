@@ -1,0 +1,56 @@
+{
+  "id": "258a6f61-8147-4005-9ce6-bbb0237b06cd",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "stage": "SUCCEEDED",
+  "last_verified_stage": "SUCCEEDED",
+  "external_reference": "COMPAT-2026-0714-A17",
+  "revision": 22,
+  "review": null,
+  "validation": {
+    "findings": [],
+    "computed": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "profile": "eur-net-vat-group-half-up-v1"
+  },
+  "receipt": {
+    "job_id": "258a6f61-8147-4005-9ce6-bbb0237b06cd",
+    "workspace": "integration",
+    "mode": "reviewed-live",
+    "order_number": "PO000001",
+    "invoice_number": "INV000001",
+    "external_reference": "COMPAT-2026-0714-A17",
+    "currency": "EUR",
+    "extraction_provenance": {
+      "attempts": [
+        {
+          "provider": "replay",
+          "origin": "ENGINEERING COMPATIBILITY FIXTURE; original sample email .test changed to .com and reference prefixed COMPAT. Not the official sample or an API response.",
+          "recording": "compatibility.reviewed.json",
+          "usage": {},
+          "elapsed_seconds": 0
+        }
+      ],
+      "source_revision": 22,
+      "desktop_adapter": "live"
+    },
+    "totals": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "678.30",
+    "verified_at": "2026-11-04T18:50:03.438085Z",
+    "evidence": [
+      "final-verification.png"
+    ]
+  },
+  "created_at": "2026-11-04 15:24:06.556731",
+  "updated_at": "2026-11-04 18:50:03.449125"
+}

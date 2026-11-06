@@ -1,0 +1,571 @@
+[
+  {
+    "id": 1176,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:27:53.711705"
+  },
+  {
+    "id": 1177,
+    "stage": "VALIDATED",
+    "action": "benchmark_expected_source",
+    "status": "observed",
+    "data": {
+      "fixture": "C:\\Users\\ammar\\OneDrive\\Desktop\\TJM\\artifacts\\desktop-benchmark\\F1\\2-mixed-2-F1\\expected.json",
+      "live_extraction": false
+    },
+    "timestamp": "2026-11-05T12:27:53.711705"
+  },
+  {
+    "id": 1178,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T12:27:54.010881"
+  },
+  {
+    "id": 1179,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Northstar Office GmbH, Marta Klein",
+        "VAT 19%",
+        "INV000019",
+        "PO000019"
+      ],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T12:28:07.213061"
+  },
+  {
+    "id": 1180,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T12:28:14.399137"
+  },
+  {
+    "id": 1181,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000020",
+      "kind": "Order",
+      "external_reference": "BENCH-2-MIXED-2-F1",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T12:28:26.242201"
+  },
+  {
+    "id": 1182,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000020"
+    },
+    "timestamp": "2026-11-05T12:28:26.248435"
+  },
+  {
+    "id": 1183,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000001"
+    },
+    "timestamp": "2026-11-05T12:28:30.953704"
+  },
+  {
+    "id": 1184,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:29:13.089841"
+  },
+  {
+    "id": 1185,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:29:13.104685"
+  },
+  {
+    "id": 1186,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T12:29:24.717729"
+  },
+  {
+    "id": 1187,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:29:30.463950"
+  },
+  {
+    "id": 1188,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T12:29:30.475768"
+  },
+  {
+    "id": 1189,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:29:42.027036"
+  },
+  {
+    "id": 1190,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-MIXED-2-F1-1"
+    },
+    "timestamp": "2026-11-05T12:29:55.556465"
+  },
+  {
+    "id": 1191,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "B-2-MIXED-2-F1-1",
+      "sku": "B-2-MIXED-2-F1-1",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T12:30:14.932341"
+  },
+  {
+    "id": 1192,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-MIXED-2-F1-1"
+    },
+    "timestamp": "2026-11-05T12:30:21.793537"
+  },
+  {
+    "id": 1193,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:30:32.275975"
+  },
+  {
+    "id": 1194,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-MIXED-2-F1-1"
+    },
+    "timestamp": "2026-11-05T12:30:32.296162"
+  },
+  {
+    "id": 1195,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:30:48.611240"
+  },
+  {
+    "id": 1196,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:30:48.626976"
+  },
+  {
+    "id": 1197,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000020"
+    },
+    "timestamp": "2026-11-05T12:30:56.536748"
+  },
+  {
+    "id": 1198,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:30:59.331497"
+  },
+  {
+    "id": 1199,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000020"
+    },
+    "timestamp": "2026-11-05T12:31:25.433318"
+  },
+  {
+    "id": 1200,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000020",
+        "kind": "Order",
+        "external_reference": "BENCH-2-MIXED-2-F1",
+        "currency": "EUR",
+        "displayed_item_subtotal": "14.80",
+        "net_is_derived": false,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "10",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "10"
+          },
+          {
+            "sku": "B-2-MIXED-2-F1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "10.1",
+            "discount_percent": "5.00",
+            "vat_percent": "19.00",
+            "printed_net": "4.8"
+          }
+        ],
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [
+          "Northstar Office GmbH has already ordered 14 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001, INV000002, INV000003, INV000004, ...\r\nTotal volume: 6.853,44 €"
+        ],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true,
+        "documents_row": {
+          "column0": "ICON_ORDER",
+          "document": "PO000020",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-2-MIXED-2-F1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "17.61",
+          "printed": "null"
+        }
+      }
+    },
+    "timestamp": "2026-11-05T12:31:25.433318"
+  },
+  {
+    "id": 1201,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000020"
+    },
+    "timestamp": "2026-11-05T12:31:29.973839"
+  },
+  {
+    "id": 1202,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000020",
+      "kind": "Invoice",
+      "external_reference": "BENCH-2-MIXED-2-F1",
+      "currency": null,
+      "displayed_item_subtotal": "14.80",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "14.80",
+        "vat": "2.81",
+        "gross": "17.61"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000020",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000020",
+        "invoice_number": "INV000020",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [
+        "Northstar Office GmbH has already ordered 14 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001, INV000002, INV000003, INV000004, ...\r\nTotal volume: 6.853,44 €"
+      ],
+      "state": "open",
+      "payment_method": "Bank Transfer",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T12:31:51.134956"
+  },
+  {
+    "id": 1203,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000020",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T12:31:51.134956"
+  },
+  {
+    "id": 1204,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T12:31:51.134956"
+  },
+  {
+    "id": 1205,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:31:58.553063"
+  },
+  {
+    "id": 1206,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000020"
+    },
+    "timestamp": "2026-11-05T12:32:15.950771"
+  },
+  {
+    "id": 1207,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:32:17.625457"
+  },
+  {
+    "id": 1208,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000020",
+      "invoice_number": "INV000020",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000020",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-2-MIXED-2-F1",
+          "state": "COMMAND_CHECKED",
+          "total": "17.61",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000020",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-2-MIXED-2-F1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "17.61",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T12:33:28.077494"
+  },
+  {
+    "id": 1209,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000020"
+    },
+    "timestamp": "2026-11-05T12:33:28.093369"
+  },
+  {
+    "id": 1210,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:33:28.204273"
+  }
+]

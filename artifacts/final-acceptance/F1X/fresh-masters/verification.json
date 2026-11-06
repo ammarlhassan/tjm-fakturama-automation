@@ -1,0 +1,99 @@
+{
+  "scenario": "fresh-masters",
+  "job_id": "5acac2d6-7817-4420-99d1-4c4f32327396",
+  "mode": "explicit synthetic source and real desktop; no live model call",
+  "official_sample": false,
+  "source_changes": [
+    "synthetic customer, addresses, email and alias",
+    "SEPA Direct Debit method",
+    "new SKUs with 19% and 9% VAT",
+    "5% document discount",
+    "leading-zero postcode",
+    "distinct reference"
+  ],
+  "status": "SUCCEEDED",
+  "series": "F1X",
+  "operator_review_revisions": 0,
+  "provider_retries": 0,
+  "operator_reviews": 0,
+  "controlled_interruption": false,
+  "duplicate_submission_verified": true,
+  "seconds_including_controlled_resume": 429.0326534000051,
+  "desktop_seconds": 428.8755489999967,
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+  },
+  "receipt": {
+    "job_id": "5acac2d6-7817-4420-99d1-4c4f32327396",
+    "workspace": "integration",
+    "mode": "reviewed-live",
+    "order_number": "PO000025",
+    "invoice_number": "INV000025",
+    "debtor_number": "CUST000007",
+    "order_date": "2026-07-14",
+    "invoice_date": "2026-11-05",
+    "invoice_service_date": "2026-11-05",
+    "source_order_state": "open",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000025",
+      "invoice_number": "INV000025",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000025",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Acceptance Fresh Office F1X GmbH",
+          "custref": "FRESH-MASTERS-2026-C17-F1X",
+          "state": "COMMAND_CHECKED",
+          "total": "632.99",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000025",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Acceptance Fresh Office F1X GmbH",
+          "custref": "FRESH-MASTERS-2026-C17-F1X",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "632.99",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000025",
+        "invoice_number": "INV000025"
+      }
+    },
+    "external_reference": "FRESH-MASTERS-2026-C17-F1X",
+    "currency": "EUR",
+    "extraction_provenance": {
+      "attempts": [],
+      "source_revision": 0,
+      "desktop_adapter": "live"
+    },
+    "totals": {
+      "net": "541.50",
+      "vat": "91.49",
+      "gross": "632.99"
+    },
+    "payment_method": "SEPA Direct Debit",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "632.99",
+    "verified_at": "2026-11-05T13:18:58.379399Z",
+    "evidence": [
+      "final-verification.png"
+    ],
+    "warnings": [],
+    "source_field_agreement": true,
+    "build": {
+      "package_version": "0.1.0",
+      "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+    }
+  }
+}

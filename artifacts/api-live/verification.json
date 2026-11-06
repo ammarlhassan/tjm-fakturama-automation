@@ -1,0 +1,31 @@
+{
+  "mode": "real localhost HTTP and separate worker",
+  "status": "NEEDS_REVIEW",
+  "submission_http_status": 202,
+  "duplicate_submission_verified": true,
+  "idempotency_conflict_http_status": 409,
+  "desktop_executed": false,
+  "complete_workflow_verified": false,
+  "reason": {
+    "code": "VISION_PROVIDER_ERROR",
+    "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+    "resolved": false,
+    "transport_attempts": [
+      {
+        "attempt": 1,
+        "http_status": 503,
+        "seconds": 3.6822576000049594
+      },
+      {
+        "attempt": 2,
+        "http_status": 503,
+        "seconds": 5.4497406000009505
+      },
+      {
+        "attempt": 3,
+        "http_status": 503,
+        "seconds": 3.1128836999996565
+      }
+    ]
+  }
+}

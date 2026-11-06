@@ -1,0 +1,85 @@
+{
+  "id": "93c8b10e-5e20-4b76-8f4e-575ba17fd9c9",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "stage": "SUCCEEDED",
+  "last_verified_stage": "SUCCEEDED",
+  "external_reference": "BENCH-30-EXISTING-1-R1",
+  "revision": 0,
+  "review": null,
+  "validation": null,
+  "receipt": {
+    "job_id": "93c8b10e-5e20-4b76-8f4e-575ba17fd9c9",
+    "workspace": "integration",
+    "mode": "reviewed-live",
+    "order_number": "PO000036",
+    "invoice_number": "INV000036",
+    "debtor_number": "CUST000001",
+    "order_date": "2026-07-14",
+    "invoice_date": "2026-11-05",
+    "invoice_service_date": "2026-11-05",
+    "source_order_state": "open",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000036",
+      "invoice_number": "INV000036",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000036",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-30-EXISTING-1-R1",
+          "state": "COMMAND_CHECKED",
+          "total": "942.48",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000036",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-30-EXISTING-1-R1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "942.48",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000036",
+        "invoice_number": "INV000036"
+      }
+    },
+    "external_reference": "BENCH-30-EXISTING-1-R1",
+    "currency": "EUR",
+    "extraction_provenance": {
+      "attempts": [],
+      "source_revision": 0,
+      "desktop_adapter": "live"
+    },
+    "totals": {
+      "net": "792.00",
+      "vat": "150.48",
+      "gross": "942.48"
+    },
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "942.48",
+    "verified_at": "2026-11-05T16:54:16.659252Z",
+    "evidence": [
+      "final-verification.png"
+    ],
+    "warnings": [],
+    "source_field_agreement": true,
+    "build": {
+      "package_version": "0.1.0",
+      "source_sha256": "99e0c8a21238221119da0c58ad1c5b21ecc54f1430e95eb1f23df6bdbc4ae437"
+    }
+  },
+  "created_at": "2026-11-05 16:33:46.413773",
+  "updated_at": "2026-11-05 16:54:16.665222"
+}

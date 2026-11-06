@@ -1,0 +1,52 @@
+[
+  {
+    "id": 650,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T07:48:23.777396"
+  },
+  {
+    "id": 651,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 1,
+      "reason": "One explicit retry of transient HTTP 503 after a waiting interval; no source correction and no desktop execution authorized by this technical retry.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 3.728579399998125
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 1.6577121000009356
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 5.033278900002188
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T07:52:01.288804"
+  },
+  {
+    "id": 652,
+    "stage": "EXTRACTED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T07:52:10.954505"
+  }
+]

@@ -1,0 +1,1017 @@
+[
+  {
+    "id": 2442,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:06:51.431974"
+  },
+  {
+    "id": 2443,
+    "stage": "VALIDATED",
+    "action": "benchmark_expected_source",
+    "status": "observed",
+    "data": {
+      "fixture": "C:\\Users\\ammar\\OneDrive\\Desktop\\TJM\\artifacts\\desktop-benchmark\\R1\\10-new-1-R1\\expected.json",
+      "live_extraction": false
+    },
+    "timestamp": "2026-11-05T17:06:51.442234"
+  },
+  {
+    "id": 2444,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T17:06:51.712943"
+  },
+  {
+    "id": 2445,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Northstar Office GmbH, Marta Klein",
+        "VAT 19%",
+        "INV000038",
+        "PO000038"
+      ],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T17:07:05.262940"
+  },
+  {
+    "id": 2446,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T17:07:12.474693"
+  },
+  {
+    "id": 2447,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000039",
+      "kind": "Order",
+      "external_reference": "BENCH-10-NEW-1-R1",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T17:07:24.679273"
+  },
+  {
+    "id": 2448,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000039"
+    },
+    "timestamp": "2026-11-05T17:07:24.696777"
+  },
+  {
+    "id": 2449,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T17:07:28.644513"
+  },
+  {
+    "id": 2450,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:07:58.860176"
+  },
+  {
+    "id": 2451,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T17:08:04.496085"
+  },
+  {
+    "id": 2452,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "observed",
+    "data": {
+      "id": "CUST000010",
+      "customer": {
+        "company": "Benchmark Office 10-new-1-R1",
+        "first_name": "Marta",
+        "last_name": "Klein",
+        "alias": "BENCH-10-new-1-R1",
+        "email": "benchmark@example.com",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": null,
+        "billing": {
+          "recipient": "Benchmark Office 10-new-1-R1",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Benchmark Warehouse 10-new-1-R1",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment_method": "Bank Transfer"
+    },
+    "timestamp": "2026-11-05T17:09:00.667686"
+  },
+  {
+    "id": 2453,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000010"
+    },
+    "timestamp": "2026-11-05T17:09:06.486990"
+  },
+  {
+    "id": 2454,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:09:22.632441"
+  },
+  {
+    "id": 2455,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:09:22.648350"
+  },
+  {
+    "id": 2456,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:09:40.133866"
+  },
+  {
+    "id": 2457,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "B-10-NEW-1-R1-0",
+      "sku": "B-10-NEW-1-R1-0",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T17:09:52.830079"
+  },
+  {
+    "id": 2458,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:09:58.040405"
+  },
+  {
+    "id": 2459,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:10:04.066037"
+  },
+  {
+    "id": 2460,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:10:04.069548"
+  },
+  {
+    "id": 2461,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:10:11.280268"
+  },
+  {
+    "id": 2462,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:10:20.453859"
+  },
+  {
+    "id": 2463,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "B-10-NEW-1-R1-1",
+      "sku": "B-10-NEW-1-R1-1",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T17:10:33.081147"
+  },
+  {
+    "id": 2464,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:10:37.935496"
+  },
+  {
+    "id": 2465,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:10:44.139304"
+  },
+  {
+    "id": 2466,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:10:44.156902"
+  },
+  {
+    "id": 2467,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:11:00.816719"
+  },
+  {
+    "id": 2468,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:2",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:11:06.874691"
+  },
+  {
+    "id": 2469,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:2",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:11:15.327921"
+  },
+  {
+    "id": 2470,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:2",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:11:15.343948"
+  },
+  {
+    "id": 2471,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:2",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:11:36.660406"
+  },
+  {
+    "id": 2472,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:3",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:11:42.481423"
+  },
+  {
+    "id": 2473,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:3",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:11:50.663647"
+  },
+  {
+    "id": 2474,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:3",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:11:50.683062"
+  },
+  {
+    "id": 2475,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:3",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:12:02.281810"
+  },
+  {
+    "id": 2476,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:4",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:12:08.146081"
+  },
+  {
+    "id": 2477,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:4",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:12:16.439713"
+  },
+  {
+    "id": 2478,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:4",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:12:16.451932"
+  },
+  {
+    "id": 2479,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:4",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:12:37.817980"
+  },
+  {
+    "id": 2480,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:5",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:12:43.654256"
+  },
+  {
+    "id": 2481,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:5",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:12:51.940793"
+  },
+  {
+    "id": 2482,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:5",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:12:51.965829"
+  },
+  {
+    "id": 2483,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:5",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:13:13.298620"
+  },
+  {
+    "id": 2484,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:6",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:13:19.331276"
+  },
+  {
+    "id": 2485,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:6",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:13:27.695012"
+  },
+  {
+    "id": 2486,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:6",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:13:27.706193"
+  },
+  {
+    "id": 2487,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:6",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:13:39.618489"
+  },
+  {
+    "id": 2488,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:7",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:13:45.483611"
+  },
+  {
+    "id": 2489,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:7",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:13:53.848200"
+  },
+  {
+    "id": 2490,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:7",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:13:53.864025"
+  },
+  {
+    "id": 2491,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:7",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:14:15.406871"
+  },
+  {
+    "id": 2492,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:8",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:14:21.294784"
+  },
+  {
+    "id": 2493,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:8",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:14:29.640862"
+  },
+  {
+    "id": 2494,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:8",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-0"
+    },
+    "timestamp": "2026-11-05T17:14:29.662151"
+  },
+  {
+    "id": 2495,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:8",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:14:51.263050"
+  },
+  {
+    "id": 2496,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:9",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:14:57.172065"
+  },
+  {
+    "id": 2497,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:9",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:15:05.509846"
+  },
+  {
+    "id": 2498,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:9",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-NEW-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:15:05.520166"
+  },
+  {
+    "id": 2499,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:9",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:15:17.527275"
+  },
+  {
+    "id": 2500,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:15:17.543840"
+  },
+  {
+    "id": 2501,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000039"
+    },
+    "timestamp": "2026-11-05T17:15:25.668057"
+  },
+  {
+    "id": 2502,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:15:28.638374"
+  },
+  {
+    "id": 2503,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000039"
+    },
+    "timestamp": "2026-11-05T17:15:54.873345"
+  },
+  {
+    "id": 2504,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000039",
+        "kind": "Order",
+        "external_reference": "BENCH-10-NEW-1-R1",
+        "currency": "EUR",
+        "displayed_item_subtotal": "155.80",
+        "net_is_derived": false,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Benchmark Office 10-new-1-R1",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "BENCH-10-new-1-R1",
+          "email": "benchmark@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Benchmark Office 10-new-1-R1",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Benchmark Warehouse 10-new-1-R1",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "B-10-NEW-1-R1-0",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "10",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "10"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "11",
+            "discount_percent": "20.0",
+            "vat_percent": "19.00",
+            "printed_net": "4.4"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-0",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "12",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "21.6"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "13",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "13"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-0",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "14",
+            "discount_percent": "20.0",
+            "vat_percent": "19.00",
+            "printed_net": "5.6"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "15",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "27"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-0",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "16",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "16"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "17",
+            "discount_percent": "20.0",
+            "vat_percent": "19.00",
+            "printed_net": "6.8"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-0",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "18",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "32.4"
+          },
+          {
+            "sku": "B-10-NEW-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "19",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "19"
+          }
+        ],
+        "totals": {
+          "net": "155.80",
+          "vat": "29.60",
+          "gross": "185.40"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true,
+        "documents_row": {
+          "column0": "ICON_ORDER",
+          "document": "PO000039",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Benchmark Office 10-new-1-R1",
+          "custref": "BENCH-10-NEW-1-R1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "185.4",
+          "printed": "null"
+        }
+      }
+    },
+    "timestamp": "2026-11-05T17:15:54.877066"
+  },
+  {
+    "id": 2505,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000039"
+    },
+    "timestamp": "2026-11-05T17:16:00.577232"
+  },
+  {
+    "id": 2506,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000039",
+      "kind": "Invoice",
+      "external_reference": "BENCH-10-NEW-1-R1",
+      "currency": null,
+      "displayed_item_subtotal": "155.80",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "155.80",
+        "vat": "29.60",
+        "gross": "185.40"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000039",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000039",
+        "invoice_number": "INV000039",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [],
+      "state": "open",
+      "payment_method": "Bank Transfer",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T17:16:22.601189"
+  },
+  {
+    "id": 2507,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000039",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T17:16:22.617814"
+  },
+  {
+    "id": 2508,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T17:16:22.617814"
+  },
+  {
+    "id": 2509,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:16:30.039221"
+  },
+  {
+    "id": 2510,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000039"
+    },
+    "timestamp": "2026-11-05T17:16:47.560078"
+  },
+  {
+    "id": 2511,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:16:49.368144"
+  },
+  {
+    "id": 2512,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000039",
+      "invoice_number": "INV000039",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000039",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Benchmark Office 10-new-1-R1",
+          "custref": "BENCH-10-NEW-1-R1",
+          "state": "COMMAND_CHECKED",
+          "total": "185.4",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000039",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Benchmark Office 10-new-1-R1",
+          "custref": "BENCH-10-NEW-1-R1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "185.4",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T17:18:01.453308"
+  },
+  {
+    "id": 2513,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000039"
+    },
+    "timestamp": "2026-11-05T17:18:01.469136"
+  },
+  {
+    "id": 2514,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:18:01.596281"
+  }
+]

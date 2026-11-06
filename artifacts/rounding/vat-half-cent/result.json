@@ -1,0 +1,128 @@
+{
+  "case": "vat-half-cent",
+  "mode": "real desktop arithmetic probe",
+  "job_id": "72931723-95ba-45fb-8439-5cafe576081b",
+  "financial_documents_saved": 0,
+  "owned_draft_discarded": true,
+  "profile_matches": true,
+  "expected": {
+    "order_date": "2026-07-14",
+    "external_reference": "PROBE-VAT-HALF-CENT",
+    "currency": "EUR",
+    "customer": {
+      "company": "Northstar Office GmbH",
+      "first_name": "Marta",
+      "last_name": "Klein",
+      "alias": "NORTHSTAR-BERLIN",
+      "email": "marta.klein@example.com",
+      "telephone": "+49 30 5550 1420",
+      "source_customer_id": "CUST-1007",
+      "billing": {
+        "recipient": "Northstar Office GmbH",
+        "additional_name": null,
+        "street": "Friedrichstrasse 88",
+        "postcode": "10117",
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "delivery": {
+        "recipient": "Northstar Office Warehouse",
+        "additional_name": null,
+        "street": "Beusselstrasse 44",
+        "postcode": "10553",
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    "payment": {
+      "method": "Bank Transfer",
+      "status": "PAID",
+      "payment_date": "2026-07-18"
+    },
+    "items": [
+      {
+        "sku": "CHR-ERG-01",
+        "description": "Ergonomic Desk Chair",
+        "quantity": "1",
+        "unit": "pcs",
+        "unit_net": "1.50",
+        "discount_percent": "0",
+        "vat_percent": "19",
+        "printed_net": "1.50"
+      }
+    ],
+    "totals": {
+      "net": "1.50",
+      "vat": "0.29",
+      "gross": "1.79"
+    },
+    "document_discount_percent": null,
+    "shipping_net": null,
+    "shipping_vat_percent": null
+  },
+  "observed": {
+    "number": "PO000010",
+    "kind": "Order",
+    "external_reference": "PROBE-VAT-HALF-CENT",
+    "currency": "EUR",
+    "order_date": "2026-07-14",
+    "document_date": "2026-07-14",
+    "service_date": "2026-07-14",
+    "price_mode": "Net",
+    "vat_mode": "With VAT",
+    "customer": {
+      "company": "Northstar Office GmbH",
+      "first_name": "Marta",
+      "last_name": "Klein",
+      "alias": "NORTHSTAR-BERLIN",
+      "email": "marta.klein@example.com",
+      "telephone": "+49 30 5550 1420",
+      "source_customer_id": null,
+      "billing": {
+        "recipient": "Northstar Office GmbH",
+        "additional_name": null,
+        "street": "Friedrichstrasse 88",
+        "postcode": "10117",
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "delivery": {
+        "recipient": "Northstar Office Warehouse",
+        "additional_name": null,
+        "street": "Beusselstrasse 44",
+        "postcode": "10553",
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    "items": [
+      {
+        "sku": "CHR-ERG-01",
+        "description": "Ergonomic Desk Chair",
+        "quantity": "1.00",
+        "unit": null,
+        "unit_net": "1.5",
+        "discount_percent": "-0.0",
+        "vat_percent": "19.00",
+        "printed_net": "1.5"
+      }
+    ],
+    "totals": {
+      "net": "1.50",
+      "vat": "0.29",
+      "gross": "1.79"
+    },
+    "document_discount_percent": "0",
+    "shipping_net": "0.00",
+    "source_order_number": null,
+    "relationship_evidence": {},
+    "application_notices": [],
+    "state": "open",
+    "payment_method": null,
+    "paid": false,
+    "payment_date": null,
+    "payment_value": null,
+    "persisted": false
+  },
+  "findings": []
+}

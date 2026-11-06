@@ -1,0 +1,17 @@
+{
+  "id": "1e7928d9-2191-4dfd-9fcc-2a31cfe84b47",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "stage": "NEEDS_REVIEW",
+  "last_verified_stage": "ORDER_OPEN",
+  "external_reference": "BENCH-2-EXISTING-1-A",
+  "revision": 0,
+  "review": {
+    "code": "TABLE_EXPORT_PROFILE_UNKNOWN",
+    "message": "Clipboard column count differs from the observed visible table"
+  },
+  "validation": null,
+  "receipt": null,
+  "created_at": "2026-11-05 09:24:29.668040",
+  "updated_at": "2026-11-05 09:25:09.211637"
+}

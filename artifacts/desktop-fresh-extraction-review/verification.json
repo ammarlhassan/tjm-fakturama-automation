@@ -1,0 +1,7 @@
+{
+  "financial_documents_saved": 0,
+  "desktop_started": false,
+  "result": "review",
+  "scope": "Separate expanded synthetic input, outside the frozen 24-document corpus",
+  "findings": "Discount before Items stopped local row segmentation; OCR also joined telephone spaces. Vision matched expected data but independent agreement was not established. Original readings preserved."
+}

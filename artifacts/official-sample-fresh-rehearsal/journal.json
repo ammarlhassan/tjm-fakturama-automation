@@ -1,0 +1,1081 @@
+[
+  {
+    "id": 767,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:22:35.753372"
+  },
+  {
+    "id": 768,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 1,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 3.030807700000878
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 2.987294999998994
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 5.5965211000002455
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T10:25:17.285381"
+  },
+  {
+    "id": 769,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 2,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 3.94315660000575
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 2.422164999996312
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 2.4803517000036663
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T10:28:01.073124"
+  },
+  {
+    "id": 770,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 3,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 1.922514099998807
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 4.730306600002223
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 2.8928052999981446
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T10:30:44.760174"
+  },
+  {
+    "id": 771,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 4,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 2.8891122000059113
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 1.8918381999974372
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 5.278527499998745
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T10:33:28.831538"
+  },
+  {
+    "id": 772,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 5,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 5.268057499997667
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 4.513530199998058
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 2.222413299998152
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T10:36:15.181745"
+  },
+  {
+    "id": 773,
+    "stage": "EXTRACTED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:36:32.379979"
+  },
+  {
+    "id": 774,
+    "stage": "VALIDATED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:36:32.411880"
+  },
+  {
+    "id": 775,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T10:39:45.083499"
+  },
+  {
+    "id": 776,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": true,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Afghanistan",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T10:39:49.646649"
+  },
+  {
+    "id": 777,
+    "stage": "NEEDS_REVIEW",
+    "action": "review_required",
+    "status": "observed",
+    "data": {
+      "code": "CONTROL_AMBIGUOUS",
+      "message": "Expected one visible TreeItem labelled 'Orders'; observed 0"
+    },
+    "timestamp": "2026-11-05T10:39:50.736544"
+  },
+  {
+    "id": 778,
+    "stage": "NEEDS_REVIEW",
+    "action": "human_review",
+    "status": "observed",
+    "data": {
+      "revision": 6,
+      "reason": "An empty workspace has no Orders node in the Documents tree; fixed the saved-document search to treat a missing node as none of that kind. No draft or document existed. Source unchanged.",
+      "before": {
+        "order_date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.test",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "Bank Transfer",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "19",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": null,
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "after": {
+        "order_date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.test",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "Bank Transfer",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "19",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": null,
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "prior_review": {
+        "code": "CONTROL_AMBIGUOUS",
+        "message": "Expected one visible TreeItem labelled 'Orders'; observed 0"
+      }
+    },
+    "timestamp": "2026-11-05T10:42:02.941192"
+  },
+  {
+    "id": 779,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T10:42:04.269980"
+  },
+  {
+    "id": 780,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T10:42:08.075408"
+  },
+  {
+    "id": 781,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T10:42:20.758730"
+  },
+  {
+    "id": 782,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000001",
+      "kind": "Order",
+      "external_reference": "WEB-2026-0714-A17",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T10:42:33.509615"
+  },
+  {
+    "id": 783,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000001"
+    },
+    "timestamp": "2026-11-05T10:42:33.530330"
+  },
+  {
+    "id": 784,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T10:42:37.385433"
+  },
+  {
+    "id": 785,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:43:07.988644"
+  },
+  {
+    "id": 786,
+    "stage": "ORDER_OPEN",
+    "action": "create_payment",
+    "status": "intent",
+    "data": {
+      "name": "Bank Transfer"
+    },
+    "timestamp": "2026-11-05T10:43:10.900326"
+  },
+  {
+    "id": 787,
+    "stage": "ORDER_OPEN",
+    "action": "create_payment",
+    "status": "observed",
+    "data": {
+      "id": "Bank Transfer",
+      "name": "Bank Transfer",
+      "code": "Credit transfer"
+    },
+    "timestamp": "2026-11-05T10:43:22.332531"
+  },
+  {
+    "id": 788,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T10:43:22.343799"
+  },
+  {
+    "id": 789,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "observed",
+    "data": {
+      "id": "CUST000001",
+      "customer": {
+        "company": "Northstar Office GmbH",
+        "first_name": "Marta",
+        "last_name": "Klein",
+        "alias": "NORTHSTAR-BERLIN",
+        "email": null,
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": null,
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment_method": "Bank Transfer"
+    },
+    "timestamp": "2026-11-05T10:44:50.136323"
+  },
+  {
+    "id": 790,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000001"
+    },
+    "timestamp": "2026-11-05T10:44:56.097870"
+  },
+  {
+    "id": 791,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:45:12.191017"
+  },
+  {
+    "id": 792,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:45:12.204109"
+  },
+  {
+    "id": 793,
+    "stage": "DEBTOR_READY",
+    "action": "create_vat",
+    "status": "intent",
+    "data": {
+      "name": "VAT 19%"
+    },
+    "timestamp": "2026-11-05T10:45:27.116961"
+  },
+  {
+    "id": 794,
+    "stage": "DEBTOR_READY",
+    "action": "create_vat",
+    "status": "observed",
+    "data": {
+      "id": "VAT 19%",
+      "name": "VAT 19%",
+      "rate": "19",
+      "code": "S (Standard rate)"
+    },
+    "timestamp": "2026-11-05T10:45:33.466471"
+  },
+  {
+    "id": 795,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T10:45:33.486447"
+  },
+  {
+    "id": 796,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "CHR-ERG-01",
+      "sku": "CHR-ERG-01",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T10:45:46.469557"
+  },
+  {
+    "id": 797,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T10:45:51.623751"
+  },
+  {
+    "id": 798,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:45:57.574772"
+  },
+  {
+    "id": 799,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T10:45:57.587237"
+  },
+  {
+    "id": 800,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:46:13.945151"
+  },
+  {
+    "id": 801,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T10:46:27.697988"
+  },
+  {
+    "id": 802,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "MAT-DESK-02",
+      "sku": "MAT-DESK-02",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T10:46:47.547871"
+  },
+  {
+    "id": 803,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T10:46:54.724181"
+  },
+  {
+    "id": 804,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:47:05.294478"
+  },
+  {
+    "id": 805,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T10:47:05.314456"
+  },
+  {
+    "id": 806,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:47:16.915468"
+  },
+  {
+    "id": 807,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:47:16.915468"
+  },
+  {
+    "id": 808,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000001"
+    },
+    "timestamp": "2026-11-05T10:47:25.072598"
+  },
+  {
+    "id": 809,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:47:28.028093"
+  },
+  {
+    "id": 810,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000001"
+    },
+    "timestamp": "2026-11-05T10:47:54.402883"
+  },
+  {
+    "id": 811,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000001",
+        "kind": "Order",
+        "external_reference": "WEB-2026-0714-A17",
+        "currency": "EUR",
+        "displayed_item_subtotal": "570.00",
+        "net_is_derived": false,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": null,
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "250",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "450"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3.00",
+            "unit": null,
+            "unit_net": "40",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "120"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true,
+        "documents_row": {
+          "column0": "ICON_ORDER",
+          "document": "PO000001",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "WEB-2026-0714-A17",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "678.3",
+          "printed": "null"
+        }
+      }
+    },
+    "timestamp": "2026-11-05T10:47:54.402883"
+  },
+  {
+    "id": 812,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000001"
+    },
+    "timestamp": "2026-11-05T10:48:00.105981"
+  },
+  {
+    "id": 813,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000001",
+      "kind": "Invoice",
+      "external_reference": "WEB-2026-0714-A17",
+      "currency": null,
+      "displayed_item_subtotal": "570.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "570.00",
+        "vat": "108.30",
+        "gross": "678.30"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000001",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000001",
+        "invoice_number": "INV000001",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [],
+      "state": "open",
+      "payment_method": "Bank Transfer",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T10:48:21.774229"
+  },
+  {
+    "id": 814,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000001",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T10:48:21.790138"
+  },
+  {
+    "id": 815,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T10:48:21.790138"
+  },
+  {
+    "id": 816,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:48:29.286251"
+  },
+  {
+    "id": 817,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000001"
+    },
+    "timestamp": "2026-11-05T10:48:46.615937"
+  },
+  {
+    "id": 818,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:48:48.390372"
+  },
+  {
+    "id": 819,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000001",
+      "invoice_number": "INV000001",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000001",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "WEB-2026-0714-A17",
+          "state": "COMMAND_CHECKED",
+          "total": "678.3",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000001",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "WEB-2026-0714-A17",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "678.3",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T10:50:00.410088"
+  },
+  {
+    "id": 820,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000001"
+    },
+    "timestamp": "2026-11-05T10:50:00.428313"
+  },
+  {
+    "id": 821,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "observed_saved_contact",
+    "status": "observed",
+    "data": {
+      "mechanism": "reopened_saved_contact",
+      "customer_id": "CUST000001",
+      "email": null,
+      "telephone": "+49 30 5550 1420",
+      "evidence": [
+        "saved-contact.png"
+      ]
+    },
+    "timestamp": "2026-11-05T10:50:38.078631"
+  },
+  {
+    "id": 822,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "source_value_warning",
+    "status": "observed",
+    "data": {
+      "code": "SOURCE_EMAIL_NOT_PERSISTED",
+      "field": "customer.email",
+      "source_value": "marta.klein@example.test",
+      "persisted_value": null,
+      "persisted_state": "blank",
+      "policy": "flag-reserved-domain",
+      "message": "The source email marta.klein@example.test uses the reserved .test domain and was not persisted; the saved contact's email is blank. The source is unchanged. This run does not establish complete source-field agreement."
+    },
+    "timestamp": "2026-11-05T10:50:38.092676"
+  },
+  {
+    "id": 823,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T10:50:38.109573"
+  }
+]

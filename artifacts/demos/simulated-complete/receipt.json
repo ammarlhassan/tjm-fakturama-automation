@@ -1,0 +1,41 @@
+{
+  "job_id": "7614f28e-8a1c-44b5-a56e-95c199c948ad",
+  "workspace": "simulated-complete",
+  "mode": "simulation",
+  "order_number": "SIM-ORDER-00001",
+  "invoice_number": "SIM-INVOICE-00007",
+  "debtor_number": "SIM-CUSTOMER-00003",
+  "order_date": "2026-07-14",
+  "invoice_date": "2026-11-04",
+  "invoice_service_date": "2026-11-04",
+  "source_order_state": "open",
+  "relationship_evidence": {},
+  "external_reference": "WEB-2026-0714-A17",
+  "currency": "EUR",
+  "extraction_provenance": {
+    "attempts": [
+      {
+        "provider": "replay",
+        "origin": "Manual transcription of visible PDF page 3; NOT an API recording",
+        "recording": "sample.reviewed.json",
+        "usage": {},
+        "elapsed_seconds": 0
+      }
+    ],
+    "source_revision": 0,
+    "desktop_adapter": "simulation"
+  },
+  "totals": {
+    "net": "570.00",
+    "vat": "108.30",
+    "gross": "678.30"
+  },
+  "payment_method": "Bank Transfer",
+  "paid": true,
+  "payment_date": "2026-07-18",
+  "payment_value": "678.30",
+  "verified_at": "2026-11-04T21:22:46.084975Z",
+  "evidence": [
+    "final-verification-SIMULATED.json"
+  ]
+}

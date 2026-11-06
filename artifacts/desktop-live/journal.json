@@ -1,0 +1,946 @@
+[
+  {
+    "id": 198,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T19:55:41.103985"
+  },
+  {
+    "id": 199,
+    "stage": "EXTRACTED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T19:55:49.383294"
+  },
+  {
+    "id": 200,
+    "stage": "VALIDATED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T19:55:49.399443"
+  },
+  {
+    "id": 201,
+    "stage": "NEEDS_REVIEW",
+    "action": "human_review",
+    "status": "observed",
+    "data": {
+      "revision": 1,
+      "reason": "Desktop application had exited while key setup was completed. Relaunched the same initialized integration workspace. Validated live extraction is retained; no financial document was created by this job.",
+      "before": {
+        "order_date": "2026-07-14",
+        "external_reference": "ACCEPT-WIN-2026-A17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "Bank Transfer",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "19",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": null,
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "after": {
+        "order_date": "2026-07-14",
+        "external_reference": "ACCEPT-WIN-2026-A17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "Bank Transfer",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "19",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": null,
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "prior_review": {
+        "code": "FAKTURAMA_NOT_READY",
+        "message": "Open exactly one initialized Fakturama test workspace",
+        "resolved": false
+      }
+    },
+    "timestamp": "2026-11-04T19:57:33.190972"
+  },
+  {
+    "id": 202,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T19:57:35.385213"
+  },
+  {
+    "id": 203,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": true,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Afghanistan",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true
+    },
+    "timestamp": "2026-11-04T19:57:41.342438"
+  },
+  {
+    "id": 204,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T19:57:50.520204"
+  },
+  {
+    "id": 205,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000002",
+      "kind": "Order",
+      "external_reference": "ACCEPT-WIN-2026-A17",
+      "currency": null,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T19:58:08.440369"
+  },
+  {
+    "id": 206,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000002"
+    },
+    "timestamp": "2026-11-04T19:58:08.452762"
+  },
+  {
+    "id": 207,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000001"
+    },
+    "timestamp": "2026-11-04T19:58:14.849277"
+  },
+  {
+    "id": 208,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T19:59:00.424084"
+  },
+  {
+    "id": 209,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T19:59:00.440903"
+  },
+  {
+    "id": 210,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-04T19:59:10.817243"
+  },
+  {
+    "id": 211,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T19:59:17.200324"
+  },
+  {
+    "id": 212,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-04T19:59:17.204293"
+  },
+  {
+    "id": 213,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T19:59:46.727050"
+  },
+  {
+    "id": 214,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-04T19:59:52.837813"
+  },
+  {
+    "id": 215,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:00:01.771812"
+  },
+  {
+    "id": 216,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-04T20:00:01.776819"
+  },
+  {
+    "id": 217,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:00:31.140155"
+  },
+  {
+    "id": 218,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:00:31.147980"
+  },
+  {
+    "id": 219,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000002"
+    },
+    "timestamp": "2026-11-04T20:00:37.793624"
+  },
+  {
+    "id": 220,
+    "stage": "NEEDS_REVIEW",
+    "action": "review_required",
+    "status": "observed",
+    "data": {
+      "code": "UI_WAIT_TIMEOUT",
+      "message": "Expected UI condition was not observed (condition false)"
+    },
+    "timestamp": "2026-11-04T20:01:10.888641"
+  },
+  {
+    "id": 221,
+    "stage": "NEEDS_REVIEW",
+    "action": "human_review",
+    "status": "observed",
+    "data": {
+      "revision": 2,
+      "reason": "Save failed before persistence with Fakturama's missing secondary-address binding. Added explicit selection of the same verified Debtor from both document address tabs, then restored source address copies. Reconcile the existing PO000002 draft and saved records before retrying.",
+      "before": {
+        "order_date": "2026-07-14",
+        "external_reference": "ACCEPT-WIN-2026-A17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "Bank Transfer",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "19",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": null,
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "after": {
+        "order_date": "2026-07-14",
+        "external_reference": "ACCEPT-WIN-2026-A17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "Bank Transfer",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "19",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": null,
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "prior_review": {
+        "code": "UI_WAIT_TIMEOUT",
+        "message": "Expected UI condition was not observed (condition false)"
+      }
+    },
+    "timestamp": "2026-11-04T20:04:08.438058"
+  },
+  {
+    "id": 222,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T20:04:10.439663"
+  },
+  {
+    "id": 223,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true
+    },
+    "timestamp": "2026-11-04T20:04:14.517538"
+  },
+  {
+    "id": 224,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000002"
+    },
+    "timestamp": "2026-11-04T20:04:32.716134"
+  },
+  {
+    "id": 225,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000001"
+    },
+    "timestamp": "2026-11-04T20:04:37.103587"
+  },
+  {
+    "id": 226,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:05:19.718661"
+  },
+  {
+    "id": 227,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:05:19.731839"
+  },
+  {
+    "id": 228,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-04T20:05:30.614682"
+  },
+  {
+    "id": 229,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:05:32.308707"
+  },
+  {
+    "id": 230,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-04T20:05:32.317848"
+  },
+  {
+    "id": 231,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:05:36.813766"
+  },
+  {
+    "id": 232,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-04T20:05:40.761237"
+  },
+  {
+    "id": 233,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:05:42.459915"
+  },
+  {
+    "id": 234,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-04T20:05:42.483472"
+  },
+  {
+    "id": 235,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:05:47.079584"
+  },
+  {
+    "id": 236,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:05:47.086516"
+  },
+  {
+    "id": 237,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000002"
+    },
+    "timestamp": "2026-11-04T20:05:53.811240"
+  },
+  {
+    "id": 238,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:05:56.989627"
+  },
+  {
+    "id": 239,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000002"
+    },
+    "timestamp": "2026-11-04T20:06:18.870461"
+  },
+  {
+    "id": 240,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000002",
+        "kind": "Order",
+        "external_reference": "ACCEPT-WIN-2026-A17",
+        "currency": "EUR",
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "250",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "450"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3.00",
+            "unit": null,
+            "unit_net": "40",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "120"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [
+          "Northstar Office GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001\r\nTotal volume: 678,30 €"
+        ],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true
+      }
+    },
+    "timestamp": "2026-11-04T20:06:18.874459"
+  },
+  {
+    "id": 241,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000002"
+    },
+    "timestamp": "2026-11-04T20:06:22.904584"
+  },
+  {
+    "id": 242,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000002",
+      "kind": "Invoice",
+      "external_reference": "ACCEPT-WIN-2026-A17",
+      "currency": null,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-04",
+      "service_date": "2026-11-04",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "570.00",
+        "vat": "108.30",
+        "gross": "678.30"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000002",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000002",
+        "invoice_number": "INV000002",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [
+        "Northstar Office GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001\r\nTotal volume: 678,30 €"
+      ],
+      "state": "open",
+      "payment_method": "Bank Transfer",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T20:06:44.460387"
+  },
+  {
+    "id": 243,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000002",
+      "document_date": "2026-11-04",
+      "service_date": "2026-11-04"
+    },
+    "timestamp": "2026-11-04T20:06:44.478481"
+  },
+  {
+    "id": 244,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T20:06:44.481948"
+  },
+  {
+    "id": 245,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:06:49.990317"
+  },
+  {
+    "id": 246,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000002"
+    },
+    "timestamp": "2026-11-04T20:07:05.355409"
+  },
+  {
+    "id": 247,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:07:07.238135"
+  },
+  {
+    "id": 248,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000002"
+    },
+    "timestamp": "2026-11-04T20:08:00.216438"
+  },
+  {
+    "id": 249,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T20:08:00.319295"
+  }
+]

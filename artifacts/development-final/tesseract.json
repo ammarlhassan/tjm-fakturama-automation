@@ -1,0 +1,220 @@
+{
+  "status": "complete",
+  "mode": "local_ocr_only",
+  "split": "development",
+  "configuration": {
+    "ocr_engine": "tesseract",
+    "parser_version": "labels-rows-v3",
+    "languages": "eng+deu",
+    "model": null
+  },
+  "configuration_sha256": "c27464a005c2f24408d3c2524e360b6f692a9b44946991c33e1d4088a40d3221",
+  "ground_truth_review": "pending",
+  "independent_documents": 12,
+  "exact_documents": 5,
+  "field_accuracy": 0.9875886524822695,
+  "errors": 0,
+  "p50_seconds": 1.6306386499200016,
+  "p95_seconds": 1.6849548547295854,
+  "pipeline_accuracy": "not measured without --live",
+  "documents": [
+    {
+      "id": "order-01",
+      "layout": 0,
+      "synthetic": true,
+      "differences": [],
+      "field_count": 47,
+      "correct_fields": 47,
+      "exact": true,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.6911312998272479
+    },
+    {
+      "id": "order-02",
+      "layout": 1,
+      "synthetic": true,
+      "differences": [
+        {
+          "field": "customer.email",
+          "expected": "orders02@example.test",
+          "observed": "ordersO2@example.test"
+        }
+      ],
+      "field_count": 47,
+      "correct_fields": 46,
+      "exact": false,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.564267700072378
+    },
+    {
+      "id": "order-03",
+      "layout": 2,
+      "synthetic": true,
+      "differences": [
+        {
+          "field": "customer.email",
+          "expected": "orders03@example.test",
+          "observed": "ordersO3@example.test"
+        }
+      ],
+      "field_count": 47,
+      "correct_fields": 46,
+      "exact": false,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.6137904999777675
+    },
+    {
+      "id": "order-04",
+      "layout": 0,
+      "synthetic": true,
+      "differences": [],
+      "field_count": 47,
+      "correct_fields": 47,
+      "exact": true,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.570987599901855
+    },
+    {
+      "id": "order-05",
+      "layout": 1,
+      "synthetic": true,
+      "differences": [],
+      "field_count": 47,
+      "correct_fields": 47,
+      "exact": true,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.6143340999260545
+    },
+    {
+      "id": "order-06",
+      "layout": 2,
+      "synthetic": true,
+      "differences": [
+        {
+          "field": "customer.email",
+          "expected": "orders06@example.test",
+          "observed": "ordersO6@example.test"
+        }
+      ],
+      "field_count": 47,
+      "correct_fields": 46,
+      "exact": false,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.6511043002828956
+    },
+    {
+      "id": "order-07",
+      "layout": 0,
+      "synthetic": true,
+      "differences": [
+        {
+          "field": "customer.email",
+          "expected": "orders07@example.test",
+          "observed": "ordersO7@example.test"
+        }
+      ],
+      "field_count": 47,
+      "correct_fields": 46,
+      "exact": false,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.5583055997267365
+    },
+    {
+      "id": "order-08",
+      "layout": 1,
+      "synthetic": true,
+      "differences": [
+        {
+          "field": "customer.email",
+          "expected": "orders08@example.test",
+          "observed": "ordersO8@example.test"
+        }
+      ],
+      "field_count": 47,
+      "correct_fields": 46,
+      "exact": false,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.5966765000484884
+    },
+    {
+      "id": "order-09",
+      "layout": 2,
+      "synthetic": true,
+      "differences": [
+        {
+          "field": "customer.email",
+          "expected": "orders09@example.test",
+          "observed": "ordersO9@example.test"
+        }
+      ],
+      "field_count": 47,
+      "correct_fields": 46,
+      "exact": false,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.671832799911499
+    },
+    {
+      "id": "order-10",
+      "layout": 0,
+      "synthetic": true,
+      "differences": [],
+      "field_count": 47,
+      "correct_fields": 47,
+      "exact": true,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.6799013996496797
+    },
+    {
+      "id": "order-11",
+      "layout": 1,
+      "synthetic": true,
+      "differences": [
+        {
+          "field": "external_reference",
+          "expected": "SYN-2026-0011",
+          "observed": "SYN-2026-001 1"
+        }
+      ],
+      "field_count": 47,
+      "correct_fields": 46,
+      "exact": false,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.6469431999139488
+    },
+    {
+      "id": "order-12",
+      "layout": 2,
+      "synthetic": true,
+      "differences": [],
+      "field_count": 47,
+      "correct_fields": 47,
+      "exact": true,
+      "ocr_issues": [],
+      "engine": "tesseract",
+      "version": "5.5.3.20260724",
+      "seconds": 1.6637971000745893
+    }
+  ]
+}

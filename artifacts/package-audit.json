@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-11-05T22:41:41.833678+00:00",
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "23223486a92a496e322fd625a60fb80d82dd4f54bfd971660cfaf04a7fc41b75"
+  },
+  "package": {
+    "wheel": "tjm_image_to_cash-0.1.0-py3-none-any.whl",
+    "wheel_bytes": 86934,
+    "sdist": "tjm_image_to_cash-0.1.0.tar.gz",
+    "sdist_bytes": 5080716,
+    "loaded_from_the_wheel": true,
+    "wheel_source_matches_the_repository": true,
+    "validate_command_passed": true,
+    "report_template_packaged": true,
+    "scope": "Existing locked dependencies on this machine; not a clean-machine installation"
+  },
+  "submission_scan": {
+    "files_scanned": 1023,
+    "bytes_scanned": 106373316,
+    "configured_values_compared": 1,
+    "files_with_a_configured_value": [],
+    "files_matching_a_key_pattern": [],
+    "secret_values_printed": false
+  }
+}

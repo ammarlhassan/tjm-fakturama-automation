@@ -1,0 +1,10 @@
+{
+  "configuration": {
+    "ocr_engine": "rapidocr",
+    "parser_version": "labels-rows-v3",
+    "languages": "eng+deu",
+    "model": null
+  },
+  "sha256": "96ac28d6d100ae5baa7be874f94238b9f1a67353b58e3d340983534dd9ac4125",
+  "note": "Frozen before held-out evaluation; generated synthetic ground truth is not human-reviewed by default"
+}

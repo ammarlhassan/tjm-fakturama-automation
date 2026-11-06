@@ -1,0 +1,35 @@
+{
+  "id": "03b895c0-5467-44d3-8949-4623a0520e34",
+  "workspace": "integration",
+  "mode": "live",
+  "stage": "NEEDS_REVIEW",
+  "last_verified_stage": "RECEIVED",
+  "external_reference": null,
+  "revision": 0,
+  "review": {
+    "code": "VISION_PROVIDER_ERROR",
+    "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+    "resolved": false,
+    "transport_attempts": [
+      {
+        "attempt": 1,
+        "http_status": 503,
+        "seconds": 3.6822576000049594
+      },
+      {
+        "attempt": 2,
+        "http_status": 503,
+        "seconds": 5.4497406000009505
+      },
+      {
+        "attempt": 3,
+        "http_status": 503,
+        "seconds": 3.1128836999996565
+      }
+    ]
+  },
+  "validation": null,
+  "receipt": null,
+  "created_at": "2026-11-05 08:34:42.699594",
+  "updated_at": "2026-11-05 08:34:59.100531"
+}

@@ -1,0 +1,648 @@
+[
+  {
+    "id": 2082,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:55:06.451941"
+  },
+  {
+    "id": 2083,
+    "stage": "VALIDATED",
+    "action": "explicit_acceptance_source",
+    "status": "observed",
+    "data": {
+      "fixture": "C:\\Users\\ammar\\OneDrive\\Desktop\\TJM\\artifacts\\final-acceptance\\R1X\\fresh-masters\\expected.json",
+      "live_extraction": false
+    },
+    "timestamp": "2026-11-05T15:55:06.463639"
+  },
+  {
+    "id": 2084,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T15:55:06.973885"
+  },
+  {
+    "id": 2085,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Northstar Office GmbH, Marta Klein",
+        "INV000031",
+        "PO000031"
+      ],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T15:55:17.972701"
+  },
+  {
+    "id": 2086,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T15:55:25.157251"
+  },
+  {
+    "id": 2087,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000032",
+      "kind": "Order",
+      "external_reference": "FRESH-MASTERS-2026-C17-R1X",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": true,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "5",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T15:55:36.990156"
+  },
+  {
+    "id": 2088,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000032"
+    },
+    "timestamp": "2026-11-05T15:55:37.005847"
+  },
+  {
+    "id": 2089,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T15:55:40.810171"
+  },
+  {
+    "id": 2090,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:56:10.606033"
+  },
+  {
+    "id": 2091,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T15:56:16.214314"
+  },
+  {
+    "id": 2092,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "observed",
+    "data": {
+      "id": "CUST000008",
+      "customer": {
+        "company": "Acceptance Fresh Office R1X GmbH",
+        "first_name": "Ada",
+        "last_name": "Weber",
+        "alias": "ACCEPT-FRESH-R1X",
+        "email": "fresh-r1x@example.com",
+        "telephone": "+493055501420",
+        "source_customer_id": null,
+        "billing": {
+          "recipient": "Acceptance Fresh Office R1X GmbH",
+          "additional_name": null,
+          "street": "Altmarkt 1",
+          "postcode": "01067",
+          "city": "Dresden",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Acceptance Fresh Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment_method": "SEPA Direct Debit"
+    },
+    "timestamp": "2026-11-05T15:57:11.764226"
+  },
+  {
+    "id": 2093,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000008"
+    },
+    "timestamp": "2026-11-05T15:57:17.753934"
+  },
+  {
+    "id": 2094,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:57:33.794267"
+  },
+  {
+    "id": 2095,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:57:33.806527"
+  },
+  {
+    "id": 2096,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-R1X-CHAIR"
+    },
+    "timestamp": "2026-11-05T15:57:50.964279"
+  },
+  {
+    "id": 2097,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "FRESH-R1X-CHAIR",
+      "sku": "FRESH-R1X-CHAIR",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T15:58:03.616213"
+  },
+  {
+    "id": 2098,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-R1X-CHAIR"
+    },
+    "timestamp": "2026-11-05T15:58:08.740034"
+  },
+  {
+    "id": 2099,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:58:14.783778"
+  },
+  {
+    "id": 2100,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-R1X-CHAIR"
+    },
+    "timestamp": "2026-11-05T15:58:14.783778"
+  },
+  {
+    "id": 2101,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:58:31.433818"
+  },
+  {
+    "id": 2102,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-R1X-MAT"
+    },
+    "timestamp": "2026-11-05T15:58:45.025575"
+  },
+  {
+    "id": 2103,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "FRESH-R1X-MAT",
+      "sku": "FRESH-R1X-MAT",
+      "vat_percent": "9"
+    },
+    "timestamp": "2026-11-05T15:59:04.727946"
+  },
+  {
+    "id": 2104,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-R1X-MAT"
+    },
+    "timestamp": "2026-11-05T15:59:11.777679"
+  },
+  {
+    "id": 2105,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:59:22.138265"
+  },
+  {
+    "id": 2106,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-R1X-MAT"
+    },
+    "timestamp": "2026-11-05T15:59:22.147699"
+  },
+  {
+    "id": 2107,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:59:33.853796"
+  },
+  {
+    "id": 2108,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:59:33.875894"
+  },
+  {
+    "id": 2109,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000032"
+    },
+    "timestamp": "2026-11-05T15:59:41.951056"
+  },
+  {
+    "id": 2110,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T15:59:44.889186"
+  },
+  {
+    "id": 2111,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000032"
+    },
+    "timestamp": "2026-11-05T16:00:11.233844"
+  },
+  {
+    "id": 2112,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000032",
+        "kind": "Order",
+        "external_reference": "FRESH-MASTERS-2026-C17-R1X",
+        "currency": "EUR",
+        "displayed_item_subtotal": "570.00",
+        "net_is_derived": true,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Acceptance Fresh Office R1X GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-R1X",
+          "email": "fresh-r1x@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Acceptance Fresh Office R1X GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "FRESH-R1X-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "250",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "450"
+          },
+          {
+            "sku": "FRESH-R1X-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3.00",
+            "unit": null,
+            "unit_net": "40",
+            "discount_percent": "-0.0",
+            "vat_percent": "9.00",
+            "printed_net": "120"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true,
+        "documents_row": {
+          "column0": "ICON_ORDER",
+          "document": "PO000032",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Acceptance Fresh Office R1X GmbH",
+          "custref": "FRESH-MASTERS-2026-C17-R1X",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "632.99",
+          "printed": "null"
+        }
+      }
+    },
+    "timestamp": "2026-11-05T16:00:11.233844"
+  },
+  {
+    "id": 2113,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000032"
+    },
+    "timestamp": "2026-11-05T16:00:17.819546"
+  },
+  {
+    "id": 2114,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000032",
+      "kind": "Invoice",
+      "external_reference": "FRESH-MASTERS-2026-C17-R1X",
+      "currency": null,
+      "displayed_item_subtotal": "570.00",
+      "net_is_derived": true,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "541.50",
+        "vat": "91.49",
+        "gross": "632.99"
+      },
+      "document_discount_percent": "5",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000032",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000032",
+        "invoice_number": "INV000032",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [],
+      "state": "open",
+      "payment_method": "SEPA Direct Debit",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T16:00:39.505437"
+  },
+  {
+    "id": 2115,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000032",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T16:00:39.521916"
+  },
+  {
+    "id": 2116,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T16:00:39.530773"
+  },
+  {
+    "id": 2117,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T16:00:46.958073"
+  },
+  {
+    "id": 2118,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000032"
+    },
+    "timestamp": "2026-11-05T16:01:04.564291"
+  },
+  {
+    "id": 2119,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T16:01:06.297732"
+  },
+  {
+    "id": 2120,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000032",
+      "invoice_number": "INV000032",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000032",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Acceptance Fresh Office R1X GmbH",
+          "custref": "FRESH-MASTERS-2026-C17-R1X",
+          "state": "COMMAND_CHECKED",
+          "total": "632.99",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000032",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Acceptance Fresh Office R1X GmbH",
+          "custref": "FRESH-MASTERS-2026-C17-R1X",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "632.99",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T16:02:18.165799"
+  },
+  {
+    "id": 2121,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000032"
+    },
+    "timestamp": "2026-11-05T16:02:18.196953"
+  },
+  {
+    "id": 2122,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T16:02:18.308190"
+  }
+]

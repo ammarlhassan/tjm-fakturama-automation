@@ -1,0 +1,2313 @@
+{
+  "mode": "live_pipeline",
+  "hosted_vision": "gemini:gemini-3.5-flash-lite",
+  "independent_documents_added_to_accuracy_corpus": 0,
+  "note": "Four transformations of one source plus three separate negative cases. These do not establish full pipeline acceptance or real-world accuracy.",
+  "cases": [
+    {
+      "name": "downsampled-75-percent",
+      "category": "transformed_variant",
+      "base_document": "official-visible-sample",
+      "image": "downsampled-75-percent.png",
+      "expected_review_code": null,
+      "exact_ocr": false,
+      "differences": [
+        {
+          "field": "customer.email",
+          "expected": "marta.klein@example.test",
+          "observed": null
+        }
+      ],
+      "validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "expected_source_validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "seconds": 2.4336075999999593,
+      "pipeline": {
+        "accepted": false,
+        "exact": true,
+        "incorrect_acceptance": false,
+        "differences": [],
+        "review_findings": [
+          {
+            "field": "customer.email",
+            "code": "EXTRACTION_DISAGREEMENT",
+            "ocr": null,
+            "vision": "marta.klein@example.test"
+          }
+        ],
+        "attempts": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "Q6vravmWDJbSxN8PxtfI-A8",
+            "usage": {
+              "promptTokenCount": 1332,
+              "candidatesTokenCount": 2407,
+              "totalTokenCount": 3739,
+              "promptTokensDetails": [
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1092
+                },
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 8.217861099999936,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.sku",
+                "canonical": "items.0.sku"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          },
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "TKvrau3HG9flxN8PoOzmmQE",
+            "usage": {
+              "promptTokenCount": 1332,
+              "candidatesTokenCount": 2407,
+              "totalTokenCount": 3739,
+              "cachedContentTokenCount": 657,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                },
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1092
+                }
+              ],
+              "cacheTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 118
+                },
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 539
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 6.244192800000064,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.sku",
+                "canonical": "items.0.sku"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "rotated-1-degree",
+      "category": "transformed_variant",
+      "base_document": "official-visible-sample",
+      "image": "rotated-1-degree.png",
+      "expected_review_code": null,
+      "exact_ocr": false,
+      "differences": [
+        {
+          "field": "customer.first_name",
+          "expected": "Marta",
+          "observed": null
+        },
+        {
+          "field": "customer.last_name",
+          "expected": "Klein",
+          "observed": null
+        }
+      ],
+      "validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "expected_source_validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "seconds": 1.8885264000000461,
+      "pipeline": {
+        "accepted": false,
+        "exact": true,
+        "incorrect_acceptance": false,
+        "differences": [],
+        "review_findings": [
+          {
+            "field": "customer.first_name",
+            "code": "EXTRACTION_DISAGREEMENT",
+            "ocr": null,
+            "vision": "Marta"
+          },
+          {
+            "field": "customer.last_name",
+            "code": "EXTRACTION_DISAGREEMENT",
+            "ocr": null,
+            "vision": "Klein"
+          }
+        ],
+        "attempts": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "VKvrap27LfLEvdIPionL0Qs",
+            "usage": {
+              "promptTokenCount": 1332,
+              "candidatesTokenCount": 2407,
+              "totalTokenCount": 3739,
+              "promptTokensDetails": [
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1092
+                },
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 7.112809900000002,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.sku",
+                "canonical": "items.0.sku"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          },
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "XavravLFHLrbxs0P5K7R4Q4",
+            "usage": {
+              "promptTokenCount": 1332,
+              "candidatesTokenCount": 2407,
+              "totalTokenCount": 3739,
+              "promptTokensDetails": [
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1092
+                },
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 6.910141999999951,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.sku",
+                "canonical": "items.0.sku"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "gaussian-blur-1",
+      "category": "transformed_variant",
+      "base_document": "official-visible-sample",
+      "image": "gaussian-blur-1.png",
+      "expected_review_code": null,
+      "exact_ocr": true,
+      "differences": [],
+      "validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "expected_source_validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "seconds": 1.7406456000001072,
+      "pipeline": {
+        "accepted": true,
+        "exact": true,
+        "incorrect_acceptance": false,
+        "differences": [],
+        "review_findings": [],
+        "attempts": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "Zqvras7nC8btxs0PkcGXgQY",
+            "usage": {
+              "promptTokenCount": 1332,
+              "candidatesTokenCount": 2401,
+              "totalTokenCount": 3733,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                },
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1092
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 6.848996599999964,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.sku",
+                "canonical": "items.0.sku"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "jpeg-quality-35",
+      "category": "transformed_variant",
+      "base_document": "official-visible-sample",
+      "image": "jpeg-quality-35.png",
+      "expected_review_code": null,
+      "exact_ocr": true,
+      "differences": [],
+      "validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "expected_source_validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "seconds": 1.5667025999998714,
+      "pipeline": {
+        "accepted": true,
+        "exact": true,
+        "incorrect_acceptance": false,
+        "differences": [],
+        "review_findings": [],
+        "attempts": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "bqvraq6zOa68vdIP86bS0A4",
+            "usage": {
+              "promptTokenCount": 1332,
+              "candidatesTokenCount": 2401,
+              "totalTokenCount": 3733,
+              "promptTokensDetails": [
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1092
+                },
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 7.661572799999931,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.sku",
+                "canonical": "items.0.sku"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "paid-without-date",
+      "category": "negative_case",
+      "base_document": "official-visible-sample",
+      "image": "paid-without-date.png",
+      "expected_review_code": "PAYMENT_DATE_MISSING",
+      "exact_ocr": true,
+      "differences": [],
+      "validation": {
+        "findings": [
+          {
+            "code": "PAYMENT_DATE_MISSING",
+            "field": "payment.payment_date",
+            "message": "Explicit PAID requires its source date",
+            "expected": null,
+            "observed": null
+          }
+        ],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "expected_source_validation": {
+        "findings": [
+          {
+            "code": "PAYMENT_DATE_MISSING",
+            "field": "payment.payment_date",
+            "message": "Explicit PAID requires its source date",
+            "expected": null,
+            "observed": null
+          }
+        ],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "seconds": 2.24807409999994,
+      "pipeline": {
+        "accepted": false,
+        "exact": true,
+        "incorrect_acceptance": false,
+        "differences": [],
+        "review_findings": [],
+        "attempts": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "eKvraoWEGZX8xN8P-oWBkAE",
+            "usage": {
+              "promptTokenCount": 1328,
+              "candidatesTokenCount": 2349,
+              "totalTokenCount": 3677,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                },
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1088
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 8.210501999999906,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.items.0.sku",
+                "canonical": "items.0.sku"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing-sku",
+      "category": "negative_case",
+      "base_document": "official-visible-sample",
+      "image": "missing-sku.png",
+      "expected_review_code": "MISSING_FIELD",
+      "exact_ocr": false,
+      "differences": [
+        {
+          "field": "items.0.description",
+          "expected": "Ergonomic Desk Chair",
+          "observed": "Desk Chair"
+        },
+        {
+          "field": "items.0.sku",
+          "expected": null,
+          "observed": "Ergonomic"
+        }
+      ],
+      "validation": {
+        "findings": [],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "expected_source_validation": {
+        "findings": [
+          {
+            "code": "MISSING_FIELD",
+            "field": "items.0.sku",
+            "message": "Every source row must be complete",
+            "expected": null,
+            "observed": null
+          }
+        ],
+        "computed": null,
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "seconds": 1.8440802000000076,
+      "pipeline": {
+        "accepted": false,
+        "exact": true,
+        "incorrect_acceptance": false,
+        "differences": [],
+        "review_findings": [
+          {
+            "field": "items.0.sku",
+            "code": "EXTRACTION_DISAGREEMENT",
+            "ocr": "Ergonomic",
+            "vision": null
+          },
+          {
+            "field": "items.0.description",
+            "code": "EXTRACTION_DISAGREEMENT",
+            "ocr": "Desk Chair",
+            "vision": "Ergonomic Desk Chair"
+          }
+        ],
+        "attempts": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "gqvrarG-IKD7xs0PhduWwA8",
+            "usage": {
+              "promptTokenCount": 1328,
+              "candidatesTokenCount": 2358,
+              "totalTokenCount": 3686,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                },
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1088
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 7.3682492999998885,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          },
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "i6vraov5LePSxN8Po83CSQ",
+            "usage": {
+              "promptTokenCount": 3330,
+              "candidatesTokenCount": 2358,
+              "totalTokenCount": 5688,
+              "promptTokensDetails": [
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 3090
+                },
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 6.989243600000009,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "incorrect-printed-total",
+      "category": "negative_case",
+      "base_document": "official-visible-sample",
+      "image": "incorrect-printed-total.png",
+      "expected_review_code": "TOTAL_MISMATCH",
+      "exact_ocr": true,
+      "differences": [],
+      "validation": {
+        "findings": [
+          {
+            "code": "TOTAL_MISMATCH",
+            "field": "totals.gross",
+            "message": "Source and calculated totals differ",
+            "expected": "678.30",
+            "observed": "678.31"
+          }
+        ],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "expected_source_validation": {
+        "findings": [
+          {
+            "code": "TOTAL_MISMATCH",
+            "field": "totals.gross",
+            "message": "Source and calculated totals differ",
+            "expected": "678.30",
+            "observed": "678.31"
+          }
+        ],
+        "computed": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "profile": "eur-net-vat-group-half-up-v1"
+      },
+      "seconds": 2.358776700000135,
+      "pipeline": {
+        "accepted": false,
+        "exact": true,
+        "incorrect_acceptance": false,
+        "differences": [],
+        "review_findings": [],
+        "attempts": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash-lite",
+            "response_id": "lavrar2nC9bMvdIP3PiN2Qs",
+            "usage": {
+              "promptTokenCount": 1328,
+              "candidatesTokenCount": 2407,
+              "totalTokenCount": 3735,
+              "promptTokensDetails": [
+                {
+                  "modality": "IMAGE",
+                  "tokenCount": 1088
+                },
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 240
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "elapsed_seconds": 7.116982700000108,
+            "prompt_version": "literal-independent-v1",
+            "schema_version": "order-v1",
+            "field_path_normalizations": [
+              {
+                "original": "order.external_reference",
+                "canonical": "external_reference"
+              },
+              {
+                "original": "order.order_date",
+                "canonical": "order_date"
+              },
+              {
+                "original": "order.currency",
+                "canonical": "currency"
+              },
+              {
+                "original": "order.customer.source_customer_id",
+                "canonical": "customer.source_customer_id"
+              },
+              {
+                "original": "order.customer.company",
+                "canonical": "customer.company"
+              },
+              {
+                "original": "order.customer.first_name",
+                "canonical": "customer.first_name"
+              },
+              {
+                "original": "order.customer.last_name",
+                "canonical": "customer.last_name"
+              },
+              {
+                "original": "order.customer.alias",
+                "canonical": "customer.alias"
+              },
+              {
+                "original": "order.customer.email",
+                "canonical": "customer.email"
+              },
+              {
+                "original": "order.customer.telephone",
+                "canonical": "customer.telephone"
+              },
+              {
+                "original": "order.customer.billing.recipient",
+                "canonical": "customer.billing.recipient"
+              },
+              {
+                "original": "order.customer.billing.street",
+                "canonical": "customer.billing.street"
+              },
+              {
+                "original": "order.customer.billing.postcode",
+                "canonical": "customer.billing.postcode"
+              },
+              {
+                "original": "order.customer.billing.city",
+                "canonical": "customer.billing.city"
+              },
+              {
+                "original": "order.customer.billing.country",
+                "canonical": "customer.billing.country"
+              },
+              {
+                "original": "order.customer.delivery.recipient",
+                "canonical": "customer.delivery.recipient"
+              },
+              {
+                "original": "order.customer.delivery.street",
+                "canonical": "customer.delivery.street"
+              },
+              {
+                "original": "order.customer.delivery.postcode",
+                "canonical": "customer.delivery.postcode"
+              },
+              {
+                "original": "order.customer.delivery.city",
+                "canonical": "customer.delivery.city"
+              },
+              {
+                "original": "order.customer.delivery.country",
+                "canonical": "customer.delivery.country"
+              },
+              {
+                "original": "order.payment.method",
+                "canonical": "payment.method"
+              },
+              {
+                "original": "order.payment.status",
+                "canonical": "payment.status"
+              },
+              {
+                "original": "order.payment.payment_date",
+                "canonical": "payment.payment_date"
+              },
+              {
+                "original": "order.items.0.sku",
+                "canonical": "items.0.sku"
+              },
+              {
+                "original": "order.items.0.description",
+                "canonical": "items.0.description"
+              },
+              {
+                "original": "order.items.0.quantity",
+                "canonical": "items.0.quantity"
+              },
+              {
+                "original": "order.items.0.unit",
+                "canonical": "items.0.unit"
+              },
+              {
+                "original": "order.items.0.unit_net",
+                "canonical": "items.0.unit_net"
+              },
+              {
+                "original": "order.items.0.discount_percent",
+                "canonical": "items.0.discount_percent"
+              },
+              {
+                "original": "order.items.0.vat_percent",
+                "canonical": "items.0.vat_percent"
+              },
+              {
+                "original": "order.items.0.printed_net",
+                "canonical": "items.0.printed_net"
+              },
+              {
+                "original": "order.items.1.sku",
+                "canonical": "items.1.sku"
+              },
+              {
+                "original": "order.items.1.description",
+                "canonical": "items.1.description"
+              },
+              {
+                "original": "order.items.1.quantity",
+                "canonical": "items.1.quantity"
+              },
+              {
+                "original": "order.items.1.unit",
+                "canonical": "items.1.unit"
+              },
+              {
+                "original": "order.items.1.unit_net",
+                "canonical": "items.1.unit_net"
+              },
+              {
+                "original": "order.items.1.discount_percent",
+                "canonical": "items.1.discount_percent"
+              },
+              {
+                "original": "order.items.1.vat_percent",
+                "canonical": "items.1.vat_percent"
+              },
+              {
+                "original": "order.items.1.printed_net",
+                "canonical": "items.1.printed_net"
+              },
+              {
+                "original": "order.totals.net",
+                "canonical": "totals.net"
+              },
+              {
+                "original": "order.totals.vat",
+                "canonical": "totals.vat"
+              },
+              {
+                "original": "order.totals.gross",
+                "canonical": "totals.gross"
+              }
+            ],
+            "transport_attempt_count": 1
+          }
+        ]
+      }
+    }
+  ]
+}

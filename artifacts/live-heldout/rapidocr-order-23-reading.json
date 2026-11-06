@@ -1,0 +1,2021 @@
+{
+  "ocr": {
+    "engine": "rapidocr",
+    "version": "3.10.0",
+    "width": 1800,
+    "height": 1700,
+    "words": [
+      {
+        "text": "SALES ORDER INPUT | SYNTHETIC TEST DATA",
+        "box": {
+          "x": 62,
+          "y": 29,
+          "width": 779,
+          "height": 33
+        },
+        "confidence": 0.97418,
+        "line": "0"
+      },
+      {
+        "text": "EXTERNAL REFERENCE",
+        "box": {
+          "x": 68,
+          "y": 145,
+          "width": 278,
+          "height": 23
+        },
+        "confidence": 0.99757,
+        "line": "1"
+      },
+      {
+        "text": "ORDER DATE",
+        "box": {
+          "x": 695,
+          "y": 143,
+          "width": 160,
+          "height": 27
+        },
+        "confidence": 0.99987,
+        "line": "2"
+      },
+      {
+        "text": "CURRENCY",
+        "box": {
+          "x": 1297,
+          "y": 143,
+          "width": 138,
+          "height": 27
+        },
+        "confidence": 0.99996,
+        "line": "3"
+      },
+      {
+        "text": "SYN-2026-0023",
+        "box": {
+          "x": 67,
+          "y": 181,
+          "width": 212,
+          "height": 30
+        },
+        "confidence": 0.99998,
+        "line": "4"
+      },
+      {
+        "text": "2026-07-23",
+        "box": {
+          "x": 694,
+          "y": 181,
+          "width": 155,
+          "height": 31
+        },
+        "confidence": 0.99999,
+        "line": "5"
+      },
+      {
+        "text": "EUR",
+        "box": {
+          "x": 1296,
+          "y": 180,
+          "width": 70,
+          "height": 34
+        },
+        "confidence": 0.99992,
+        "line": "6"
+      },
+      {
+        "text": "COMPANY",
+        "box": {
+          "x": 66,
+          "y": 254,
+          "width": 125,
+          "height": 27
+        },
+        "confidence": 0.99997,
+        "line": "7"
+      },
+      {
+        "text": "CUSTOMER ID",
+        "box": {
+          "x": 948,
+          "y": 255,
+          "width": 164,
+          "height": 24
+        },
+        "confidence": 0.99489,
+        "line": "8"
+      },
+      {
+        "text": "Example Office 23 GmbH",
+        "box": {
+          "x": 67,
+          "y": 291,
+          "width": 334,
+          "height": 33
+        },
+        "confidence": 0.97576,
+        "line": "9"
+      },
+      {
+        "text": "SRC-0023",
+        "box": {
+          "x": 946,
+          "y": 292,
+          "width": 142,
+          "height": 31
+        },
+        "confidence": 0.99996,
+        "line": "10"
+      },
+      {
+        "text": "CUSTOMER ALIAS",
+        "box": {
+          "x": 67,
+          "y": 364,
+          "width": 213,
+          "height": 26
+        },
+        "confidence": 0.99883,
+        "line": "11"
+      },
+      {
+        "text": "CONTACT NAME",
+        "box": {
+          "x": 947,
+          "y": 364,
+          "width": 195,
+          "height": 26
+        },
+        "confidence": 0.99809,
+        "line": "12"
+      },
+      {
+        "text": "EXAMPLE-23",
+        "box": {
+          "x": 68,
+          "y": 403,
+          "width": 181,
+          "height": 27
+        },
+        "confidence": 0.99997,
+        "line": "13"
+      },
+      {
+        "text": "Ada Weber",
+        "box": {
+          "x": 945,
+          "y": 402,
+          "width": 153,
+          "height": 30
+        },
+        "confidence": 0.99991,
+        "line": "14"
+      },
+      {
+        "text": "EMAIL",
+        "box": {
+          "x": 66,
+          "y": 473,
+          "width": 78,
+          "height": 28
+        },
+        "confidence": 0.99989,
+        "line": "15"
+      },
+      {
+        "text": "PHONE",
+        "box": {
+          "x": 946,
+          "y": 473,
+          "width": 90,
+          "height": 27
+        },
+        "confidence": 0.99994,
+        "line": "16"
+      },
+      {
+        "text": "orders23@example.test",
+        "box": {
+          "x": 67,
+          "y": 512,
+          "width": 317,
+          "height": 33
+        },
+        "confidence": 0.99999,
+        "line": "17"
+      },
+      {
+        "text": "+49 30 5550 1420",
+        "box": {
+          "x": 947,
+          "y": 511,
+          "width": 238,
+          "height": 30
+        },
+        "confidence": 0.9709,
+        "line": "18"
+      },
+      {
+        "text": "DELIVERY ADDRESS",
+        "box": {
+          "x": 66,
+          "y": 592,
+          "width": 239,
+          "height": 26
+        },
+        "confidence": 0.97291,
+        "line": "19"
+      },
+      {
+        "text": "BILLING ADDRESS",
+        "box": {
+          "x": 947,
+          "y": 593,
+          "width": 217,
+          "height": 26
+        },
+        "confidence": 0.99958,
+        "line": "20"
+      },
+      {
+        "text": "Example Warehouse 23",
+        "box": {
+          "x": 66,
+          "y": 633,
+          "width": 316,
+          "height": 34
+        },
+        "confidence": 0.98847,
+        "line": "21"
+      },
+      {
+        "text": "Example Office 23 GmbH",
+        "box": {
+          "x": 946,
+          "y": 633,
+          "width": 336,
+          "height": 34
+        },
+        "confidence": 0.99978,
+        "line": "22"
+      },
+      {
+        "text": "Beusselstrasse 44",
+        "box": {
+          "x": 66,
+          "y": 673,
+          "width": 244,
+          "height": 30
+        },
+        "confidence": 0.99982,
+        "line": "23"
+      },
+      {
+        "text": "Friedrichstrasse 88",
+        "box": {
+          "x": 944,
+          "y": 670,
+          "width": 258,
+          "height": 36
+        },
+        "confidence": 0.99978,
+        "line": "24"
+      },
+      {
+        "text": "10553 Berlin",
+        "box": {
+          "x": 67,
+          "y": 711,
+          "width": 168,
+          "height": 33
+        },
+        "confidence": 0.99981,
+        "line": "25"
+      },
+      {
+        "text": "01022 Berlin",
+        "box": {
+          "x": 945,
+          "y": 711,
+          "width": 170,
+          "height": 33
+        },
+        "confidence": 0.99992,
+        "line": "26"
+      },
+      {
+        "text": "Germany",
+        "box": {
+          "x": 64,
+          "y": 750,
+          "width": 131,
+          "height": 37
+        },
+        "confidence": 0.99998,
+        "line": "27"
+      },
+      {
+        "text": "Germany",
+        "box": {
+          "x": 943,
+          "y": 746,
+          "width": 133,
+          "height": 42
+        },
+        "confidence": 0.99997,
+        "line": "28"
+      },
+      {
+        "text": "PAID STATUS",
+        "box": {
+          "x": 67,
+          "y": 865,
+          "width": 158,
+          "height": 24
+        },
+        "confidence": 0.9998,
+        "line": "29"
+      },
+      {
+        "text": "PAYMENT DATE",
+        "box": {
+          "x": 637,
+          "y": 864,
+          "width": 188,
+          "height": 26
+        },
+        "confidence": 0.9998,
+        "line": "30"
+      },
+      {
+        "text": "PAYMENT METHOD",
+        "box": {
+          "x": 1204,
+          "y": 864,
+          "width": 225,
+          "height": 26
+        },
+        "confidence": 0.9668,
+        "line": "31"
+      },
+      {
+        "text": "PAID",
+        "box": {
+          "x": 64,
+          "y": 900,
+          "width": 77,
+          "height": 34
+        },
+        "confidence": 0.99989,
+        "line": "32"
+      },
+      {
+        "text": "2026-07-26",
+        "box": {
+          "x": 637,
+          "y": 901,
+          "width": 155,
+          "height": 31
+        },
+        "confidence": 0.99999,
+        "line": "33"
+      },
+      {
+        "text": "Credit Card",
+        "box": {
+          "x": 1206,
+          "y": 902,
+          "width": 155,
+          "height": 30
+        },
+        "confidence": 0.99994,
+        "line": "34"
+      },
+      {
+        "text": "ITEMS",
+        "box": {
+          "x": 66,
+          "y": 979,
+          "width": 85,
+          "height": 28
+        },
+        "confidence": 0.99993,
+        "line": "35"
+      },
+      {
+        "text": "SKU",
+        "box": {
+          "x": 63,
+          "y": 1023,
+          "width": 61,
+          "height": 30
+        },
+        "confidence": 0.99922,
+        "line": "36"
+      },
+      {
+        "text": "Description",
+        "box": {
+          "x": 300,
+          "y": 1025,
+          "width": 136,
+          "height": 31
+        },
+        "confidence": 0.99998,
+        "line": "37"
+      },
+      {
+        "text": "Qty",
+        "box": {
+          "x": 909,
+          "y": 1019,
+          "width": 58,
+          "height": 44
+        },
+        "confidence": 0.99994,
+        "line": "38"
+      },
+      {
+        "text": "Unit",
+        "box": {
+          "x": 1043,
+          "y": 1023,
+          "width": 60,
+          "height": 33
+        },
+        "confidence": 0.99996,
+        "line": "39"
+      },
+      {
+        "text": "Unit net",
+        "box": {
+          "x": 1163,
+          "y": 1024,
+          "width": 100,
+          "height": 31
+        },
+        "confidence": 0.95086,
+        "line": "40"
+      },
+      {
+        "text": "Disc.",
+        "box": {
+          "x": 1367,
+          "y": 1022,
+          "width": 67,
+          "height": 33
+        },
+        "confidence": 0.99969,
+        "line": "41"
+      },
+      {
+        "text": "VAT",
+        "box": {
+          "x": 1503,
+          "y": 1023,
+          "width": 61,
+          "height": 33
+        },
+        "confidence": 0.99993,
+        "line": "42"
+      },
+      {
+        "text": "Line net",
+        "box": {
+          "x": 1624,
+          "y": 1022,
+          "width": 100,
+          "height": 34
+        },
+        "confidence": 0.99263,
+        "line": "43"
+      },
+      {
+        "text": "SKU-23-01",
+        "box": {
+          "x": 65,
+          "y": 1091,
+          "width": 135,
+          "height": 31
+        },
+        "confidence": 0.99996,
+        "line": "44"
+      },
+      {
+        "text": "Office Chair",
+        "box": {
+          "x": 299,
+          "y": 1091,
+          "width": 145,
+          "height": 31
+        },
+        "confidence": 0.99989,
+        "line": "45"
+      },
+      {
+        "text": "3",
+        "box": {
+          "x": 914,
+          "y": 1092,
+          "width": 25,
+          "height": 30
+        },
+        "confidence": 0.99996,
+        "line": "46"
+      },
+      {
+        "text": "pcs",
+        "box": {
+          "x": 1044,
+          "y": 1094,
+          "width": 53,
+          "height": 34
+        },
+        "confidence": 0.99944,
+        "line": "47"
+      },
+      {
+        "text": "85.95",
+        "box": {
+          "x": 1163,
+          "y": 1089,
+          "width": 77,
+          "height": 34
+        },
+        "confidence": 0.99999,
+        "line": "48"
+      },
+      {
+        "text": "5%",
+        "box": {
+          "x": 1367,
+          "y": 1087,
+          "width": 52,
+          "height": 39
+        },
+        "confidence": 0.99949,
+        "line": "49"
+      },
+      {
+        "text": "19%",
+        "box": {
+          "x": 1506,
+          "y": 1090,
+          "width": 60,
+          "height": 34
+        },
+        "confidence": 0.99958,
+        "line": "50"
+      },
+      {
+        "text": "244.96",
+        "box": {
+          "x": 1624,
+          "y": 1091,
+          "width": 89,
+          "height": 32
+        },
+        "confidence": 0.99999,
+        "line": "51"
+      },
+      {
+        "text": "SKU-23-02",
+        "box": {
+          "x": 65,
+          "y": 1161,
+          "width": 136,
+          "height": 30
+        },
+        "confidence": 0.99999,
+        "line": "52"
+      },
+      {
+        "text": "Desk Mat",
+        "box": {
+          "x": 300,
+          "y": 1162,
+          "width": 120,
+          "height": 31
+        },
+        "confidence": 0.99994,
+        "line": "53"
+      },
+      {
+        "text": "4",
+        "box": {
+          "x": 917,
+          "y": 1165,
+          "width": 20,
+          "height": 25
+        },
+        "confidence": 1.0,
+        "line": "54"
+      },
+      {
+        "text": "pcs",
+        "box": {
+          "x": 1042,
+          "y": 1161,
+          "width": 54,
+          "height": 37
+        },
+        "confidence": 0.99971,
+        "line": "55"
+      },
+      {
+        "text": "86.95",
+        "box": {
+          "x": 1163,
+          "y": 1160,
+          "width": 76,
+          "height": 32
+        },
+        "confidence": 0.99999,
+        "line": "56"
+      },
+      {
+        "text": "10%",
+        "box": {
+          "x": 1370,
+          "y": 1159,
+          "width": 61,
+          "height": 34
+        },
+        "confidence": 0.99977,
+        "line": "57"
+      },
+      {
+        "text": "19%",
+        "box": {
+          "x": 1506,
+          "y": 1160,
+          "width": 61,
+          "height": 34
+        },
+        "confidence": 0.99977,
+        "line": "58"
+      },
+      {
+        "text": "313.02",
+        "box": {
+          "x": 1624,
+          "y": 1161,
+          "width": 89,
+          "height": 32
+        },
+        "confidence": 0.99999,
+        "line": "59"
+      },
+      {
+        "text": "NET TOTAL",
+        "box": {
+          "x": 67,
+          "y": 1268,
+          "width": 135,
+          "height": 24
+        },
+        "confidence": 0.95954,
+        "line": "60"
+      },
+      {
+        "text": "VAT TOTAL",
+        "box": {
+          "x": 638,
+          "y": 1268,
+          "width": 134,
+          "height": 24
+        },
+        "confidence": 0.99194,
+        "line": "61"
+      },
+      {
+        "text": "GROSS TOTAL",
+        "box": {
+          "x": 1206,
+          "y": 1266,
+          "width": 174,
+          "height": 27
+        },
+        "confidence": 0.99987,
+        "line": "62"
+      },
+      {
+        "text": "EUR 557.98",
+        "box": {
+          "x": 67,
+          "y": 1305,
+          "width": 163,
+          "height": 30
+        },
+        "confidence": 0.99976,
+        "line": "63"
+      },
+      {
+        "text": "EUR 106.02",
+        "box": {
+          "x": 637,
+          "y": 1305,
+          "width": 165,
+          "height": 30
+        },
+        "confidence": 0.99797,
+        "line": "64"
+      },
+      {
+        "text": "EUR 664.00",
+        "box": {
+          "x": 1207,
+          "y": 1305,
+          "width": 163,
+          "height": 30
+        },
+        "confidence": 0.99981,
+        "line": "65"
+      },
+      {
+        "text": "Synthetic data | Net prices | Dates YYYY-MM-DD | EUR",
+        "box": {
+          "x": 66,
+          "y": 1643,
+          "width": 550,
+          "height": 29
+        },
+        "confidence": 0.971,
+        "line": "66"
+      }
+    ],
+    "elapsed_seconds": 2.475681399999985
+  },
+  "extraction": {
+    "order": {
+      "order_date": "2026-07-23",
+      "external_reference": "SYN-2026-0023",
+      "currency": "EUR",
+      "customer": {
+        "company": "Example Office 23 GmbH",
+        "first_name": "Ada",
+        "last_name": "Weber",
+        "alias": "EXAMPLE-23",
+        "email": "orders23@example.test",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": "SRC-0023",
+        "billing": {
+          "recipient": "Example Office 23 GmbH",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "01022",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Example Warehouse 23",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment": {
+        "method": "Credit Card",
+        "status": "PAID",
+        "payment_date": "2026-07-26"
+      },
+      "items": [
+        {
+          "sku": "SKU-23-01",
+          "description": "Office Chair",
+          "quantity": "3",
+          "unit": "pcs",
+          "unit_net": "85.95",
+          "discount_percent": "5",
+          "vat_percent": "19",
+          "printed_net": "244.96"
+        },
+        {
+          "sku": "SKU-23-02",
+          "description": "Desk Mat",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "86.95",
+          "discount_percent": "10",
+          "vat_percent": "19",
+          "printed_net": "313.02"
+        }
+      ],
+      "totals": {
+        "net": "557.98",
+        "vat": "106.02",
+        "gross": "664.00"
+      },
+      "document_discount_percent": null,
+      "shipping_net": null,
+      "shipping_vat_percent": null
+    },
+    "evidence": [
+      {
+        "field": "customer.contact",
+        "raw_text": "Ada Weber",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 945,
+            "y": 402,
+            "width": 153,
+            "height": 30
+          }
+        ],
+        "confidence": 0.99991,
+        "artifact": null
+      },
+      {
+        "field": "customer.company",
+        "raw_text": "Example Office 23 GmbH",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 67,
+            "y": 291,
+            "width": 334,
+            "height": 33
+          }
+        ],
+        "confidence": 0.97576,
+        "artifact": null
+      },
+      {
+        "field": "customer.alias",
+        "raw_text": "EXAMPLE-23",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 68,
+            "y": 403,
+            "width": 181,
+            "height": 27
+          }
+        ],
+        "confidence": 0.99997,
+        "artifact": null
+      },
+      {
+        "field": "customer.email",
+        "raw_text": "orders23@example.test",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 67,
+            "y": 512,
+            "width": 317,
+            "height": 33
+          }
+        ],
+        "confidence": 0.99999,
+        "artifact": null
+      },
+      {
+        "field": "customer.telephone",
+        "raw_text": "+49 30 5550 1420",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 947,
+            "y": 511,
+            "width": 238,
+            "height": 30
+          }
+        ],
+        "confidence": 0.9709,
+        "artifact": null
+      },
+      {
+        "field": "customer.source_customer_id",
+        "raw_text": "SRC-0023",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 946,
+            "y": 292,
+            "width": 142,
+            "height": 31
+          }
+        ],
+        "confidence": 0.99996,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing",
+        "raw_text": "Example Office 23 GmbH\nFriedrichstrasse 88\n01022 Berlin\nGermany",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 946,
+            "y": 633,
+            "width": 336,
+            "height": 34
+          },
+          {
+            "x": 944,
+            "y": 670,
+            "width": 258,
+            "height": 36
+          },
+          {
+            "x": 945,
+            "y": 711,
+            "width": 170,
+            "height": 33
+          },
+          {
+            "x": 943,
+            "y": 746,
+            "width": 133,
+            "height": 42
+          }
+        ],
+        "confidence": 0.99978,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery",
+        "raw_text": "Example Warehouse 23\nBeusselstrasse 44\n10553 Berlin\nGermany",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 66,
+            "y": 633,
+            "width": 316,
+            "height": 34
+          },
+          {
+            "x": 66,
+            "y": 673,
+            "width": 244,
+            "height": 30
+          },
+          {
+            "x": 67,
+            "y": 711,
+            "width": 168,
+            "height": 33
+          },
+          {
+            "x": 64,
+            "y": 750,
+            "width": 131,
+            "height": 37
+          }
+        ],
+        "confidence": 0.98847,
+        "artifact": null
+      },
+      {
+        "field": "currency",
+        "raw_text": "EUR",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 1296,
+            "y": 180,
+            "width": 70,
+            "height": 34
+          }
+        ],
+        "confidence": 0.99992,
+        "artifact": null
+      },
+      {
+        "field": "order_date",
+        "raw_text": "2026-07-23",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 694,
+            "y": 181,
+            "width": 155,
+            "height": 31
+          }
+        ],
+        "confidence": 0.99999,
+        "artifact": null
+      },
+      {
+        "field": "external_reference",
+        "raw_text": "SYN-2026-0023",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 67,
+            "y": 181,
+            "width": 212,
+            "height": 30
+          }
+        ],
+        "confidence": 0.99998,
+        "artifact": null
+      },
+      {
+        "field": "payment.method",
+        "raw_text": "Credit Card",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 1206,
+            "y": 902,
+            "width": 155,
+            "height": 30
+          }
+        ],
+        "confidence": 0.99994,
+        "artifact": null
+      },
+      {
+        "field": "payment.status",
+        "raw_text": "PAID",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 64,
+            "y": 900,
+            "width": 77,
+            "height": 34
+          }
+        ],
+        "confidence": 0.99989,
+        "artifact": null
+      },
+      {
+        "field": "payment.payment_date",
+        "raw_text": "2026-07-26",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 637,
+            "y": 901,
+            "width": 155,
+            "height": 31
+          }
+        ],
+        "confidence": 0.99999,
+        "artifact": null
+      },
+      {
+        "field": "totals.net",
+        "raw_text": "EUR 557.98",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 67,
+            "y": 1305,
+            "width": 163,
+            "height": 30
+          }
+        ],
+        "confidence": 0.99976,
+        "artifact": null
+      },
+      {
+        "field": "totals.vat",
+        "raw_text": "EUR 106.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 637,
+            "y": 1305,
+            "width": 165,
+            "height": 30
+          }
+        ],
+        "confidence": 0.99797,
+        "artifact": null
+      },
+      {
+        "field": "totals.gross",
+        "raw_text": "EUR 664.00",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 1207,
+            "y": 1305,
+            "width": 163,
+            "height": 30
+          }
+        ],
+        "confidence": 0.99981,
+        "artifact": null
+      },
+      {
+        "field": "items.0.sku",
+        "raw_text": "SKU-23-01 Office Chair 3 pcs 85.95 5% 19% 244.96",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1091,
+            "width": 135,
+            "height": 31
+          },
+          {
+            "x": 299,
+            "y": 1091,
+            "width": 145,
+            "height": 31
+          },
+          {
+            "x": 914,
+            "y": 1092,
+            "width": 25,
+            "height": 30
+          },
+          {
+            "x": 1044,
+            "y": 1094,
+            "width": 53,
+            "height": 34
+          },
+          {
+            "x": 1163,
+            "y": 1089,
+            "width": 77,
+            "height": 34
+          },
+          {
+            "x": 1367,
+            "y": 1087,
+            "width": 52,
+            "height": 39
+          },
+          {
+            "x": 1506,
+            "y": 1090,
+            "width": 60,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1091,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99944,
+        "artifact": null
+      },
+      {
+        "field": "items.0.description",
+        "raw_text": "SKU-23-01 Office Chair 3 pcs 85.95 5% 19% 244.96",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1091,
+            "width": 135,
+            "height": 31
+          },
+          {
+            "x": 299,
+            "y": 1091,
+            "width": 145,
+            "height": 31
+          },
+          {
+            "x": 914,
+            "y": 1092,
+            "width": 25,
+            "height": 30
+          },
+          {
+            "x": 1044,
+            "y": 1094,
+            "width": 53,
+            "height": 34
+          },
+          {
+            "x": 1163,
+            "y": 1089,
+            "width": 77,
+            "height": 34
+          },
+          {
+            "x": 1367,
+            "y": 1087,
+            "width": 52,
+            "height": 39
+          },
+          {
+            "x": 1506,
+            "y": 1090,
+            "width": 60,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1091,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99944,
+        "artifact": null
+      },
+      {
+        "field": "items.0.quantity",
+        "raw_text": "SKU-23-01 Office Chair 3 pcs 85.95 5% 19% 244.96",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1091,
+            "width": 135,
+            "height": 31
+          },
+          {
+            "x": 299,
+            "y": 1091,
+            "width": 145,
+            "height": 31
+          },
+          {
+            "x": 914,
+            "y": 1092,
+            "width": 25,
+            "height": 30
+          },
+          {
+            "x": 1044,
+            "y": 1094,
+            "width": 53,
+            "height": 34
+          },
+          {
+            "x": 1163,
+            "y": 1089,
+            "width": 77,
+            "height": 34
+          },
+          {
+            "x": 1367,
+            "y": 1087,
+            "width": 52,
+            "height": 39
+          },
+          {
+            "x": 1506,
+            "y": 1090,
+            "width": 60,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1091,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99944,
+        "artifact": null
+      },
+      {
+        "field": "items.0.unit",
+        "raw_text": "SKU-23-01 Office Chair 3 pcs 85.95 5% 19% 244.96",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1091,
+            "width": 135,
+            "height": 31
+          },
+          {
+            "x": 299,
+            "y": 1091,
+            "width": 145,
+            "height": 31
+          },
+          {
+            "x": 914,
+            "y": 1092,
+            "width": 25,
+            "height": 30
+          },
+          {
+            "x": 1044,
+            "y": 1094,
+            "width": 53,
+            "height": 34
+          },
+          {
+            "x": 1163,
+            "y": 1089,
+            "width": 77,
+            "height": 34
+          },
+          {
+            "x": 1367,
+            "y": 1087,
+            "width": 52,
+            "height": 39
+          },
+          {
+            "x": 1506,
+            "y": 1090,
+            "width": 60,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1091,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99944,
+        "artifact": null
+      },
+      {
+        "field": "items.0.unit_net",
+        "raw_text": "SKU-23-01 Office Chair 3 pcs 85.95 5% 19% 244.96",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1091,
+            "width": 135,
+            "height": 31
+          },
+          {
+            "x": 299,
+            "y": 1091,
+            "width": 145,
+            "height": 31
+          },
+          {
+            "x": 914,
+            "y": 1092,
+            "width": 25,
+            "height": 30
+          },
+          {
+            "x": 1044,
+            "y": 1094,
+            "width": 53,
+            "height": 34
+          },
+          {
+            "x": 1163,
+            "y": 1089,
+            "width": 77,
+            "height": 34
+          },
+          {
+            "x": 1367,
+            "y": 1087,
+            "width": 52,
+            "height": 39
+          },
+          {
+            "x": 1506,
+            "y": 1090,
+            "width": 60,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1091,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99944,
+        "artifact": null
+      },
+      {
+        "field": "items.0.discount_percent",
+        "raw_text": "SKU-23-01 Office Chair 3 pcs 85.95 5% 19% 244.96",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1091,
+            "width": 135,
+            "height": 31
+          },
+          {
+            "x": 299,
+            "y": 1091,
+            "width": 145,
+            "height": 31
+          },
+          {
+            "x": 914,
+            "y": 1092,
+            "width": 25,
+            "height": 30
+          },
+          {
+            "x": 1044,
+            "y": 1094,
+            "width": 53,
+            "height": 34
+          },
+          {
+            "x": 1163,
+            "y": 1089,
+            "width": 77,
+            "height": 34
+          },
+          {
+            "x": 1367,
+            "y": 1087,
+            "width": 52,
+            "height": 39
+          },
+          {
+            "x": 1506,
+            "y": 1090,
+            "width": 60,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1091,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99944,
+        "artifact": null
+      },
+      {
+        "field": "items.0.vat_percent",
+        "raw_text": "SKU-23-01 Office Chair 3 pcs 85.95 5% 19% 244.96",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1091,
+            "width": 135,
+            "height": 31
+          },
+          {
+            "x": 299,
+            "y": 1091,
+            "width": 145,
+            "height": 31
+          },
+          {
+            "x": 914,
+            "y": 1092,
+            "width": 25,
+            "height": 30
+          },
+          {
+            "x": 1044,
+            "y": 1094,
+            "width": 53,
+            "height": 34
+          },
+          {
+            "x": 1163,
+            "y": 1089,
+            "width": 77,
+            "height": 34
+          },
+          {
+            "x": 1367,
+            "y": 1087,
+            "width": 52,
+            "height": 39
+          },
+          {
+            "x": 1506,
+            "y": 1090,
+            "width": 60,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1091,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99944,
+        "artifact": null
+      },
+      {
+        "field": "items.0.printed_net",
+        "raw_text": "SKU-23-01 Office Chair 3 pcs 85.95 5% 19% 244.96",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1091,
+            "width": 135,
+            "height": 31
+          },
+          {
+            "x": 299,
+            "y": 1091,
+            "width": 145,
+            "height": 31
+          },
+          {
+            "x": 914,
+            "y": 1092,
+            "width": 25,
+            "height": 30
+          },
+          {
+            "x": 1044,
+            "y": 1094,
+            "width": 53,
+            "height": 34
+          },
+          {
+            "x": 1163,
+            "y": 1089,
+            "width": 77,
+            "height": 34
+          },
+          {
+            "x": 1367,
+            "y": 1087,
+            "width": 52,
+            "height": 39
+          },
+          {
+            "x": 1506,
+            "y": 1090,
+            "width": 60,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1091,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99944,
+        "artifact": null
+      },
+      {
+        "field": "items.1.sku",
+        "raw_text": "SKU-23-02 Desk Mat 4 pcs 86.95 10% 19% 313.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1161,
+            "width": 136,
+            "height": 30
+          },
+          {
+            "x": 300,
+            "y": 1162,
+            "width": 120,
+            "height": 31
+          },
+          {
+            "x": 917,
+            "y": 1165,
+            "width": 20,
+            "height": 25
+          },
+          {
+            "x": 1042,
+            "y": 1161,
+            "width": 54,
+            "height": 37
+          },
+          {
+            "x": 1163,
+            "y": 1160,
+            "width": 76,
+            "height": 32
+          },
+          {
+            "x": 1370,
+            "y": 1159,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1506,
+            "y": 1160,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1161,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99971,
+        "artifact": null
+      },
+      {
+        "field": "items.1.description",
+        "raw_text": "SKU-23-02 Desk Mat 4 pcs 86.95 10% 19% 313.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1161,
+            "width": 136,
+            "height": 30
+          },
+          {
+            "x": 300,
+            "y": 1162,
+            "width": 120,
+            "height": 31
+          },
+          {
+            "x": 917,
+            "y": 1165,
+            "width": 20,
+            "height": 25
+          },
+          {
+            "x": 1042,
+            "y": 1161,
+            "width": 54,
+            "height": 37
+          },
+          {
+            "x": 1163,
+            "y": 1160,
+            "width": 76,
+            "height": 32
+          },
+          {
+            "x": 1370,
+            "y": 1159,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1506,
+            "y": 1160,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1161,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99971,
+        "artifact": null
+      },
+      {
+        "field": "items.1.quantity",
+        "raw_text": "SKU-23-02 Desk Mat 4 pcs 86.95 10% 19% 313.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1161,
+            "width": 136,
+            "height": 30
+          },
+          {
+            "x": 300,
+            "y": 1162,
+            "width": 120,
+            "height": 31
+          },
+          {
+            "x": 917,
+            "y": 1165,
+            "width": 20,
+            "height": 25
+          },
+          {
+            "x": 1042,
+            "y": 1161,
+            "width": 54,
+            "height": 37
+          },
+          {
+            "x": 1163,
+            "y": 1160,
+            "width": 76,
+            "height": 32
+          },
+          {
+            "x": 1370,
+            "y": 1159,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1506,
+            "y": 1160,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1161,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99971,
+        "artifact": null
+      },
+      {
+        "field": "items.1.unit",
+        "raw_text": "SKU-23-02 Desk Mat 4 pcs 86.95 10% 19% 313.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1161,
+            "width": 136,
+            "height": 30
+          },
+          {
+            "x": 300,
+            "y": 1162,
+            "width": 120,
+            "height": 31
+          },
+          {
+            "x": 917,
+            "y": 1165,
+            "width": 20,
+            "height": 25
+          },
+          {
+            "x": 1042,
+            "y": 1161,
+            "width": 54,
+            "height": 37
+          },
+          {
+            "x": 1163,
+            "y": 1160,
+            "width": 76,
+            "height": 32
+          },
+          {
+            "x": 1370,
+            "y": 1159,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1506,
+            "y": 1160,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1161,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99971,
+        "artifact": null
+      },
+      {
+        "field": "items.1.unit_net",
+        "raw_text": "SKU-23-02 Desk Mat 4 pcs 86.95 10% 19% 313.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1161,
+            "width": 136,
+            "height": 30
+          },
+          {
+            "x": 300,
+            "y": 1162,
+            "width": 120,
+            "height": 31
+          },
+          {
+            "x": 917,
+            "y": 1165,
+            "width": 20,
+            "height": 25
+          },
+          {
+            "x": 1042,
+            "y": 1161,
+            "width": 54,
+            "height": 37
+          },
+          {
+            "x": 1163,
+            "y": 1160,
+            "width": 76,
+            "height": 32
+          },
+          {
+            "x": 1370,
+            "y": 1159,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1506,
+            "y": 1160,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1161,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99971,
+        "artifact": null
+      },
+      {
+        "field": "items.1.discount_percent",
+        "raw_text": "SKU-23-02 Desk Mat 4 pcs 86.95 10% 19% 313.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1161,
+            "width": 136,
+            "height": 30
+          },
+          {
+            "x": 300,
+            "y": 1162,
+            "width": 120,
+            "height": 31
+          },
+          {
+            "x": 917,
+            "y": 1165,
+            "width": 20,
+            "height": 25
+          },
+          {
+            "x": 1042,
+            "y": 1161,
+            "width": 54,
+            "height": 37
+          },
+          {
+            "x": 1163,
+            "y": 1160,
+            "width": 76,
+            "height": 32
+          },
+          {
+            "x": 1370,
+            "y": 1159,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1506,
+            "y": 1160,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1161,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99971,
+        "artifact": null
+      },
+      {
+        "field": "items.1.vat_percent",
+        "raw_text": "SKU-23-02 Desk Mat 4 pcs 86.95 10% 19% 313.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1161,
+            "width": 136,
+            "height": 30
+          },
+          {
+            "x": 300,
+            "y": 1162,
+            "width": 120,
+            "height": 31
+          },
+          {
+            "x": 917,
+            "y": 1165,
+            "width": 20,
+            "height": 25
+          },
+          {
+            "x": 1042,
+            "y": 1161,
+            "width": 54,
+            "height": 37
+          },
+          {
+            "x": 1163,
+            "y": 1160,
+            "width": 76,
+            "height": 32
+          },
+          {
+            "x": 1370,
+            "y": 1159,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1506,
+            "y": 1160,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1161,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99971,
+        "artifact": null
+      },
+      {
+        "field": "items.1.printed_net",
+        "raw_text": "SKU-23-02 Desk Mat 4 pcs 86.95 10% 19% 313.02",
+        "engine": "rapidocr",
+        "boxes": [
+          {
+            "x": 65,
+            "y": 1161,
+            "width": 136,
+            "height": 30
+          },
+          {
+            "x": 300,
+            "y": 1162,
+            "width": 120,
+            "height": 31
+          },
+          {
+            "x": 917,
+            "y": 1165,
+            "width": 20,
+            "height": 25
+          },
+          {
+            "x": 1042,
+            "y": 1161,
+            "width": 54,
+            "height": 37
+          },
+          {
+            "x": 1163,
+            "y": 1160,
+            "width": 76,
+            "height": 32
+          },
+          {
+            "x": 1370,
+            "y": 1159,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1506,
+            "y": 1160,
+            "width": 61,
+            "height": 34
+          },
+          {
+            "x": 1624,
+            "y": 1161,
+            "width": 89,
+            "height": 32
+          }
+        ],
+        "confidence": 0.99971,
+        "artifact": null
+      }
+    ],
+    "issues": []
+  }
+}

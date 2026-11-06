@@ -1,0 +1,1687 @@
+{
+  "mode": "real HTTP API, separate worker, live vision and real Fakturama",
+  "official_sample": false,
+  "series": "R1",
+  "status": "SUCCEEDED",
+  "complete_workflow_verified": true,
+  "provider_retries": 4,
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "99e0c8a21238221119da0c58ad1c5b21ecc54f1430e95eb1f23df6bdbc4ae437"
+  },
+  "job_id": "40464571-89c0-4e9c-810e-6da2ac1983bd",
+  "submission_http_status": 202,
+  "duplicate_submission_verified": true,
+  "idempotency_conflict_http_status": 409,
+  "report_http_status": 200,
+  "worker_exit_code": 0,
+  "worker_seconds": 1017.117808199997,
+  "operator_review_revisions": 4,
+  "receipt": {
+    "job_id": "40464571-89c0-4e9c-810e-6da2ac1983bd",
+    "workspace": "integration",
+    "mode": "live",
+    "order_number": "PO000033",
+    "invoice_number": "INV000033",
+    "debtor_number": "CUST000001",
+    "order_date": "2026-07-14",
+    "invoice_date": "2026-11-05",
+    "invoice_service_date": "2026-11-05",
+    "source_order_state": "open",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000033",
+      "invoice_number": "INV000033",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000033",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "API-WIN-2026-A17-R1",
+          "state": "COMMAND_CHECKED",
+          "total": "678.3",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000033",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "API-WIN-2026-A17-R1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "678.3",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000033",
+        "invoice_number": "INV000033"
+      }
+    },
+    "external_reference": "API-WIN-2026-A17-R1",
+    "currency": "EUR",
+    "extraction_provenance": {
+      "attempts": [
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash-lite",
+          "response_id": "Pavsap3XCNS_vdIP3Iqk8A8",
+          "usage": {
+            "promptTokenCount": 1328,
+            "candidatesTokenCount": 2407,
+            "totalTokenCount": 3735,
+            "promptTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1088
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 240
+              }
+            ],
+            "serviceTier": "standard"
+          },
+          "elapsed_seconds": 69.79866069999116,
+          "prompt_version": "literal-independent-v1",
+          "schema_version": "order-v1",
+          "field_path_normalizations": [
+            {
+              "original": "order.order_date",
+              "canonical": "order_date"
+            },
+            {
+              "original": "order.external_reference",
+              "canonical": "external_reference"
+            },
+            {
+              "original": "order.currency",
+              "canonical": "currency"
+            },
+            {
+              "original": "order.customer.company",
+              "canonical": "customer.company"
+            },
+            {
+              "original": "order.customer.first_name",
+              "canonical": "customer.first_name"
+            },
+            {
+              "original": "order.customer.last_name",
+              "canonical": "customer.last_name"
+            },
+            {
+              "original": "order.customer.alias",
+              "canonical": "customer.alias"
+            },
+            {
+              "original": "order.customer.email",
+              "canonical": "customer.email"
+            },
+            {
+              "original": "order.customer.telephone",
+              "canonical": "customer.telephone"
+            },
+            {
+              "original": "order.customer.source_customer_id",
+              "canonical": "customer.source_customer_id"
+            },
+            {
+              "original": "order.customer.billing.recipient",
+              "canonical": "customer.billing.recipient"
+            },
+            {
+              "original": "order.customer.billing.street",
+              "canonical": "customer.billing.street"
+            },
+            {
+              "original": "order.customer.billing.postcode",
+              "canonical": "customer.billing.postcode"
+            },
+            {
+              "original": "order.customer.billing.city",
+              "canonical": "customer.billing.city"
+            },
+            {
+              "original": "order.customer.billing.country",
+              "canonical": "customer.billing.country"
+            },
+            {
+              "original": "order.customer.delivery.recipient",
+              "canonical": "customer.delivery.recipient"
+            },
+            {
+              "original": "order.customer.delivery.street",
+              "canonical": "customer.delivery.street"
+            },
+            {
+              "original": "order.customer.delivery.postcode",
+              "canonical": "customer.delivery.postcode"
+            },
+            {
+              "original": "order.customer.delivery.city",
+              "canonical": "customer.delivery.city"
+            },
+            {
+              "original": "order.customer.delivery.country",
+              "canonical": "customer.delivery.country"
+            },
+            {
+              "original": "order.payment.method",
+              "canonical": "payment.method"
+            },
+            {
+              "original": "order.payment.status",
+              "canonical": "payment.status"
+            },
+            {
+              "original": "order.payment.payment_date",
+              "canonical": "payment.payment_date"
+            },
+            {
+              "original": "order.items.0.sku",
+              "canonical": "items.0.sku"
+            },
+            {
+              "original": "order.items.0.description",
+              "canonical": "items.0.description"
+            },
+            {
+              "original": "order.items.0.quantity",
+              "canonical": "items.0.quantity"
+            },
+            {
+              "original": "order.items.0.unit",
+              "canonical": "items.0.unit"
+            },
+            {
+              "original": "order.items.0.unit_net",
+              "canonical": "items.0.unit_net"
+            },
+            {
+              "original": "order.items.0.discount_percent",
+              "canonical": "items.0.discount_percent"
+            },
+            {
+              "original": "order.items.0.vat_percent",
+              "canonical": "items.0.vat_percent"
+            },
+            {
+              "original": "order.items.0.printed_net",
+              "canonical": "items.0.printed_net"
+            },
+            {
+              "original": "order.items.1.sku",
+              "canonical": "items.1.sku"
+            },
+            {
+              "original": "order.items.1.description",
+              "canonical": "items.1.description"
+            },
+            {
+              "original": "order.items.1.quantity",
+              "canonical": "items.1.quantity"
+            },
+            {
+              "original": "order.items.1.unit",
+              "canonical": "items.1.unit"
+            },
+            {
+              "original": "order.items.1.unit_net",
+              "canonical": "items.1.unit_net"
+            },
+            {
+              "original": "order.items.1.discount_percent",
+              "canonical": "items.1.discount_percent"
+            },
+            {
+              "original": "order.items.1.vat_percent",
+              "canonical": "items.1.vat_percent"
+            },
+            {
+              "original": "order.items.1.printed_net",
+              "canonical": "items.1.printed_net"
+            },
+            {
+              "original": "order.totals.net",
+              "canonical": "totals.net"
+            },
+            {
+              "original": "order.totals.vat",
+              "canonical": "totals.vat"
+            },
+            {
+              "original": "order.totals.gross",
+              "canonical": "totals.gross"
+            }
+          ],
+          "transport_attempt_count": 3,
+          "transport_attempts": [
+            {
+              "attempt": 1,
+              "http_status": 503,
+              "seconds": 25.604076900010114
+            },
+            {
+              "attempt": 2,
+              "http_status": 503,
+              "seconds": 18.14742130000377
+            },
+            {
+              "attempt": 3,
+              "http_status": 200,
+              "seconds": 21.68979629999376
+            }
+          ]
+        }
+      ],
+      "source_revision": 4,
+      "desktop_adapter": "live"
+    },
+    "totals": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "678.30",
+    "verified_at": "2026-11-05T16:19:17.028429Z",
+    "evidence": [
+      "final-verification.png"
+    ],
+    "warnings": [],
+    "source_field_agreement": true,
+    "build": {
+      "package_version": "0.1.0",
+      "source_sha256": "99e0c8a21238221119da0c58ad1c5b21ecc54f1430e95eb1f23df6bdbc4ae437"
+    }
+  },
+  "health_before": {
+    "service": "ready",
+    "desktop": {
+      "platform": "Windows",
+      "interactive_desktop": true,
+      "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+      "api_key_configured": false,
+      "gemini_key_configured": true,
+      "fakturama_windows": [
+        {
+          "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+          "pid": 26376
+        }
+      ]
+    },
+    "workers": [
+      {
+        "pid": 10896,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T13:22:10.311617+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 14088,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T13:29:28.008616+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 28260,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T08:34:59.188748+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 7504,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T13:19:55.711010+00:00",
+        "fresh": false
+      }
+    ],
+    "desktop_worker_ready": false,
+    "workspaces": []
+  },
+  "health_during": [
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:02:21.306964+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": true,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:05:19.676050+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": true,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:08:24.107652+00:00",
+            "fresh": true
+          }
+        ],
+        "desktop_worker_ready": true,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:10:46.327516+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": true,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:10:59.199091+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "RECEIVED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 5096,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:13:00.539593+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:10:59.199091+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": true,
+        "workspaces": []
+      }
+    },
+    {
+      "stage": "VALIDATED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 5096,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:14:11.238449+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:10:59.199091+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": [
+          {
+            "workspace": "integration",
+            "job_id": "40464571-89c0-4e9c-810e-6da2ac1983bd",
+            "quarantined": false,
+            "heartbeat": "2026-11-05T16:14:11.111084",
+            "stale": false
+          }
+        ]
+      }
+    },
+    {
+      "stage": "ORDER_OPEN",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 5096,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:14:47.480985+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:10:59.199091+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": [
+          {
+            "workspace": "integration",
+            "job_id": "40464571-89c0-4e9c-810e-6da2ac1983bd",
+            "quarantined": false,
+            "heartbeat": "2026-11-05T16:14:41.185896",
+            "stale": false
+          }
+        ]
+      }
+    },
+    {
+      "stage": "DEBTOR_READY",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 5096,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:15:35.945839+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:10:59.199091+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": [
+          {
+            "workspace": "integration",
+            "job_id": "40464571-89c0-4e9c-810e-6da2ac1983bd",
+            "quarantined": false,
+            "heartbeat": "2026-11-05T16:15:31.342773",
+            "stale": false
+          }
+        ]
+      }
+    },
+    {
+      "stage": "ITEMS_READY",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 5096,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:16:36.608542+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:10:59.199091+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": [
+          {
+            "workspace": "integration",
+            "job_id": "40464571-89c0-4e9c-810e-6da2ac1983bd",
+            "quarantined": false,
+            "heartbeat": "2026-11-05T16:16:31.486275",
+            "stale": false
+          }
+        ]
+      }
+    },
+    {
+      "stage": "ORDER_SAVED_VERIFIED",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 5096,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:17:14.966264+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:10:59.199091+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": [
+          {
+            "workspace": "integration",
+            "job_id": "40464571-89c0-4e9c-810e-6da2ac1983bd",
+            "quarantined": false,
+            "heartbeat": "2026-11-05T16:17:11.585819",
+            "stale": false
+          }
+        ]
+      }
+    },
+    {
+      "stage": "INVOICE_OPEN",
+      "health": {
+        "service": "ready",
+        "desktop": {
+          "platform": "Windows",
+          "interactive_desktop": true,
+          "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+          "api_key_configured": false,
+          "gemini_key_configured": true,
+          "fakturama_windows": [
+            {
+              "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+              "pid": 26376
+            }
+          ]
+        },
+        "workers": [
+          {
+            "pid": 10896,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:22:10.311617+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 14088,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:29:28.008616+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 1820,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:03:17.517027+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 21852,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:06:21.773860+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 28260,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T08:34:59.188748+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 5096,
+            "role": "all",
+            "state": "running",
+            "last_seen": "2026-11-05T16:17:39.193852+00:00",
+            "fresh": true
+          },
+          {
+            "pid": 6008,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:10:59.199091+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7504,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T13:19:55.711010+00:00",
+            "fresh": false
+          },
+          {
+            "pid": 7984,
+            "role": "all",
+            "state": "stopped",
+            "last_seen": "2026-11-05T16:08:44.443678+00:00",
+            "fresh": false
+          }
+        ],
+        "desktop_worker_ready": false,
+        "workspaces": [
+          {
+            "workspace": "integration",
+            "job_id": "40464571-89c0-4e9c-810e-6da2ac1983bd",
+            "quarantined": false,
+            "heartbeat": "2026-11-05T16:17:31.618042",
+            "stale": false
+          }
+        ]
+      }
+    }
+  ],
+  "health_after": {
+    "service": "ready",
+    "desktop": {
+      "platform": "Windows",
+      "interactive_desktop": true,
+      "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+      "api_key_configured": false,
+      "gemini_key_configured": true,
+      "fakturama_windows": [
+        {
+          "title": "Fakturama - C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration\\data",
+          "pid": 26376
+        }
+      ]
+    },
+    "workers": [
+      {
+        "pid": 10896,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T13:22:10.311617+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 14088,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T13:29:28.008616+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 1820,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T16:03:17.517027+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 21852,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T16:06:21.773860+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 28260,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T08:34:59.188748+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 5096,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T16:19:17.123566+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 6008,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T16:10:59.199091+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 7504,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T13:19:55.711010+00:00",
+        "fresh": false
+      },
+      {
+        "pid": 7984,
+        "role": "all",
+        "state": "stopped",
+        "last_seen": "2026-11-05T16:08:44.443678+00:00",
+        "fresh": false
+      }
+    ],
+    "desktop_worker_ready": false,
+    "workspaces": []
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 93,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.989586"
+  },
+  {
+    "id": 94,
+    "stage": "EXTRACTED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:49.367637"
+  }
+]

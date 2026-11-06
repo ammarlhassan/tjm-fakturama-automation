@@ -1,0 +1,13 @@
+{
+  "findings": [
+    {
+      "code": "MISSING_FIELD",
+      "field": "items.0.sku",
+      "message": "Every source row must be complete",
+      "expected": null,
+      "observed": null
+    }
+  ],
+  "computed": null,
+  "profile": "eur-net-vat-group-half-up-v1"
+}

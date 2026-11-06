@@ -1,0 +1,18 @@
+{
+  "provider": "gemini:gemini-3.5-flash-lite",
+  "scope": "Jobs created on 2026-11-05 from 12:00 local time, read from the local journals",
+  "http_statuses": {
+    "200": 9,
+    "503": 174
+  },
+  "requests_recorded": 183,
+  "share_http_503": 0.951,
+  "extraction_rounds_stopped_by_the_provider_then_retried": 51,
+  "jobs_that_recovered_after_a_retry": 8,
+  "jobs_left_stopped_on_the_provider": 4,
+  "first_and_last_retry_utc": [
+    "2026-11-05 10:25:17.285381",
+    "2026-11-05 17:47:02.632786"
+  ],
+  "note": "A stopped job makes no desktop change. Counts cover recorded transport attempts only."
+}

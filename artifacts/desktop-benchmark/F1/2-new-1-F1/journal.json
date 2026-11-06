@@ -1,0 +1,648 @@
+[
+  {
+    "id": 1018,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:01:48.964842"
+  },
+  {
+    "id": 1019,
+    "stage": "VALIDATED",
+    "action": "benchmark_expected_source",
+    "status": "observed",
+    "data": {
+      "fixture": "C:\\Users\\ammar\\OneDrive\\Desktop\\TJM\\artifacts\\desktop-benchmark\\F1\\2-new-1-F1\\expected.json",
+      "live_extraction": false
+    },
+    "timestamp": "2026-11-05T12:01:48.976297"
+  },
+  {
+    "id": 1020,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T12:01:49.293067"
+  },
+  {
+    "id": 1021,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Northstar Office GmbH, Marta Klein",
+        "INV000015",
+        "PO000015"
+      ],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T12:02:00.587767"
+  },
+  {
+    "id": 1022,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T12:02:07.752856"
+  },
+  {
+    "id": 1023,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000016",
+      "kind": "Order",
+      "external_reference": "BENCH-2-NEW-1-F1",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T12:02:19.681490"
+  },
+  {
+    "id": 1024,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000016"
+    },
+    "timestamp": "2026-11-05T12:02:19.697300"
+  },
+  {
+    "id": 1025,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T12:02:23.423305"
+  },
+  {
+    "id": 1026,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:02:53.188460"
+  },
+  {
+    "id": 1027,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T12:02:58.884440"
+  },
+  {
+    "id": 1028,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "observed",
+    "data": {
+      "id": "CUST000004",
+      "customer": {
+        "company": "Benchmark Office 2-new-1-F1",
+        "first_name": "Marta",
+        "last_name": "Klein",
+        "alias": "BENCH-2-new-1-F1",
+        "email": "benchmark@example.com",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": null,
+        "billing": {
+          "recipient": "Benchmark Office 2-new-1-F1",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Benchmark Warehouse 2-new-1-F1",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment_method": "Bank Transfer"
+    },
+    "timestamp": "2026-11-05T12:03:54.327410"
+  },
+  {
+    "id": 1029,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000004"
+    },
+    "timestamp": "2026-11-05T12:04:00.160509"
+  },
+  {
+    "id": 1030,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:04:15.782532"
+  },
+  {
+    "id": 1031,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:04:15.799010"
+  },
+  {
+    "id": 1032,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-NEW-1-F1-0"
+    },
+    "timestamp": "2026-11-05T12:04:33.330685"
+  },
+  {
+    "id": 1033,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "B-2-NEW-1-F1-0",
+      "sku": "B-2-NEW-1-F1-0",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T12:04:46.182286"
+  },
+  {
+    "id": 1034,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-NEW-1-F1-0"
+    },
+    "timestamp": "2026-11-05T12:04:51.316607"
+  },
+  {
+    "id": 1035,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:04:57.089152"
+  },
+  {
+    "id": 1036,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-NEW-1-F1-0"
+    },
+    "timestamp": "2026-11-05T12:04:57.105642"
+  },
+  {
+    "id": 1037,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:05:04.197100"
+  },
+  {
+    "id": 1038,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-NEW-1-F1-1"
+    },
+    "timestamp": "2026-11-05T12:05:13.360941"
+  },
+  {
+    "id": 1039,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "B-2-NEW-1-F1-1",
+      "sku": "B-2-NEW-1-F1-1",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T12:05:25.551313"
+  },
+  {
+    "id": 1040,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-NEW-1-F1-1"
+    },
+    "timestamp": "2026-11-05T12:05:30.231351"
+  },
+  {
+    "id": 1041,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:05:36.373127"
+  },
+  {
+    "id": 1042,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "B-2-NEW-1-F1-1"
+    },
+    "timestamp": "2026-11-05T12:05:36.392906"
+  },
+  {
+    "id": 1043,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:05:52.776625"
+  },
+  {
+    "id": 1044,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:05:52.813788"
+  },
+  {
+    "id": 1045,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000016"
+    },
+    "timestamp": "2026-11-05T12:06:00.748365"
+  },
+  {
+    "id": 1046,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:06:03.616079"
+  },
+  {
+    "id": 1047,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000016"
+    },
+    "timestamp": "2026-11-05T12:06:29.720971"
+  },
+  {
+    "id": 1048,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000016",
+        "kind": "Order",
+        "external_reference": "BENCH-2-NEW-1-F1",
+        "currency": "EUR",
+        "displayed_item_subtotal": "14.80",
+        "net_is_derived": false,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Benchmark Office 2-new-1-F1",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "BENCH-2-new-1-F1",
+          "email": "benchmark@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Benchmark Office 2-new-1-F1",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Benchmark Warehouse 2-new-1-F1",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "B-2-NEW-1-F1-0",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "10",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "10"
+          },
+          {
+            "sku": "B-2-NEW-1-F1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "10.1",
+            "discount_percent": "5.00",
+            "vat_percent": "19.00",
+            "printed_net": "4.8"
+          }
+        ],
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true,
+        "documents_row": {
+          "column0": "ICON_ORDER",
+          "document": "PO000016",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Benchmark Office 2-new-1-F1",
+          "custref": "BENCH-2-NEW-1-F1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "17.61",
+          "printed": "null"
+        }
+      }
+    },
+    "timestamp": "2026-11-05T12:06:29.720971"
+  },
+  {
+    "id": 1049,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000016"
+    },
+    "timestamp": "2026-11-05T12:06:35.352581"
+  },
+  {
+    "id": 1050,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000016",
+      "kind": "Invoice",
+      "external_reference": "BENCH-2-NEW-1-F1",
+      "currency": null,
+      "displayed_item_subtotal": "14.80",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "14.80",
+        "vat": "2.81",
+        "gross": "17.61"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000016",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000016",
+        "invoice_number": "INV000016",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [],
+      "state": "open",
+      "payment_method": "Bank Transfer",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T12:06:57.001054"
+  },
+  {
+    "id": 1051,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000016",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T12:06:57.009360"
+  },
+  {
+    "id": 1052,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T12:06:57.009360"
+  },
+  {
+    "id": 1053,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:07:04.576114"
+  },
+  {
+    "id": 1054,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000016"
+    },
+    "timestamp": "2026-11-05T12:07:21.793964"
+  },
+  {
+    "id": 1055,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:07:23.509578"
+  },
+  {
+    "id": 1056,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000016",
+      "invoice_number": "INV000016",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000016",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Benchmark Office 2-new-1-F1",
+          "custref": "BENCH-2-NEW-1-F1",
+          "state": "COMMAND_CHECKED",
+          "total": "17.61",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000016",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Benchmark Office 2-new-1-F1",
+          "custref": "BENCH-2-NEW-1-F1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "17.61",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T12:08:33.960584"
+  },
+  {
+    "id": 1057,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000016"
+    },
+    "timestamp": "2026-11-05T12:08:33.994411"
+  },
+  {
+    "id": 1058,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T12:08:34.087633"
+  }
+]

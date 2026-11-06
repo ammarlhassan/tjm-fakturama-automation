@@ -1,0 +1,72 @@
+{
+  "job_id": "63d579c4-cfff-4dfe-a14f-32c537fe50bd",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "order_number": "PO000039",
+  "invoice_number": "INV000039",
+  "debtor_number": "CUST000010",
+  "order_date": "2026-07-14",
+  "invoice_date": "2026-11-05",
+  "invoice_service_date": "2026-11-05",
+  "source_order_state": "open",
+  "relationship_evidence": {
+    "mechanism": "saved_fakturama_transaction_group",
+    "scope": "This transaction",
+    "search": "",
+    "order_number": "PO000039",
+    "invoice_number": "INV000039",
+    "observed_documents": [
+      {
+        "column0": "ICON_INVOICE",
+        "document": "INV000039",
+        "date": "Thu Nov 05 00:00:00 EET 2026",
+        "name": "Benchmark Office 10-new-1-R1",
+        "custref": "BENCH-10-NEW-1-R1",
+        "state": "COMMAND_CHECKED",
+        "total": "185.4",
+        "printed": "null"
+      },
+      {
+        "column0": "ICON_ORDER",
+        "document": "PO000039",
+        "date": "Tue Jul 14 00:00:00 EEST 2026",
+        "name": "Benchmark Office 10-new-1-R1",
+        "custref": "BENCH-10-NEW-1-R1",
+        "state": "COMMAND_ORDER_PENDING",
+        "total": "185.4",
+        "printed": "null"
+      }
+    ],
+    "follow_up_observation": {
+      "mechanism": "observed_fakturama_follow_up_action",
+      "order_number": "PO000039",
+      "invoice_number": "INV000039"
+    }
+  },
+  "external_reference": "BENCH-10-NEW-1-R1",
+  "currency": "EUR",
+  "extraction_provenance": {
+    "attempts": [],
+    "source_revision": 0,
+    "desktop_adapter": "live"
+  },
+  "totals": {
+    "net": "155.80",
+    "vat": "29.60",
+    "gross": "185.40"
+  },
+  "payment_method": "Bank Transfer",
+  "paid": true,
+  "payment_date": "2026-07-18",
+  "payment_value": "185.40",
+  "verified_at": "2026-11-05T17:18:01.580544Z",
+  "evidence": [
+    "final-verification.png"
+  ],
+  "warnings": [],
+  "source_field_agreement": true,
+  "build": {
+    "package_version": "0.1.0",
+    "source_sha256": "99e0c8a21238221119da0c58ad1c5b21ecc54f1430e95eb1f23df6bdbc4ae437"
+  }
+}

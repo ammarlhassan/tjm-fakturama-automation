@@ -1,0 +1,145 @@
+{
+  "order_date": "2026-07-14",
+  "external_reference": "BENCH-10-NEW-1-R1",
+  "currency": "EUR",
+  "customer": {
+    "company": "Benchmark Office 10-new-1-R1",
+    "first_name": "Marta",
+    "last_name": "Klein",
+    "alias": "BENCH-10-new-1-R1",
+    "email": "benchmark@example.com",
+    "telephone": "+49 30 5550 1420",
+    "source_customer_id": "CUST-1007",
+    "billing": {
+      "recipient": "Benchmark Office 10-new-1-R1",
+      "additional_name": null,
+      "street": "Friedrichstrasse 88",
+      "postcode": "10117",
+      "city": "Berlin",
+      "country": "Germany"
+    },
+    "delivery": {
+      "recipient": "Benchmark Warehouse 10-new-1-R1",
+      "additional_name": null,
+      "street": "Beusselstrasse 44",
+      "postcode": "10553",
+      "city": "Berlin",
+      "country": "Germany"
+    }
+  },
+  "payment": {
+    "method": "Bank Transfer",
+    "status": "PAID",
+    "payment_date": "2026-07-18"
+  },
+  "items": [
+    {
+      "sku": "B-10-NEW-1-R1-0",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "10",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "10.00"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-1",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "11",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "4.40"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-0",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "12",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "21.60"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-1",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "13",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "13.00"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-0",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "14",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "5.60"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-1",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "15",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "27.00"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-0",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "16",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "16.00"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-1",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "0.5",
+      "unit": "pcs",
+      "unit_net": "17",
+      "discount_percent": "20",
+      "vat_percent": "19",
+      "printed_net": "6.80"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-0",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "18",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "32.40"
+    },
+    {
+      "sku": "B-10-NEW-1-R1-1",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "1",
+      "unit": "pcs",
+      "unit_net": "19",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "19.00"
+    }
+  ],
+  "totals": {
+    "net": "155.80",
+    "vat": "29.60",
+    "gross": "185.40"
+  },
+  "document_discount_percent": null,
+  "shipping_net": null,
+  "shipping_vat_percent": null
+}

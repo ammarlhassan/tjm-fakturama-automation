@@ -1,0 +1,72 @@
+{
+  "job_id": "660a85de-329f-4e5e-a02d-7b4538645795",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "order_number": "PO000027",
+  "invoice_number": "INV000027",
+  "debtor_number": "CUST000001",
+  "order_date": "2026-07-14",
+  "invoice_date": "2026-11-05",
+  "invoice_service_date": "2026-11-05",
+  "source_order_state": "open",
+  "relationship_evidence": {
+    "mechanism": "saved_fakturama_transaction_group",
+    "scope": "This transaction",
+    "search": "",
+    "order_number": "PO000027",
+    "invoice_number": "INV000027",
+    "observed_documents": [
+      {
+        "column0": "ICON_INVOICE",
+        "document": "INV000027",
+        "date": "Thu Nov 05 00:00:00 EET 2026",
+        "name": "Northstar Office GmbH",
+        "custref": "BENCH-10-EXISTING-1-F2",
+        "state": "COMMAND_CHECKED",
+        "total": "134.85",
+        "printed": "null"
+      },
+      {
+        "column0": "ICON_ORDER",
+        "document": "PO000027",
+        "date": "Tue Jul 14 00:00:00 EEST 2026",
+        "name": "Northstar Office GmbH",
+        "custref": "BENCH-10-EXISTING-1-F2",
+        "state": "COMMAND_ORDER_PENDING",
+        "total": "134.85",
+        "printed": "null"
+      }
+    ],
+    "follow_up_observation": {
+      "mechanism": "observed_fakturama_follow_up_action",
+      "order_number": "PO000027",
+      "invoice_number": "INV000027"
+    }
+  },
+  "external_reference": "BENCH-10-EXISTING-1-F2",
+  "currency": "EUR",
+  "extraction_provenance": {
+    "attempts": [],
+    "source_revision": 0,
+    "desktop_adapter": "live"
+  },
+  "totals": {
+    "net": "113.32",
+    "vat": "21.53",
+    "gross": "134.85"
+  },
+  "payment_method": "Bank Transfer",
+  "paid": true,
+  "payment_date": "2026-07-18",
+  "payment_value": "134.85",
+  "verified_at": "2026-11-05T13:52:18.415031Z",
+  "evidence": [
+    "final-verification.png"
+  ],
+  "warnings": [],
+  "source_field_agreement": true,
+  "build": {
+    "package_version": "0.1.0",
+    "source_sha256": "445f08f881211dce76c2d68a767ba706c4bd02042a6d5f16c9e0ad5701697da2"
+  }
+}

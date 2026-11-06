@@ -1,0 +1,7 @@
+{
+  "mode": "SIMULATION",
+  "documents": 2,
+  "debtors": 1,
+  "products": 2,
+  "recovered_after_save": true
+}

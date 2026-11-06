@@ -1,0 +1,215 @@
+{
+  "source": "visible official sample",
+  "mode": "live_gemini_plus_local_ocr",
+  "differences_from_visual_transcription": [],
+  "independent_disagreements": [],
+  "attempts": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "response_id": "bKnraqa6Ap3gvdIP8qziuQ8",
+      "usage": {
+        "promptTokenCount": 1332,
+        "candidatesTokenCount": 2407,
+        "totalTokenCount": 3739,
+        "cachedContentTokenCount": 657,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 240
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1092
+          }
+        ],
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 118
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 539
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "elapsed_seconds": 6.047206100000039,
+      "prompt_version": "literal-independent-v1",
+      "schema_version": "order-v1",
+      "field_path_normalizations": [
+        {
+          "original": "order.order_date",
+          "canonical": "order_date"
+        },
+        {
+          "original": "order.external_reference",
+          "canonical": "external_reference"
+        },
+        {
+          "original": "order.currency",
+          "canonical": "currency"
+        },
+        {
+          "original": "order.customer.company",
+          "canonical": "customer.company"
+        },
+        {
+          "original": "order.customer.first_name",
+          "canonical": "customer.first_name"
+        },
+        {
+          "original": "order.customer.last_name",
+          "canonical": "customer.last_name"
+        },
+        {
+          "original": "order.customer.alias",
+          "canonical": "customer.alias"
+        },
+        {
+          "original": "order.customer.email",
+          "canonical": "customer.email"
+        },
+        {
+          "original": "order.customer.telephone",
+          "canonical": "customer.telephone"
+        },
+        {
+          "original": "order.customer.source_customer_id",
+          "canonical": "customer.source_customer_id"
+        },
+        {
+          "original": "order.customer.billing.recipient",
+          "canonical": "customer.billing.recipient"
+        },
+        {
+          "original": "order.customer.billing.street",
+          "canonical": "customer.billing.street"
+        },
+        {
+          "original": "order.customer.billing.postcode",
+          "canonical": "customer.billing.postcode"
+        },
+        {
+          "original": "order.customer.billing.city",
+          "canonical": "customer.billing.city"
+        },
+        {
+          "original": "order.customer.billing.country",
+          "canonical": "customer.billing.country"
+        },
+        {
+          "original": "order.customer.delivery.recipient",
+          "canonical": "customer.delivery.recipient"
+        },
+        {
+          "original": "order.customer.delivery.street",
+          "canonical": "customer.delivery.street"
+        },
+        {
+          "original": "order.customer.delivery.postcode",
+          "canonical": "customer.delivery.postcode"
+        },
+        {
+          "original": "order.customer.delivery.city",
+          "canonical": "customer.delivery.city"
+        },
+        {
+          "original": "order.customer.delivery.country",
+          "canonical": "customer.delivery.country"
+        },
+        {
+          "original": "order.payment.method",
+          "canonical": "payment.method"
+        },
+        {
+          "original": "order.payment.status",
+          "canonical": "payment.status"
+        },
+        {
+          "original": "order.payment.payment_date",
+          "canonical": "payment.payment_date"
+        },
+        {
+          "original": "order.items.0.sku",
+          "canonical": "items.0.sku"
+        },
+        {
+          "original": "order.items.0.description",
+          "canonical": "items.0.description"
+        },
+        {
+          "original": "order.items.0.quantity",
+          "canonical": "items.0.quantity"
+        },
+        {
+          "original": "order.items.0.unit",
+          "canonical": "items.0.unit"
+        },
+        {
+          "original": "order.items.0.unit_net",
+          "canonical": "items.0.unit_net"
+        },
+        {
+          "original": "order.items.0.discount_percent",
+          "canonical": "items.0.discount_percent"
+        },
+        {
+          "original": "order.items.0.vat_percent",
+          "canonical": "items.0.vat_percent"
+        },
+        {
+          "original": "order.items.0.printed_net",
+          "canonical": "items.0.printed_net"
+        },
+        {
+          "original": "order.items.1.sku",
+          "canonical": "items.1.sku"
+        },
+        {
+          "original": "order.items.1.description",
+          "canonical": "items.1.description"
+        },
+        {
+          "original": "order.items.1.quantity",
+          "canonical": "items.1.quantity"
+        },
+        {
+          "original": "order.items.1.unit",
+          "canonical": "items.1.unit"
+        },
+        {
+          "original": "order.items.1.unit_net",
+          "canonical": "items.1.unit_net"
+        },
+        {
+          "original": "order.items.1.discount_percent",
+          "canonical": "items.1.discount_percent"
+        },
+        {
+          "original": "order.items.1.vat_percent",
+          "canonical": "items.1.vat_percent"
+        },
+        {
+          "original": "order.items.1.printed_net",
+          "canonical": "items.1.printed_net"
+        },
+        {
+          "original": "order.totals.net",
+          "canonical": "totals.net"
+        },
+        {
+          "original": "order.totals.vat",
+          "canonical": "totals.vat"
+        },
+        {
+          "original": "order.totals.gross",
+          "canonical": "totals.gross"
+        }
+      ],
+      "transport_attempt_count": 1
+    }
+  ],
+  "desktop_executed": false
+}

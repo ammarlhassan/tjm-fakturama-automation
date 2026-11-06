@@ -1,0 +1,47 @@
+{
+  "timestamp_utc": "2026-11-06T10:04:40.918992+00:00",
+  "platform": "Windows AMD64",
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "020e1135a436145c5d5324c270d9af30c0577c4b9b97c950fb27577b49845d36"
+  },
+  "checks": [
+    {
+      "command": "python -m ruff check --no-cache src scripts tests",
+      "exit_code": 0,
+      "seconds": 0.131,
+      "output": "All checks passed!\n"
+    },
+    {
+      "command": "python -m ruff format --check --no-cache src scripts tests",
+      "exit_code": 0,
+      "seconds": 0.112,
+      "output": "57 files already formatted\n"
+    },
+    {
+      "command": "python -m mypy --platform win32 src/image_to_cash",
+      "exit_code": 0,
+      "seconds": 19.357,
+      "output": "Success: no issues found in 19 source files\n"
+    },
+    {
+      "command": "python -m mypy --platform linux src/image_to_cash",
+      "exit_code": 0,
+      "seconds": 19.977,
+      "output": "Success: no issues found in 19 source files\n"
+    },
+    {
+      "command": "python -m pytest -q -p no:cacheprovider -W ignore",
+      "exit_code": 0,
+      "seconds": 17.457,
+      "output": "........................................................................ [ 37%]\n........................................................................ [ 75%]\n..............................................                           [100%]\n190 passed in 16.42s\n"
+    },
+    {
+      "command": "python scripts\\check_docs.py",
+      "exit_code": 0,
+      "seconds": 0.328,
+      "output": "0 documentation problems\n"
+    }
+  ],
+  "all_passed": true
+}

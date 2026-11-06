@@ -1,0 +1,940 @@
+[
+  {
+    "id": 2515,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:18:02.055864"
+  },
+  {
+    "id": 2516,
+    "stage": "VALIDATED",
+    "action": "benchmark_expected_source",
+    "status": "observed",
+    "data": {
+      "fixture": "C:\\Users\\ammar\\OneDrive\\Desktop\\TJM\\artifacts\\desktop-benchmark\\R1\\10-mixed-1-R1\\expected.json",
+      "live_extraction": false
+    },
+    "timestamp": "2026-11-05T17:18:02.071756"
+  },
+  {
+    "id": 2517,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T17:18:02.359469"
+  },
+  {
+    "id": 2518,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Bank Transfer",
+        "Benchmark Office 10-new-1-R1, Marta Klein",
+        "VAT 19%",
+        "INV000039",
+        "PO000039"
+      ],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T17:18:18.138237"
+  },
+  {
+    "id": 2519,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T17:18:25.200759"
+  },
+  {
+    "id": 2520,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000040",
+      "kind": "Order",
+      "external_reference": "BENCH-10-MIXED-1-R1",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T17:18:37.373741"
+  },
+  {
+    "id": 2521,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000040"
+    },
+    "timestamp": "2026-11-05T17:18:37.389942"
+  },
+  {
+    "id": 2522,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000001"
+    },
+    "timestamp": "2026-11-05T17:18:41.975687"
+  },
+  {
+    "id": 2523,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:19:24.843184"
+  },
+  {
+    "id": 2524,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:19:24.857025"
+  },
+  {
+    "id": 2525,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:19:36.739127"
+  },
+  {
+    "id": 2526,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:19:42.731839"
+  },
+  {
+    "id": 2527,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:19:42.747554"
+  },
+  {
+    "id": 2528,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:19:54.572050"
+  },
+  {
+    "id": 2529,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:20:08.162805"
+  },
+  {
+    "id": 2530,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "B-10-MIXED-1-R1-1",
+      "sku": "B-10-MIXED-1-R1-1",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T17:20:27.738284"
+  },
+  {
+    "id": 2531,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:20:34.803320"
+  },
+  {
+    "id": 2532,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:20:45.263235"
+  },
+  {
+    "id": 2533,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:20:45.274309"
+  },
+  {
+    "id": 2534,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:21:01.776081"
+  },
+  {
+    "id": 2535,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:2",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:21:07.705429"
+  },
+  {
+    "id": 2536,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:2",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:21:15.934329"
+  },
+  {
+    "id": 2537,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:2",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:21:15.949963"
+  },
+  {
+    "id": 2538,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:2",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:21:37.061507"
+  },
+  {
+    "id": 2539,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:3",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:21:42.847499"
+  },
+  {
+    "id": 2540,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:3",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:21:51.118446"
+  },
+  {
+    "id": 2541,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:3",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:21:51.137877"
+  },
+  {
+    "id": 2542,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:3",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:22:02.722452"
+  },
+  {
+    "id": 2543,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:4",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:22:08.650988"
+  },
+  {
+    "id": 2544,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:4",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:22:17.055378"
+  },
+  {
+    "id": 2545,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:4",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:22:17.070880"
+  },
+  {
+    "id": 2546,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:4",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:22:38.496284"
+  },
+  {
+    "id": 2547,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:5",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:22:44.343213"
+  },
+  {
+    "id": 2548,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:5",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:22:52.513353"
+  },
+  {
+    "id": 2549,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:5",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:22:52.529427"
+  },
+  {
+    "id": 2550,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:5",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:23:13.761572"
+  },
+  {
+    "id": 2551,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:6",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:23:19.607111"
+  },
+  {
+    "id": 2552,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:6",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:23:27.903415"
+  },
+  {
+    "id": 2553,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:6",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:23:27.922448"
+  },
+  {
+    "id": 2554,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:6",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:23:39.618660"
+  },
+  {
+    "id": 2555,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:7",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:23:45.410801"
+  },
+  {
+    "id": 2556,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:7",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:23:53.740807"
+  },
+  {
+    "id": 2557,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:7",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:23:53.758196"
+  },
+  {
+    "id": 2558,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:7",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:24:15.311965"
+  },
+  {
+    "id": 2559,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:8",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:24:21.057434"
+  },
+  {
+    "id": 2560,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:8",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:24:29.436783"
+  },
+  {
+    "id": 2561,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:8",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T17:24:29.448611"
+  },
+  {
+    "id": 2562,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:8",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:24:50.921618"
+  },
+  {
+    "id": 2563,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:9",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:24:56.929180"
+  },
+  {
+    "id": 2564,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:9",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:25:05.268933"
+  },
+  {
+    "id": 2565,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:9",
+    "status": "intent",
+    "data": {
+      "sku": "B-10-MIXED-1-R1-1"
+    },
+    "timestamp": "2026-11-05T17:25:05.284659"
+  },
+  {
+    "id": 2566,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:9",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:25:17.085405"
+  },
+  {
+    "id": 2567,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:25:17.103581"
+  },
+  {
+    "id": 2568,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000040"
+    },
+    "timestamp": "2026-11-05T17:25:25.177027"
+  },
+  {
+    "id": 2569,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:25:28.078165"
+  },
+  {
+    "id": 2570,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000040"
+    },
+    "timestamp": "2026-11-05T17:25:54.458646"
+  },
+  {
+    "id": 2571,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000040",
+        "kind": "Order",
+        "external_reference": "BENCH-10-MIXED-1-R1",
+        "currency": "EUR",
+        "displayed_item_subtotal": "155.80",
+        "net_is_derived": false,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "10",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "10"
+          },
+          {
+            "sku": "B-10-MIXED-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "11",
+            "discount_percent": "20.0",
+            "vat_percent": "19.00",
+            "printed_net": "4.4"
+          },
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "12",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "21.6"
+          },
+          {
+            "sku": "B-10-MIXED-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "13",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "13"
+          },
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "14",
+            "discount_percent": "20.0",
+            "vat_percent": "19.00",
+            "printed_net": "5.6"
+          },
+          {
+            "sku": "B-10-MIXED-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "15",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "27"
+          },
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "16",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "16"
+          },
+          {
+            "sku": "B-10-MIXED-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "0.50",
+            "unit": null,
+            "unit_net": "17",
+            "discount_percent": "20.0",
+            "vat_percent": "19.00",
+            "printed_net": "6.8"
+          },
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "18",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "32.4"
+          },
+          {
+            "sku": "B-10-MIXED-1-R1-1",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "1.00",
+            "unit": null,
+            "unit_net": "19",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "19"
+          }
+        ],
+        "totals": {
+          "net": "155.80",
+          "vat": "29.60",
+          "gross": "185.40"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [
+          "Northstar Office GmbH has already ordered 28 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001, INV000002, INV000003, INV000004, ...\r\nTotal volume: 12.933,77 €"
+        ],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true,
+        "documents_row": {
+          "column0": "ICON_ORDER",
+          "document": "PO000040",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-10-MIXED-1-R1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "185.4",
+          "printed": "null"
+        }
+      }
+    },
+    "timestamp": "2026-11-05T17:25:54.460649"
+  },
+  {
+    "id": 2572,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000040"
+    },
+    "timestamp": "2026-11-05T17:25:59.079808"
+  },
+  {
+    "id": 2573,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000040",
+      "kind": "Invoice",
+      "external_reference": "BENCH-10-MIXED-1-R1",
+      "currency": null,
+      "displayed_item_subtotal": "155.80",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "155.80",
+        "vat": "29.60",
+        "gross": "185.40"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000040",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000040",
+        "invoice_number": "INV000040",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [
+        "Northstar Office GmbH has already ordered 28 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001, INV000002, INV000003, INV000004, ...\r\nTotal volume: 12.933,77 €"
+      ],
+      "state": "open",
+      "payment_method": "Bank Transfer",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T17:26:20.479231"
+  },
+  {
+    "id": 2574,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000040",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T17:26:20.495423"
+  },
+  {
+    "id": 2575,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T17:26:20.495423"
+  },
+  {
+    "id": 2576,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:26:28.144628"
+  },
+  {
+    "id": 2577,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000040"
+    },
+    "timestamp": "2026-11-05T17:26:45.826319"
+  },
+  {
+    "id": 2578,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:26:47.623728"
+  },
+  {
+    "id": 2579,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000040",
+      "invoice_number": "INV000040",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000040",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-10-MIXED-1-R1",
+          "state": "COMMAND_CHECKED",
+          "total": "185.4",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000040",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "BENCH-10-MIXED-1-R1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "185.4",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T17:27:58.930456"
+  },
+  {
+    "id": 2580,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000040"
+    },
+    "timestamp": "2026-11-05T17:27:58.961878"
+  },
+  {
+    "id": 2581,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T17:27:59.045259"
+  }
+]

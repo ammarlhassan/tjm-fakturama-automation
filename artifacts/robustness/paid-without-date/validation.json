@@ -1,0 +1,17 @@
+{
+  "findings": [
+    {
+      "code": "PAYMENT_DATE_MISSING",
+      "field": "payment.payment_date",
+      "message": "Explicit PAID requires its source date",
+      "expected": null,
+      "observed": null
+    }
+  ],
+  "computed": {
+    "net": "570.00",
+    "vat": "108.30",
+    "gross": "678.30"
+  },
+  "profile": "eur-net-vat-group-half-up-v1"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ed419e30-f254-433b-ab8d-438ba2cd3c31",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "stage": "NEEDS_REVIEW",
+  "last_verified_stage": "ORDER_OPEN",
+  "external_reference": "WEB-2026-0714-A17",
+  "revision": 6,
+  "review": {
+    "code": "FAKTURAMA_EMAIL_REJECTED",
+    "message": "Fakturama 2.2.0 rejects the visible reserved .test email and persists a blank value. Official input is preserved. No source Order or Invoice was saved.",
+    "resolved": false
+  },
+  "validation": {
+    "findings": [],
+    "computed": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "profile": "eur-net-vat-group-half-up-v1"
+  },
+  "receipt": null,
+  "created_at": "2026-11-04 14:59:05.725730",
+  "updated_at": "2026-11-04 15:23:35.824891"
+}

@@ -1,0 +1,367 @@
+{
+  "job_id": "de2178cf-5dd7-40f5-bfda-47123f203ed5",
+  "status": "SUCCEEDED",
+  "mode": "live vision + local OCR + real Fakturama, brand-new workspace",
+  "official_sample": true,
+  "source_changes": [],
+  "image_sha256": "7483f718cfefb9f1ca33b07e3614886ef56a47ed6aae71cde81a5c1742588833",
+  "provider_retries": 5,
+  "operator_reviews": 1,
+  "extraction_wall_seconds_including_provider_waits": null,
+  "desktop_seconds": null,
+  "vision_cache_hit": false,
+  "acceptance": {
+    "checks": {
+      "reference": true,
+      "net_570_00": true,
+      "vat_108_30": true,
+      "gross_678_30": true,
+      "bank_transfer": true,
+      "literal_paid": true,
+      "payment_date": true,
+      "payment_value": true,
+      "source_order_open": true,
+      "order_rows": true,
+      "invoice_rows": true,
+      "order_persisted": true,
+      "invoice_persisted": true,
+      "invoice_links_order": true,
+      "saved_relationship": true,
+      "both_addresses": true,
+      "email_flagged_not_claimed": true,
+      "created_debtor_payment_vat": true,
+      "created_two_products": true,
+      "blank_email_flagged": true,
+      "live_extraction_not_replay": true,
+      "no_operator_reviews": false
+    },
+    "passed": false
+  },
+  "duplicate_submission": {
+    "same_job": true,
+    "deduplicated": true,
+    "same_receipt": true
+  },
+  "warnings": [
+    {
+      "code": "SOURCE_EMAIL_NOT_PERSISTED",
+      "field": "customer.email",
+      "source_value": "marta.klein@example.test",
+      "persisted_value": null,
+      "persisted_state": "blank",
+      "policy": "flag-reserved-domain",
+      "message": "The source email marta.klein@example.test uses the reserved .test domain and was not persisted; the saved contact's email is blank. The source is unchanged. This run does not establish complete source-field agreement."
+    }
+  ],
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+  },
+  "receipt": {
+    "job_id": "de2178cf-5dd7-40f5-bfda-47123f203ed5",
+    "workspace": "official-fresh",
+    "mode": "live",
+    "order_number": "PO000001",
+    "invoice_number": "INV000001",
+    "debtor_number": "CUST000001",
+    "order_date": "2026-07-14",
+    "invoice_date": "2026-11-05",
+    "invoice_service_date": "2026-11-05",
+    "source_order_state": "open",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000001",
+      "invoice_number": "INV000001",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000001",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "WEB-2026-0714-A17",
+          "state": "COMMAND_CHECKED",
+          "total": "678.3",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000001",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "WEB-2026-0714-A17",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "678.3",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000001",
+        "invoice_number": "INV000001"
+      }
+    },
+    "external_reference": "WEB-2026-0714-A17",
+    "currency": "EUR",
+    "extraction_provenance": {
+      "attempts": [
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash-lite",
+          "response_id": "Klzsao3YKuqDvdIPt8r6QA",
+          "usage": {
+            "promptTokenCount": 1332,
+            "candidatesTokenCount": 2401,
+            "totalTokenCount": 3733,
+            "cachedContentTokenCount": 657,
+            "promptTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1092
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 240
+              }
+            ],
+            "cacheTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 118
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 539
+              }
+            ],
+            "serviceTier": "standard"
+          },
+          "elapsed_seconds": 17.073356000000786,
+          "prompt_version": "literal-independent-v1",
+          "schema_version": "order-v1",
+          "field_path_normalizations": [
+            {
+              "original": "order.external_reference",
+              "canonical": "external_reference"
+            },
+            {
+              "original": "order.order_date",
+              "canonical": "order_date"
+            },
+            {
+              "original": "order.customer.source_customer_id",
+              "canonical": "customer.source_customer_id"
+            },
+            {
+              "original": "order.currency",
+              "canonical": "currency"
+            },
+            {
+              "original": "order.customer.company",
+              "canonical": "customer.company"
+            },
+            {
+              "original": "order.customer.first_name",
+              "canonical": "customer.first_name"
+            },
+            {
+              "original": "order.customer.last_name",
+              "canonical": "customer.last_name"
+            },
+            {
+              "original": "order.customer.email",
+              "canonical": "customer.email"
+            },
+            {
+              "original": "order.customer.telephone",
+              "canonical": "customer.telephone"
+            },
+            {
+              "original": "order.customer.alias",
+              "canonical": "customer.alias"
+            },
+            {
+              "original": "order.customer.billing.recipient",
+              "canonical": "customer.billing.recipient"
+            },
+            {
+              "original": "order.customer.billing.street",
+              "canonical": "customer.billing.street"
+            },
+            {
+              "original": "order.customer.billing.postcode",
+              "canonical": "customer.billing.postcode"
+            },
+            {
+              "original": "order.customer.billing.city",
+              "canonical": "customer.billing.city"
+            },
+            {
+              "original": "order.customer.billing.country",
+              "canonical": "customer.billing.country"
+            },
+            {
+              "original": "order.customer.delivery.recipient",
+              "canonical": "customer.delivery.recipient"
+            },
+            {
+              "original": "order.customer.delivery.street",
+              "canonical": "customer.delivery.street"
+            },
+            {
+              "original": "order.customer.delivery.postcode",
+              "canonical": "customer.delivery.postcode"
+            },
+            {
+              "original": "order.customer.delivery.city",
+              "canonical": "customer.delivery.city"
+            },
+            {
+              "original": "order.customer.delivery.country",
+              "canonical": "customer.delivery.country"
+            },
+            {
+              "original": "order.payment.method",
+              "canonical": "payment.method"
+            },
+            {
+              "original": "order.payment.status",
+              "canonical": "payment.status"
+            },
+            {
+              "original": "order.payment.payment_date",
+              "canonical": "payment.payment_date"
+            },
+            {
+              "original": "order.items.0.sku",
+              "canonical": "items.0.sku"
+            },
+            {
+              "original": "order.items.0.description",
+              "canonical": "items.0.description"
+            },
+            {
+              "original": "order.items.0.quantity",
+              "canonical": "items.0.quantity"
+            },
+            {
+              "original": "order.items.0.unit",
+              "canonical": "items.0.unit"
+            },
+            {
+              "original": "order.items.0.unit_net",
+              "canonical": "items.0.unit_net"
+            },
+            {
+              "original": "order.items.0.discount_percent",
+              "canonical": "items.0.discount_percent"
+            },
+            {
+              "original": "order.items.0.vat_percent",
+              "canonical": "items.0.vat_percent"
+            },
+            {
+              "original": "order.items.0.printed_net",
+              "canonical": "items.0.printed_net"
+            },
+            {
+              "original": "order.items.1.sku",
+              "canonical": "items.1.sku"
+            },
+            {
+              "original": "order.items.1.description",
+              "canonical": "items.1.description"
+            },
+            {
+              "original": "order.items.1.quantity",
+              "canonical": "items.1.quantity"
+            },
+            {
+              "original": "order.items.1.unit",
+              "canonical": "items.1.unit"
+            },
+            {
+              "original": "order.items.1.unit_net",
+              "canonical": "items.1.unit_net"
+            },
+            {
+              "original": "order.items.1.discount_percent",
+              "canonical": "items.1.discount_percent"
+            },
+            {
+              "original": "order.items.1.vat_percent",
+              "canonical": "items.1.vat_percent"
+            },
+            {
+              "original": "order.items.1.printed_net",
+              "canonical": "items.1.printed_net"
+            },
+            {
+              "original": "order.totals.net",
+              "canonical": "totals.net"
+            },
+            {
+              "original": "order.totals.vat",
+              "canonical": "totals.vat"
+            },
+            {
+              "original": "order.totals.gross",
+              "canonical": "totals.gross"
+            }
+          ],
+          "transport_attempt_count": 3,
+          "transport_attempts": [
+            {
+              "attempt": 1,
+              "http_status": 503,
+              "seconds": 2.424078299998655
+            },
+            {
+              "attempt": 2,
+              "http_status": 503,
+              "seconds": 4.012644399997953
+            },
+            {
+              "attempt": 3,
+              "http_status": 200,
+              "seconds": 6.209589099998993
+            }
+          ]
+        }
+      ],
+      "source_revision": 6,
+      "desktop_adapter": "live"
+    },
+    "totals": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "678.30",
+    "verified_at": "2026-11-05T10:50:38.092676Z",
+    "evidence": [
+      "final-verification.png",
+      "saved-contact.png"
+    ],
+    "warnings": [
+      {
+        "code": "SOURCE_EMAIL_NOT_PERSISTED",
+        "field": "customer.email",
+        "source_value": "marta.klein@example.test",
+        "persisted_value": null,
+        "persisted_state": "blank",
+        "policy": "flag-reserved-domain",
+        "message": "The source email marta.klein@example.test uses the reserved .test domain and was not persisted; the saved contact's email is blank. The source is unchanged. This run does not establish complete source-field agreement."
+      }
+    ],
+    "source_field_agreement": false,
+    "build": {
+      "package_version": "0.1.0",
+      "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+    }
+  }
+}

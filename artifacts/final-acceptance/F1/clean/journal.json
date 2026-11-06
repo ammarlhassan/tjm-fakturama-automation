@@ -1,0 +1,719 @@
+[
+  {
+    "id": 874,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:16:41.902324"
+  },
+  {
+    "id": 875,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 1,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 10.860141699995438
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 3.7466178000031505
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 2.313987499997893
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T11:18:33.051769"
+  },
+  {
+    "id": 876,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 2,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 2.661631999995734
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 1.8133491999979015
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 6.2495868999976665
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T11:20:18.397683"
+  },
+  {
+    "id": 877,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 3,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 2.7033440000013798
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 2.2077086999997846
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 2.6122466000015265
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T11:20:52.575975"
+  },
+  {
+    "id": 878,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 4,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 1.734042700001737
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 2.6312978000059957
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 2.0192000000024564
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T11:23:33.285360"
+  },
+  {
+    "id": 879,
+    "stage": "NEEDS_REVIEW",
+    "action": "technical_review",
+    "status": "observed",
+    "data": {
+      "revision": 5,
+      "reason": "Bounded retry after provider unavailability: no source value existed and none was changed.",
+      "prior_review": {
+        "code": "VISION_PROVIDER_ERROR",
+        "message": "Gemini returned HTTP 503; verify model access, key and free-tier quota",
+        "resolved": false,
+        "transport_attempts": [
+          {
+            "attempt": 1,
+            "http_status": 503,
+            "seconds": 11.112668400004623
+          },
+          {
+            "attempt": 2,
+            "http_status": 503,
+            "seconds": 5.14814020000631
+          },
+          {
+            "attempt": 3,
+            "http_status": 503,
+            "seconds": 6.3097980999955325
+          }
+        ]
+      },
+      "source_changed": false
+    },
+    "timestamp": "2026-11-05T11:26:30.080692"
+  },
+  {
+    "id": 880,
+    "stage": "EXTRACTED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:26:38.193097"
+  },
+  {
+    "id": 881,
+    "stage": "VALIDATED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:26:38.209145"
+  },
+  {
+    "id": 882,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T11:26:38.764127"
+  },
+  {
+    "id": 883,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [],
+      "preserved_drafts": [],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T11:26:42.705074"
+  },
+  {
+    "id": 884,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T11:26:50.001884"
+  },
+  {
+    "id": 885,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000012",
+      "kind": "Order",
+      "external_reference": "CLEAN-WIN-2026-C17-F1",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T11:27:01.941458"
+  },
+  {
+    "id": 886,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000012"
+    },
+    "timestamp": "2026-11-05T11:27:01.957487"
+  },
+  {
+    "id": 887,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000001"
+    },
+    "timestamp": "2026-11-05T11:27:06.413789"
+  },
+  {
+    "id": 888,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:27:49.183832"
+  },
+  {
+    "id": 889,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:27:49.194786"
+  },
+  {
+    "id": 890,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T11:28:00.881706"
+  },
+  {
+    "id": 891,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:28:06.734217"
+  },
+  {
+    "id": 892,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-05T11:28:06.757132"
+  },
+  {
+    "id": 893,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:28:22.966857"
+  },
+  {
+    "id": 894,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T11:28:28.894242"
+  },
+  {
+    "id": 895,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:28:37.118885"
+  },
+  {
+    "id": 896,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-05T11:28:37.134706"
+  },
+  {
+    "id": 897,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:28:48.832899"
+  },
+  {
+    "id": 898,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:28:48.852246"
+  },
+  {
+    "id": 899,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000012"
+    },
+    "timestamp": "2026-11-05T11:28:56.771482"
+  },
+  {
+    "id": 900,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:28:59.683032"
+  },
+  {
+    "id": 901,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000012"
+    },
+    "timestamp": "2026-11-05T11:29:26.777967"
+  },
+  {
+    "id": 902,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000012",
+        "kind": "Order",
+        "external_reference": "CLEAN-WIN-2026-C17-F1",
+        "currency": "EUR",
+        "displayed_item_subtotal": "570.00",
+        "net_is_derived": false,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "250",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "450"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3.00",
+            "unit": null,
+            "unit_net": "40",
+            "discount_percent": "-0.0",
+            "vat_percent": "19.00",
+            "printed_net": "120"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [
+          "Northstar Office GmbH has already ordered 9 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001, INV000002, INV000003, INV000004, ...\r\nTotal volume: 6.104,70 €"
+        ],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true,
+        "documents_row": {
+          "column0": "ICON_ORDER",
+          "document": "PO000012",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "CLEAN-WIN-2026-C17-F1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "678.3",
+          "printed": "null"
+        }
+      }
+    },
+    "timestamp": "2026-11-05T11:29:26.784713"
+  },
+  {
+    "id": 903,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000012"
+    },
+    "timestamp": "2026-11-05T11:29:30.642885"
+  },
+  {
+    "id": 904,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000012",
+      "kind": "Invoice",
+      "external_reference": "CLEAN-WIN-2026-C17-F1",
+      "currency": null,
+      "displayed_item_subtotal": "570.00",
+      "net_is_derived": false,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "570.00",
+        "vat": "108.30",
+        "gross": "678.30"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000012",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000012",
+        "invoice_number": "INV000012",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [
+        "Northstar Office GmbH has already ordered 9 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001, INV000002, INV000003, INV000004, ...\r\nTotal volume: 6.104,70 €"
+      ],
+      "state": "open",
+      "payment_method": "Bank Transfer",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false,
+      "documents_row": {}
+    },
+    "timestamp": "2026-11-05T11:29:52.566524"
+  },
+  {
+    "id": 905,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000012",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T11:29:52.589348"
+  },
+  {
+    "id": 906,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T11:29:52.598735"
+  },
+  {
+    "id": 907,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:30:00.124214"
+  },
+  {
+    "id": 908,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000012"
+    },
+    "timestamp": "2026-11-05T11:30:17.635665"
+  },
+  {
+    "id": 909,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:30:19.379257"
+  },
+  {
+    "id": 910,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000012",
+      "invoice_number": "INV000012",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000012",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "CLEAN-WIN-2026-C17-F1",
+          "state": "COMMAND_CHECKED",
+          "total": "678.3",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000012",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "CLEAN-WIN-2026-C17-F1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "678.3",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T11:31:30.903864"
+  },
+  {
+    "id": 911,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000012"
+    },
+    "timestamp": "2026-11-05T11:31:30.936367"
+  },
+  {
+    "id": 912,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T11:31:31.062838"
+  }
+]

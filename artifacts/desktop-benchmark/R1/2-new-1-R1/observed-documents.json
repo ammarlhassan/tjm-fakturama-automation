@@ -1,0 +1,210 @@
+{
+  "order": {
+    "number": "PO000037",
+    "kind": "Order",
+    "external_reference": "BENCH-2-NEW-1-R1",
+    "currency": "EUR",
+    "displayed_item_subtotal": "14.40",
+    "net_is_derived": false,
+    "order_date": "2026-07-14",
+    "document_date": "2026-07-14",
+    "service_date": "2026-07-14",
+    "price_mode": "Net",
+    "vat_mode": "With VAT",
+    "customer": {
+      "company": "Benchmark Office 2-new-1-R1",
+      "first_name": "Marta",
+      "last_name": "Klein",
+      "alias": "BENCH-2-new-1-R1",
+      "email": "benchmark@example.com",
+      "telephone": "+49 30 5550 1420",
+      "source_customer_id": null,
+      "billing": {
+        "recipient": "Benchmark Office 2-new-1-R1",
+        "additional_name": null,
+        "street": "Friedrichstrasse 88",
+        "postcode": "10117",
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "delivery": {
+        "recipient": "Benchmark Warehouse 2-new-1-R1",
+        "additional_name": null,
+        "street": "Beusselstrasse 44",
+        "postcode": "10553",
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    "items": [
+      {
+        "sku": "B-2-NEW-1-R1-0",
+        "description": "Ergonomic Desk Chair",
+        "quantity": "1.00",
+        "unit": null,
+        "unit_net": "10",
+        "discount_percent": "-0.0",
+        "vat_percent": "19.00",
+        "printed_net": "10"
+      },
+      {
+        "sku": "B-2-NEW-1-R1-1",
+        "description": "Anti-Fatigue Desk Mat",
+        "quantity": "0.50",
+        "unit": null,
+        "unit_net": "11",
+        "discount_percent": "20.0",
+        "vat_percent": "19.00",
+        "printed_net": "4.4"
+      }
+    ],
+    "totals": {
+      "net": "14.40",
+      "vat": "2.74",
+      "gross": "17.14"
+    },
+    "document_discount_percent": "0",
+    "shipping_net": "0.00",
+    "source_order_number": null,
+    "relationship_evidence": {},
+    "application_notices": [
+      "Benchmark Office 2-new-1-R1 has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000037\r\nTotal volume: 17,14 €"
+    ],
+    "state": "open",
+    "payment_method": null,
+    "paid": false,
+    "payment_date": null,
+    "payment_value": null,
+    "persisted": true,
+    "documents_row": {
+      "column0": "ICON_ORDER",
+      "document": "PO000037",
+      "date": "Tue Jul 14 00:00:00 EEST 2026",
+      "name": "Benchmark Office 2-new-1-R1",
+      "custref": "BENCH-2-NEW-1-R1",
+      "state": "COMMAND_ORDER_PENDING",
+      "total": "17.14",
+      "printed": "null"
+    }
+  },
+  "invoice": {
+    "number": "INV000037",
+    "kind": "Invoice",
+    "external_reference": "BENCH-2-NEW-1-R1",
+    "currency": "EUR",
+    "displayed_item_subtotal": "14.40",
+    "net_is_derived": false,
+    "order_date": "2026-07-14",
+    "document_date": "2026-11-05",
+    "service_date": "2026-11-05",
+    "price_mode": "Net",
+    "vat_mode": "With VAT",
+    "customer": {
+      "company": "Benchmark Office 2-new-1-R1",
+      "first_name": "Marta",
+      "last_name": "Klein",
+      "alias": "BENCH-2-new-1-R1",
+      "email": "benchmark@example.com",
+      "telephone": "+49 30 5550 1420",
+      "source_customer_id": null,
+      "billing": {
+        "recipient": "Benchmark Office 2-new-1-R1",
+        "additional_name": null,
+        "street": "Friedrichstrasse 88",
+        "postcode": "10117",
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "delivery": {
+        "recipient": "Benchmark Warehouse 2-new-1-R1",
+        "additional_name": null,
+        "street": "Beusselstrasse 44",
+        "postcode": "10553",
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    "items": [
+      {
+        "sku": "B-2-NEW-1-R1-0",
+        "description": "Ergonomic Desk Chair",
+        "quantity": "1.00",
+        "unit": null,
+        "unit_net": "10",
+        "discount_percent": "-0.0",
+        "vat_percent": "19.00",
+        "printed_net": "10"
+      },
+      {
+        "sku": "B-2-NEW-1-R1-1",
+        "description": "Anti-Fatigue Desk Mat",
+        "quantity": "0.50",
+        "unit": null,
+        "unit_net": "11",
+        "discount_percent": "20.0",
+        "vat_percent": "19.00",
+        "printed_net": "4.4"
+      }
+    ],
+    "totals": {
+      "net": "14.40",
+      "vat": "2.74",
+      "gross": "17.14"
+    },
+    "document_discount_percent": "0",
+    "shipping_net": "0.00",
+    "source_order_number": "PO000037",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000037",
+      "invoice_number": "INV000037",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000037",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Benchmark Office 2-new-1-R1",
+          "custref": "BENCH-2-NEW-1-R1",
+          "state": "COMMAND_CHECKED",
+          "total": "17.14",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000037",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Benchmark Office 2-new-1-R1",
+          "custref": "BENCH-2-NEW-1-R1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "17.14",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000037",
+        "invoice_number": "INV000037"
+      }
+    },
+    "application_notices": [],
+    "state": "paid",
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "17.14",
+    "persisted": true,
+    "documents_row": {
+      "column0": "ICON_INVOICE",
+      "document": "INV000037",
+      "date": "Thu Nov 05 00:00:00 EET 2026",
+      "name": "Benchmark Office 2-new-1-R1",
+      "custref": "BENCH-2-NEW-1-R1",
+      "state": "COMMAND_CHECKED",
+      "total": "17.14",
+      "printed": "null"
+    }
+  },
+  "mode": "live"
+}

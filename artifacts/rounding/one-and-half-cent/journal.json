@@ -1,0 +1,168 @@
+[
+  {
+    "id": 578,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:36:02.069479"
+  },
+  {
+    "id": 579,
+    "stage": "ORDER_OPEN",
+    "action": "prepare_probe",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:36:02.372184"
+  },
+  {
+    "id": 580,
+    "stage": "ORDER_OPEN",
+    "action": "prepare_probe",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true
+    },
+    "timestamp": "2026-11-04T23:36:06.765962"
+  },
+  {
+    "id": 581,
+    "stage": "ORDER_OPEN",
+    "action": "open_probe",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:36:12.917360"
+  },
+  {
+    "id": 582,
+    "stage": "ORDER_OPEN",
+    "action": "open_probe",
+    "status": "observed",
+    "data": {
+      "number": "PO000010",
+      "kind": "Order",
+      "external_reference": "PROBE-ONE-AND-HALF-CENT",
+      "currency": null,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T23:36:31.460910"
+  },
+  {
+    "id": 583,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:36:36.047856"
+  },
+  {
+    "id": 584,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:37:20.007147"
+  },
+  {
+    "id": 585,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_product:0",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:37:24.081258"
+  },
+  {
+    "id": 586,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:37:30.427045"
+  },
+  {
+    "id": 587,
+    "stage": "ORDER_OPEN",
+    "action": "set_probe_line:0",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:37:30.450651"
+  },
+  {
+    "id": 588,
+    "stage": "ORDER_OPEN",
+    "action": "set_probe_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:37:47.255451"
+  },
+  {
+    "id": 589,
+    "stage": "ORDER_OPEN",
+    "action": "discard_owned_probe_draft",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:37:55.712380"
+  },
+  {
+    "id": 590,
+    "stage": "ORDER_OPEN",
+    "action": "discard_owned_probe_draft",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:37:59.993677"
+  }
+]

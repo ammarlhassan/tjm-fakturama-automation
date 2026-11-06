@@ -1,0 +1,77 @@
+{
+  "platform": "Windows",
+  "interactive_desktop": true,
+  "fakturama_executable": "C:\\Program Files\\Fakturama2\\Fakturama.exe",
+  "api_key_configured": false,
+  "gemini_key_configured": true,
+  "fakturama_windows": [],
+  "workspace": {
+    "name": "integration",
+    "directory": "C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\workspaces\\integration",
+    "initialized": true,
+    "connected": false
+  },
+  "python": "3.12.16",
+  "dependencies": {
+    "pydantic": "2.14.2",
+    "sqlalchemy": "2.0.57",
+    "fastapi": "0.162.0",
+    "openai": "2.54.0",
+    "pywinauto": "0.6.9",
+    "pillow": "12.3.0",
+    "rapidocr": "3.10.0",
+    "onnxruntime": "1.31.1"
+  },
+  "runtime": "C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash",
+  "database": "sqlite",
+  "openai_model": "gpt-6-astra",
+  "vision_provider": "gemini",
+  "gemini_model": "gemini-3.5-flash-lite",
+  "extraction_ocr_engine": "rapidocr",
+  "email_discrepancy_policy": "flag-reserved-domain",
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "020e1135a436145c5d5324c270d9af30c0577c4b9b97c950fb27577b49845d36"
+  },
+  "java": {
+    "selected": "C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\tools\\java\\jdk-21.0.13+9-jre\\bin\\javaw.exe",
+    "version_output": [
+      "openjdk version \"21.0.13\" 2026-10-20 LTS",
+      "OpenJDK Runtime Environment Temurin-21.0.13+9 (build 21.0.13+9-LTS)",
+      "OpenJDK 64-Bit Server VM Temurin-21.0.13+9 (build 21.0.13+9-LTS, mixed mode, sharing)"
+    ],
+    "provenance": {
+      "release": "jdk-21.0.13+9",
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_x64_windows_hotspot_21.0.13_9.zip",
+      "sha256": "2332c0b4cff6bed722da3567c91d5e47568bcba863fa4945d0a8d6fc76158628"
+    }
+  },
+  "fakturama_builds": [
+    "com.sebulli.fakturama.rcp_2.2.0"
+  ],
+  "ocr": {
+    "executable": "C:\\Users\\ammar\\AppData\\Local\\TJM-ImageToCash\\tools\\tesseract\\tesseract.exe",
+    "version": "5.5.3.20260724",
+    "languages": [
+      "deu",
+      "eng",
+      "osd"
+    ]
+  },
+  "rapidocr_models": [
+    {
+      "file": "ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+      "bytes": 585532
+    },
+    {
+      "file": "PP-OCRv6_det_small.onnx",
+      "bytes": 9929594
+    },
+    {
+      "file": "PP-OCRv6_rec_small.onnx",
+      "bytes": 21234383
+    }
+  ],
+  "office_integration": null,
+  "runtime_writable": true
+}

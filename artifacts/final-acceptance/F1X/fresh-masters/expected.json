@@ -1,0 +1,65 @@
+{
+  "order_date": "2026-07-14",
+  "external_reference": "FRESH-MASTERS-2026-C17-F1X",
+  "currency": "EUR",
+  "customer": {
+    "company": "Acceptance Fresh Office F1X GmbH",
+    "first_name": "Ada",
+    "last_name": "Weber",
+    "alias": "ACCEPT-FRESH-F1X",
+    "email": "fresh-f1x@example.com",
+    "telephone": "+493055501420",
+    "source_customer_id": "CUST-1007",
+    "billing": {
+      "recipient": "Acceptance Fresh Office F1X GmbH",
+      "additional_name": null,
+      "street": "Altmarkt 1",
+      "postcode": "01067",
+      "city": "Dresden",
+      "country": "Germany"
+    },
+    "delivery": {
+      "recipient": "Acceptance Fresh Warehouse",
+      "additional_name": null,
+      "street": "Beusselstrasse 44",
+      "postcode": "10553",
+      "city": "Berlin",
+      "country": "Germany"
+    }
+  },
+  "payment": {
+    "method": "SEPA Direct Debit",
+    "status": "PAID",
+    "payment_date": "2026-07-18"
+  },
+  "items": [
+    {
+      "sku": "FRESH-F1X-CHAIR",
+      "description": "Ergonomic Desk Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "250.00",
+      "discount_percent": "10",
+      "vat_percent": "19",
+      "printed_net": "450.00"
+    },
+    {
+      "sku": "FRESH-F1X-MAT",
+      "description": "Anti-Fatigue Desk Mat",
+      "quantity": "3",
+      "unit": "pcs",
+      "unit_net": "40.00",
+      "discount_percent": "0",
+      "vat_percent": "9",
+      "printed_net": "120.00"
+    }
+  ],
+  "totals": {
+    "net": "541.50",
+    "vat": "91.49",
+    "gross": "632.99"
+  },
+  "document_discount_percent": "5",
+  "shipping_net": null,
+  "shipping_vat_percent": null
+}

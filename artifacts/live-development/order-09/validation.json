@@ -1,0 +1,9 @@
+{
+  "findings": [],
+  "computed": {
+    "net": "382.97",
+    "vat": "45.79",
+    "gross": "428.76"
+  },
+  "profile": "eur-net-vat-group-half-up-v1"
+}

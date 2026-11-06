@@ -1,0 +1,689 @@
+[
+  {
+    "id": 46,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.269985"
+  },
+  {
+    "id": 47,
+    "stage": "EXTRACTED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.320142"
+  },
+  {
+    "id": 48,
+    "stage": "VALIDATED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.335650"
+  },
+  {
+    "id": 49,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.420101"
+  },
+  {
+    "id": 50,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "mode": "simulation",
+      "read_only_product_search": true
+    },
+    "timestamp": "2026-11-04T21:22:46.420101"
+  },
+  {
+    "id": 51,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.420101"
+  },
+  {
+    "id": 52,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "SIM-ORDER-00001",
+      "kind": "Order",
+      "external_reference": "WEB-2026-0714-A17",
+      "currency": "EUR",
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-11-04",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "570.00",
+        "vat": "108.30",
+        "gross": "678.30"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T21:22:46.420101"
+  },
+  {
+    "id": 53,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "SIM-ORDER-00001"
+    },
+    "timestamp": "2026-11-04T21:22:46.436673"
+  },
+  {
+    "id": 54,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.436673"
+  },
+  {
+    "id": 55,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.452075"
+  },
+  {
+    "id": 56,
+    "stage": "ORDER_OPEN",
+    "action": "create_payment",
+    "status": "intent",
+    "data": {
+      "name": "Bank Transfer"
+    },
+    "timestamp": "2026-11-04T21:22:46.452875"
+  },
+  {
+    "id": 57,
+    "stage": "ORDER_OPEN",
+    "action": "create_payment",
+    "status": "observed",
+    "data": {
+      "id": "SIM-PAYMENT-00002",
+      "name": "Bank Transfer",
+      "description": "Bank Transfer",
+      "code": "Credit transfer",
+      "account": "",
+      "cash_discount": "0",
+      "discount_days": 0,
+      "net_days": 0,
+      "unpaid_text": "",
+      "deposit_text": "",
+      "paid_text": "",
+      "standard": false
+    },
+    "timestamp": "2026-11-04T21:22:46.452875"
+  },
+  {
+    "id": 58,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.452875"
+  },
+  {
+    "id": 59,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "observed",
+    "data": {
+      "id": "SIM-CUSTOMER-00003",
+      "customer": {
+        "company": "Northstar Office GmbH",
+        "first_name": "Marta",
+        "last_name": "Klein",
+        "alias": "NORTHSTAR-BERLIN",
+        "email": "marta.klein@example.test",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": "CUST-1007",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment_method": "Bank Transfer",
+      "discount": "0",
+      "pricing": "Net",
+      "salutation": "---"
+    },
+    "timestamp": "2026-11-04T21:22:46.452875"
+  },
+  {
+    "id": 60,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "SIM-CUSTOMER-00003"
+    },
+    "timestamp": "2026-11-04T21:22:46.469531"
+  },
+  {
+    "id": 61,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.469531"
+  },
+  {
+    "id": 62,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.469531"
+  },
+  {
+    "id": 63,
+    "stage": "DEBTOR_READY",
+    "action": "create_vat",
+    "status": "intent",
+    "data": {
+      "name": "VAT 19%"
+    },
+    "timestamp": "2026-11-04T21:22:46.486243"
+  },
+  {
+    "id": 64,
+    "stage": "DEBTOR_READY",
+    "action": "create_vat",
+    "status": "observed",
+    "data": {
+      "id": "SIM-VAT-00004",
+      "name": "VAT 19%",
+      "description": "VAT 19%",
+      "rate": "19",
+      "code": "S (Standard rate)"
+    },
+    "timestamp": "2026-11-04T21:22:46.486243"
+  },
+  {
+    "id": 65,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-04T21:22:46.486243"
+  },
+  {
+    "id": 66,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "SIM-PRODUCT-00005",
+      "sku": "CHR-ERG-01",
+      "name": "Ergonomic Desk Chair",
+      "description": "Ergonomic Desk Chair",
+      "gross": "297.50",
+      "vat_percent": "19",
+      "cost_net": "0",
+      "stock": "0"
+    },
+    "timestamp": "2026-11-04T21:22:46.503263"
+  },
+  {
+    "id": 67,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-04T21:22:46.505278"
+  },
+  {
+    "id": 68,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.505278"
+  },
+  {
+    "id": 69,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "CHR-ERG-01"
+    },
+    "timestamp": "2026-11-04T21:22:46.519860"
+  },
+  {
+    "id": 70,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.522881"
+  },
+  {
+    "id": 71,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-04T21:22:46.522881"
+  },
+  {
+    "id": 72,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "SIM-PRODUCT-00006",
+      "sku": "MAT-DESK-02",
+      "name": "Anti-Fatigue Desk Mat",
+      "description": "Anti-Fatigue Desk Mat",
+      "gross": "47.60",
+      "vat_percent": "19",
+      "cost_net": "0",
+      "stock": "0"
+    },
+    "timestamp": "2026-11-04T21:22:46.534086"
+  },
+  {
+    "id": 73,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-04T21:22:46.540491"
+  },
+  {
+    "id": 74,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.545997"
+  },
+  {
+    "id": 75,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "MAT-DESK-02"
+    },
+    "timestamp": "2026-11-04T21:22:46.549577"
+  },
+  {
+    "id": 76,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.553118"
+  },
+  {
+    "id": 77,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.553118"
+  },
+  {
+    "id": 78,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "SIM-ORDER-00001"
+    },
+    "timestamp": "2026-11-04T21:22:46.553118"
+  },
+  {
+    "id": 79,
+    "stage": "RECONCILING",
+    "action": "injected_process_interruption",
+    "status": "observed",
+    "data": {
+      "after": "Order save side effect",
+      "mode": "simulation"
+    },
+    "timestamp": "2026-11-04T21:22:46.569813"
+  },
+  {
+    "id": 80,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.586158"
+  },
+  {
+    "id": 81,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "mode": "simulation",
+      "read_only_product_search": true
+    },
+    "timestamp": "2026-11-04T21:22:46.586158"
+  },
+  {
+    "id": 82,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "SIM-ORDER-00001"
+    },
+    "timestamp": "2026-11-04T21:22:46.605703"
+  },
+  {
+    "id": 83,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "SIM-ORDER-00001",
+        "kind": "Order",
+        "external_reference": "WEB-2026-0714-A17",
+        "currency": "EUR",
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-11-04",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Northstar Office GmbH",
+          "first_name": "Marta",
+          "last_name": "Klein",
+          "alias": "NORTHSTAR-BERLIN",
+          "email": "marta.klein@example.test",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Northstar Office GmbH",
+            "additional_name": null,
+            "street": "Friedrichstrasse 88",
+            "postcode": "10117",
+            "city": "Berlin",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Northstar Office Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "19",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true
+      }
+    },
+    "timestamp": "2026-11-04T21:22:46.618683"
+  },
+  {
+    "id": 84,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "SIM-ORDER-00001"
+    },
+    "timestamp": "2026-11-04T21:22:46.619445"
+  },
+  {
+    "id": 85,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "SIM-INVOICE-00007",
+      "kind": "Invoice",
+      "external_reference": "WEB-2026-0714-A17",
+      "currency": "EUR",
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-04",
+      "service_date": "2026-11-04",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": "Northstar Office GmbH",
+        "first_name": "Marta",
+        "last_name": "Klein",
+        "alias": "NORTHSTAR-BERLIN",
+        "email": "marta.klein@example.test",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": "CUST-1007",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "items": [
+        {
+          "sku": "CHR-ERG-01",
+          "description": "Ergonomic Desk Chair",
+          "quantity": "2",
+          "unit": "pcs",
+          "unit_net": "250.00",
+          "discount_percent": "10",
+          "vat_percent": "19",
+          "printed_net": "450.00"
+        },
+        {
+          "sku": "MAT-DESK-02",
+          "description": "Anti-Fatigue Desk Mat",
+          "quantity": "3",
+          "unit": "pcs",
+          "unit_net": "40.00",
+          "discount_percent": "0",
+          "vat_percent": "19",
+          "printed_net": "120.00"
+        }
+      ],
+      "totals": {
+        "net": "570.00",
+        "vat": "108.30",
+        "gross": "678.30"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0",
+      "source_order_number": "SIM-ORDER-00001",
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T21:22:46.619445"
+  },
+  {
+    "id": 86,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "SIM-INVOICE-00007",
+      "document_date": "2026-11-04",
+      "service_date": "2026-11-04"
+    },
+    "timestamp": "2026-11-04T21:22:46.635112"
+  },
+  {
+    "id": 87,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.636189"
+  },
+  {
+    "id": 88,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.636189"
+  },
+  {
+    "id": 89,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "SIM-INVOICE-00007"
+    },
+    "timestamp": "2026-11-04T21:22:46.636189"
+  },
+  {
+    "id": 90,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.653032"
+  },
+  {
+    "id": 91,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "SIM-INVOICE-00007"
+    },
+    "timestamp": "2026-11-04T21:22:46.653032"
+  },
+  {
+    "id": 92,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:46.669740"
+  }
+]

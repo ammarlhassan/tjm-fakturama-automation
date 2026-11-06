@@ -1,0 +1,20 @@
+{
+  "subject": "Fakturama sums line values before rounding, so sub-cent lines can accumulate",
+  "observed_in": {
+    "job_id": "8c88db2a-6f03-4879-9f82-00bf35ca8a17",
+    "reference": "BENCH-30-EXISTING-1-F2",
+    "draft": "PO000028, 30 synthetic rows, never saved"
+  },
+  "source_rule_in_the_generated_document": "Each line rounded half up to cents, then summed",
+  "lines_not_whole_cents": 7,
+  "sum_of_rounded_lines": "375.80",
+  "unrounded_sum": "375.7875",
+  "unrounded_sum_rounded_once": "375.79",
+  "fakturama_total_net": "375.79",
+  "fakturama_total_gross": "447.19",
+  "source_total_gross": "447.20",
+  "outcome": "DOCUMENT_VERIFICATION_FAILED before Order Save. No financial document was saved, and the draft was abandoned.",
+  "interpretation": "The observed value matches rounding once after summing unrounded lines. This is inferred from this one document and from a 10-line document where both methods agree; Fakturama's code was not read.",
+  "consequence": "A source that prints a total from rounded lines can differ from Fakturama by a cent when several lines have sub-cent values. Such a document stops for review. The rounding check was not relaxed.",
+  "benchmark_change": "Later benchmark documents use whole-cent line values, because they measure desktop time rather than rounding."
+}

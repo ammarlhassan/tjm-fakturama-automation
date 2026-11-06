@@ -1,0 +1,296 @@
+{
+  "id": "cda78a77-1fbb-4fa4-a757-740e30419c9d",
+  "workspace": "integration",
+  "mode": "live",
+  "stage": "SUCCEEDED",
+  "last_verified_stage": "SUCCEEDED",
+  "external_reference": "CLEAN-WIN-2026-C17-F1",
+  "revision": 5,
+  "review": null,
+  "validation": {
+    "findings": [],
+    "computed": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "profile": "eur-net-vat-group-half-up-v1"
+  },
+  "receipt": {
+    "job_id": "cda78a77-1fbb-4fa4-a757-740e30419c9d",
+    "workspace": "integration",
+    "mode": "live",
+    "order_number": "PO000012",
+    "invoice_number": "INV000012",
+    "debtor_number": "CUST000001",
+    "order_date": "2026-07-14",
+    "invoice_date": "2026-11-05",
+    "invoice_service_date": "2026-11-05",
+    "source_order_state": "open",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000012",
+      "invoice_number": "INV000012",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000012",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "CLEAN-WIN-2026-C17-F1",
+          "state": "COMMAND_CHECKED",
+          "total": "678.3",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000012",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Northstar Office GmbH",
+          "custref": "CLEAN-WIN-2026-C17-F1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "678.3",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000012",
+        "invoice_number": "INV000012"
+      }
+    },
+    "external_reference": "CLEAN-WIN-2026-C17-F1",
+    "currency": "EUR",
+    "extraction_provenance": {
+      "attempts": [
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash-lite",
+          "response_id": "5mfsarrEN5y8xN8PjuHLsQ8",
+          "usage": {
+            "promptTokenCount": 1328,
+            "candidatesTokenCount": 2410,
+            "totalTokenCount": 3738,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 240
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1088
+              }
+            ],
+            "serviceTier": "standard"
+          },
+          "elapsed_seconds": 7.967096600004879,
+          "prompt_version": "literal-independent-v1",
+          "schema_version": "order-v1",
+          "field_path_normalizations": [
+            {
+              "original": "order.order_date",
+              "canonical": "order_date"
+            },
+            {
+              "original": "order.external_reference",
+              "canonical": "external_reference"
+            },
+            {
+              "original": "order.currency",
+              "canonical": "currency"
+            },
+            {
+              "original": "order.customer.source_customer_id",
+              "canonical": "customer.source_customer_id"
+            },
+            {
+              "original": "order.customer.company",
+              "canonical": "customer.company"
+            },
+            {
+              "original": "order.customer.first_name",
+              "canonical": "customer.first_name"
+            },
+            {
+              "original": "order.customer.last_name",
+              "canonical": "customer.last_name"
+            },
+            {
+              "original": "order.customer.alias",
+              "canonical": "customer.alias"
+            },
+            {
+              "original": "order.customer.email",
+              "canonical": "customer.email"
+            },
+            {
+              "original": "order.customer.telephone",
+              "canonical": "customer.telephone"
+            },
+            {
+              "original": "order.customer.billing.recipient",
+              "canonical": "customer.billing.recipient"
+            },
+            {
+              "original": "order.customer.billing.street",
+              "canonical": "customer.billing.street"
+            },
+            {
+              "original": "order.customer.billing.postcode",
+              "canonical": "customer.billing.postcode"
+            },
+            {
+              "original": "order.customer.billing.city",
+              "canonical": "customer.billing.city"
+            },
+            {
+              "original": "order.customer.billing.country",
+              "canonical": "customer.billing.country"
+            },
+            {
+              "original": "order.customer.delivery.recipient",
+              "canonical": "customer.delivery.recipient"
+            },
+            {
+              "original": "order.customer.delivery.street",
+              "canonical": "customer.delivery.street"
+            },
+            {
+              "original": "order.customer.delivery.postcode",
+              "canonical": "customer.delivery.postcode"
+            },
+            {
+              "original": "order.customer.delivery.city",
+              "canonical": "customer.delivery.city"
+            },
+            {
+              "original": "order.customer.delivery.country",
+              "canonical": "customer.delivery.country"
+            },
+            {
+              "original": "order.payment.method",
+              "canonical": "payment.method"
+            },
+            {
+              "original": "order.payment.status",
+              "canonical": "payment.status"
+            },
+            {
+              "original": "order.payment.payment_date",
+              "canonical": "payment.payment_date"
+            },
+            {
+              "original": "order.items.0.sku",
+              "canonical": "items.0.sku"
+            },
+            {
+              "original": "order.items.0.description",
+              "canonical": "items.0.description"
+            },
+            {
+              "original": "order.items.0.quantity",
+              "canonical": "items.0.quantity"
+            },
+            {
+              "original": "order.items.0.unit",
+              "canonical": "items.0.unit"
+            },
+            {
+              "original": "order.items.0.unit_net",
+              "canonical": "items.0.unit_net"
+            },
+            {
+              "original": "order.items.0.discount_percent",
+              "canonical": "items.0.discount_percent"
+            },
+            {
+              "original": "order.items.0.vat_percent",
+              "canonical": "items.0.vat_percent"
+            },
+            {
+              "original": "order.items.0.printed_net",
+              "canonical": "items.0.printed_net"
+            },
+            {
+              "original": "order.items.1.sku",
+              "canonical": "items.1.sku"
+            },
+            {
+              "original": "order.items.1.description",
+              "canonical": "items.1.description"
+            },
+            {
+              "original": "order.items.1.quantity",
+              "canonical": "items.1.quantity"
+            },
+            {
+              "original": "order.items.1.unit",
+              "canonical": "items.1.unit"
+            },
+            {
+              "original": "order.items.1.unit_net",
+              "canonical": "items.1.unit_net"
+            },
+            {
+              "original": "order.items.1.discount_percent",
+              "canonical": "items.1.discount_percent"
+            },
+            {
+              "original": "order.items.1.vat_percent",
+              "canonical": "items.1.vat_percent"
+            },
+            {
+              "original": "order.items.1.printed_net",
+              "canonical": "items.1.printed_net"
+            },
+            {
+              "original": "order.totals.net",
+              "canonical": "totals.net"
+            },
+            {
+              "original": "order.totals.vat",
+              "canonical": "totals.vat"
+            },
+            {
+              "original": "order.totals.gross",
+              "canonical": "totals.gross"
+            }
+          ],
+          "transport_attempt_count": 1,
+          "transport_attempts": [
+            {
+              "attempt": 1,
+              "http_status": 200,
+              "seconds": 7.953319799999008
+            }
+          ]
+        }
+      ],
+      "source_revision": 5,
+      "desktop_adapter": "live"
+    },
+    "totals": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "678.30",
+    "verified_at": "2026-11-05T11:31:31.047096Z",
+    "evidence": [
+      "final-verification.png"
+    ],
+    "warnings": [],
+    "source_field_agreement": true,
+    "build": {
+      "package_version": "0.1.0",
+      "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+    }
+  },
+  "created_at": "2026-11-05 11:16:41.900319",
+  "updated_at": "2026-11-05 11:31:31.058563"
+}

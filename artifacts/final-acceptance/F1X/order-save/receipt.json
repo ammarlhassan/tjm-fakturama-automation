@@ -1,0 +1,72 @@
+{
+  "job_id": "03cbcbaa-e0f0-4137-b852-6fd0bd2a2b18",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "order_number": "PO000022",
+  "invoice_number": "INV000022",
+  "debtor_number": "CUST000001",
+  "order_date": "2026-07-14",
+  "invoice_date": "2026-11-05",
+  "invoice_service_date": "2026-11-05",
+  "source_order_state": "open",
+  "relationship_evidence": {
+    "mechanism": "saved_fakturama_transaction_group",
+    "scope": "This transaction",
+    "search": "",
+    "order_number": "PO000022",
+    "invoice_number": "INV000022",
+    "observed_documents": [
+      {
+        "column0": "ICON_INVOICE",
+        "document": "INV000022",
+        "date": "Thu Nov 05 00:00:00 EET 2026",
+        "name": "Northstar Office GmbH",
+        "custref": "RECOVER-ORDER-2026-B17-F1X",
+        "state": "COMMAND_CHECKED",
+        "total": "678.3",
+        "printed": "null"
+      },
+      {
+        "column0": "ICON_ORDER",
+        "document": "PO000022",
+        "date": "Tue Jul 14 00:00:00 EEST 2026",
+        "name": "Northstar Office GmbH",
+        "custref": "RECOVER-ORDER-2026-B17-F1X",
+        "state": "COMMAND_ORDER_PENDING",
+        "total": "678.3",
+        "printed": "null"
+      }
+    ],
+    "follow_up_observation": {
+      "mechanism": "observed_fakturama_follow_up_action",
+      "order_number": "PO000022",
+      "invoice_number": "INV000022"
+    }
+  },
+  "external_reference": "RECOVER-ORDER-2026-B17-F1X",
+  "currency": "EUR",
+  "extraction_provenance": {
+    "attempts": [],
+    "source_revision": 0,
+    "desktop_adapter": "live"
+  },
+  "totals": {
+    "net": "570.00",
+    "vat": "108.30",
+    "gross": "678.30"
+  },
+  "payment_method": "Bank Transfer",
+  "paid": true,
+  "payment_date": "2026-07-18",
+  "payment_value": "678.30",
+  "verified_at": "2026-11-05T13:01:03.870261Z",
+  "evidence": [
+    "final-verification.png"
+  ],
+  "warnings": [],
+  "source_field_agreement": true,
+  "build": {
+    "package_version": "0.1.0",
+    "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+  }
+}

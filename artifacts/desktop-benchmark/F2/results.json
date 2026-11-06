@@ -1,0 +1,136 @@
+{
+  "status": "stopped_for_review",
+  "mode": "REAL FAKTURAMA DESKTOP",
+  "input_provenance": "Explicit synthetic expected data; no extraction/API time included",
+  "master_cardinality": "Two unique SKUs per document, repeated across 2/10/30 rows",
+  "temperature": "Fakturama warm; new adapter per job, same Python process; first case marks process first-use",
+  "cold_fakturama": "Not measured; do not interpret first-use as application cold start",
+  "series": "F2",
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "445f08f881211dce76c2d68a767ba706c4bd02042a6d5f16c9e0ad5701697da2"
+  },
+  "requested": {
+    "lines": [
+      10,
+      30
+    ],
+    "masters": [
+      "existing"
+    ],
+    "runs": 1
+  },
+  "summary": {
+    "attempted": 2,
+    "verified": 1,
+    "reviewed": 1,
+    "p50_seconds": 585.0111874499999,
+    "p95_seconds": 612.554896305003,
+    "verified_orders_per_hour_during_measured_execution": 3.076864235444803,
+    "matrix_wall_seconds": 1170.0223748999997
+  },
+  "measurements": [
+    {
+      "case": "10-existing-1-F2",
+      "job_id": "660a85de-329f-4e5e-a02d-7b4538645795",
+      "lines": 10,
+      "masters": "existing",
+      "run": 1,
+      "process_first_use": true,
+      "seconds": 554.4070664999963,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "660a85de-329f-4e5e-a02d-7b4538645795",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000027",
+        "invoice_number": "INV000027",
+        "debtor_number": "CUST000001",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000027",
+          "invoice_number": "INV000027",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000027",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-10-EXISTING-1-F2",
+              "state": "COMMAND_CHECKED",
+              "total": "134.85",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000027",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-10-EXISTING-1-F2",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "134.85",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000027",
+            "invoice_number": "INV000027"
+          }
+        },
+        "external_reference": "BENCH-10-EXISTING-1-F2",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "113.32",
+          "vat": "21.53",
+          "gross": "134.85"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "134.85",
+        "verified_at": "2026-11-05T13:52:18.415031Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "445f08f881211dce76c2d68a767ba706c4bd02042a6d5f16c9e0ad5701697da2"
+        }
+      }
+    },
+    {
+      "case": "30-existing-1-F2",
+      "job_id": "8c88db2a-6f03-4879-9f82-00bf35ca8a17",
+      "lines": 30,
+      "masters": "existing",
+      "run": 1,
+      "process_first_use": false,
+      "seconds": 615.6153084000034,
+      "verified": false,
+      "review": {
+        "code": "TABLE_COLUMNS_CLIPPED",
+        "message": "Visible table headers do not cover the copied columns; resize the pane or dialog"
+      },
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": null
+    }
+  ]
+}

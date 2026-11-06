@@ -1,0 +1,817 @@
+{
+  "status": "stopped_for_review",
+  "mode": "REAL FAKTURAMA DESKTOP",
+  "input_provenance": "Explicit synthetic expected data; no extraction/API time included",
+  "master_cardinality": "Two unique SKUs per document, repeated across 2/10/30 rows",
+  "temperature": "Fakturama warm; new adapter per job, same Python process; first case marks process first-use",
+  "cold_fakturama": "Not measured; do not interpret first-use as application cold start",
+  "series": "F1",
+  "source_identity": {
+    "package_version": "0.1.0",
+    "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+  },
+  "requested": {
+    "lines": [
+      10
+    ],
+    "masters": [
+      "existing",
+      "new",
+      "mixed"
+    ],
+    "runs": 1
+  },
+  "summary": {
+    "attempted": 10,
+    "verified": 9,
+    "reviewed": 1,
+    "p50_seconds": 336.68153444999916,
+    "p95_seconds": 410.0296875950022,
+    "verified_orders_per_hour_during_measured_execution": 9.338141318374864,
+    "matrix_wall_seconds": 3469.641216100019
+  },
+  "measurements": [
+    {
+      "case": "2-existing-1-F1",
+      "job_id": "b1cdf9bf-49db-4a82-8241-6815b1592e65",
+      "lines": 2,
+      "masters": "existing",
+      "run": 1,
+      "process_first_use": true,
+      "seconds": 304.41304750000563,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "b1cdf9bf-49db-4a82-8241-6815b1592e65",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000013",
+        "invoice_number": "INV000013",
+        "debtor_number": "CUST000001",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000013",
+          "invoice_number": "INV000013",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000013",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-EXISTING-1-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000013",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-EXISTING-1-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000013",
+            "invoice_number": "INV000013"
+          }
+        },
+        "external_reference": "BENCH-2-EXISTING-1-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T11:51:38.494336Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "2-existing-2-F1",
+      "job_id": "02865946-fe5d-4f25-ad42-ed2e5f60632c",
+      "lines": 2,
+      "masters": "existing",
+      "run": 2,
+      "process_first_use": false,
+      "seconds": 304.6029242000004,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "02865946-fe5d-4f25-ad42-ed2e5f60632c",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000014",
+        "invoice_number": "INV000014",
+        "debtor_number": "CUST000001",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000014",
+          "invoice_number": "INV000014",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000014",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-EXISTING-2-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000014",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-EXISTING-2-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000014",
+            "invoice_number": "INV000014"
+          }
+        },
+        "external_reference": "BENCH-2-EXISTING-2-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T11:56:43.404817Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "2-existing-3-F1",
+      "job_id": "afab3be8-509e-4932-aa48-1d3fd15f8a2d",
+      "lines": 2,
+      "masters": "existing",
+      "run": 3,
+      "process_first_use": false,
+      "seconds": 304.9472612000027,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "afab3be8-509e-4932-aa48-1d3fd15f8a2d",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000015",
+        "invoice_number": "INV000015",
+        "debtor_number": "CUST000001",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000015",
+          "invoice_number": "INV000015",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000015",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-EXISTING-3-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000015",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-EXISTING-3-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000015",
+            "invoice_number": "INV000015"
+          }
+        },
+        "external_reference": "BENCH-2-EXISTING-3-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T12:01:48.624400Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "2-new-1-F1",
+      "job_id": "20158797-4b62-42b1-b804-830fdaf402f0",
+      "lines": 2,
+      "masters": "new",
+      "run": 1,
+      "process_first_use": false,
+      "seconds": 405.19539250000525,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "20158797-4b62-42b1-b804-830fdaf402f0",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000016",
+        "invoice_number": "INV000016",
+        "debtor_number": "CUST000004",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000016",
+          "invoice_number": "INV000016",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000016",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Benchmark Office 2-new-1-F1",
+              "custref": "BENCH-2-NEW-1-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000016",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Benchmark Office 2-new-1-F1",
+              "custref": "BENCH-2-NEW-1-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000016",
+            "invoice_number": "INV000016"
+          }
+        },
+        "external_reference": "BENCH-2-NEW-1-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T12:08:34.072000Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "2-new-2-F1",
+      "job_id": "06be6436-f616-45ac-a613-467aa44c995b",
+      "lines": 2,
+      "masters": "new",
+      "run": 2,
+      "process_first_use": false,
+      "seconds": 411.73925150000287,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "06be6436-f616-45ac-a613-467aa44c995b",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000017",
+        "invoice_number": "INV000017",
+        "debtor_number": "CUST000005",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000017",
+          "invoice_number": "INV000017",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000017",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Benchmark Office 2-new-2-F1",
+              "custref": "BENCH-2-NEW-2-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000017",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Benchmark Office 2-new-2-F1",
+              "custref": "BENCH-2-NEW-2-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000017",
+            "invoice_number": "INV000017"
+          }
+        },
+        "external_reference": "BENCH-2-NEW-2-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T12:15:26.080338Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "2-new-3-F1",
+      "job_id": "8b2267c4-f0b9-4622-aeac-d5c2e46e363f",
+      "lines": 2,
+      "masters": "new",
+      "run": 3,
+      "process_first_use": false,
+      "seconds": 407.94022060000134,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "8b2267c4-f0b9-4622-aeac-d5c2e46e363f",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000018",
+        "invoice_number": "INV000018",
+        "debtor_number": "CUST000006",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000018",
+          "invoice_number": "INV000018",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000018",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Benchmark Office 2-new-3-F1",
+              "custref": "BENCH-2-NEW-3-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000018",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Benchmark Office 2-new-3-F1",
+              "custref": "BENCH-2-NEW-3-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000018",
+            "invoice_number": "INV000018"
+          }
+        },
+        "external_reference": "BENCH-2-NEW-3-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T12:22:14.282425Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "2-mixed-1-F1",
+      "job_id": "870796b0-3ad6-4e61-ae2b-c18042f69d51",
+      "lines": 2,
+      "masters": "mixed",
+      "run": 1,
+      "process_first_use": false,
+      "seconds": 338.81406889999926,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "870796b0-3ad6-4e61-ae2b-c18042f69d51",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000019",
+        "invoice_number": "INV000019",
+        "debtor_number": "CUST000001",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000019",
+          "invoice_number": "INV000019",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000019",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-MIXED-1-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000019",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-MIXED-1-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000019",
+            "invoice_number": "INV000019"
+          }
+        },
+        "external_reference": "BENCH-2-MIXED-1-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T12:27:53.361019Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "2-mixed-2-F1",
+      "job_id": "903ed00e-7ffd-45ba-8df6-7bdd63c06314",
+      "lines": 2,
+      "masters": "mixed",
+      "run": 2,
+      "process_first_use": false,
+      "seconds": 334.5683965999997,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "903ed00e-7ffd-45ba-8df6-7bdd63c06314",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000020",
+        "invoice_number": "INV000020",
+        "debtor_number": "CUST000001",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000020",
+          "invoice_number": "INV000020",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000020",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-MIXED-2-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000020",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-MIXED-2-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000020",
+            "invoice_number": "INV000020"
+          }
+        },
+        "external_reference": "BENCH-2-MIXED-2-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T12:33:28.188556Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "2-mixed-3-F1",
+      "job_id": "24df56c8-585c-4a06-8999-a428ae4f1f9a",
+      "lines": 2,
+      "masters": "mixed",
+      "run": 3,
+      "process_first_use": false,
+      "seconds": 338.79467229999864,
+      "verified": true,
+      "review": null,
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": {
+        "job_id": "24df56c8-585c-4a06-8999-a428ae4f1f9a",
+        "workspace": "integration",
+        "mode": "reviewed-live",
+        "order_number": "PO000021",
+        "invoice_number": "INV000021",
+        "debtor_number": "CUST000001",
+        "order_date": "2026-07-14",
+        "invoice_date": "2026-11-05",
+        "invoice_service_date": "2026-11-05",
+        "source_order_state": "open",
+        "relationship_evidence": {
+          "mechanism": "saved_fakturama_transaction_group",
+          "scope": "This transaction",
+          "search": "",
+          "order_number": "PO000021",
+          "invoice_number": "INV000021",
+          "observed_documents": [
+            {
+              "column0": "ICON_INVOICE",
+              "document": "INV000021",
+              "date": "Thu Nov 05 00:00:00 EET 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-MIXED-3-F1",
+              "state": "COMMAND_CHECKED",
+              "total": "17.61",
+              "printed": "null"
+            },
+            {
+              "column0": "ICON_ORDER",
+              "document": "PO000021",
+              "date": "Tue Jul 14 00:00:00 EEST 2026",
+              "name": "Northstar Office GmbH",
+              "custref": "BENCH-2-MIXED-3-F1",
+              "state": "COMMAND_ORDER_PENDING",
+              "total": "17.61",
+              "printed": "null"
+            }
+          ],
+          "follow_up_observation": {
+            "mechanism": "observed_fakturama_follow_up_action",
+            "order_number": "PO000021",
+            "invoice_number": "INV000021"
+          }
+        },
+        "external_reference": "BENCH-2-MIXED-3-F1",
+        "currency": "EUR",
+        "extraction_provenance": {
+          "attempts": [],
+          "source_revision": 0,
+          "desktop_adapter": "live"
+        },
+        "totals": {
+          "net": "14.80",
+          "vat": "2.81",
+          "gross": "17.61"
+        },
+        "payment_method": "Bank Transfer",
+        "paid": true,
+        "payment_date": "2026-07-18",
+        "payment_value": "17.61",
+        "verified_at": "2026-11-05T12:39:07.253923Z",
+        "evidence": [
+          "final-verification.png"
+        ],
+        "warnings": [],
+        "source_field_agreement": true,
+        "build": {
+          "package_version": "0.1.0",
+          "source_sha256": "1ecdb75aa2f1e77b24984e4aa35f1da093ab9b1478d3cb350171a1b3117e215d"
+        }
+      }
+    },
+    {
+      "case": "10-existing-1-F1",
+      "job_id": "d5b8cb21-87fa-4612-be61-5739a3b1f7b9",
+      "lines": 10,
+      "masters": "existing",
+      "run": 1,
+      "process_first_use": false,
+      "seconds": 318.62598080000316,
+      "verified": false,
+      "review": {
+        "code": "TABLE_COLUMNS_CLIPPED",
+        "message": "Visible table headers do not cover the copied columns; resize the pane or dialog"
+      },
+      "operator_review_revisions": 0,
+      "duplicate_submission_verified": true,
+      "receipt": null
+    }
+  ]
+}

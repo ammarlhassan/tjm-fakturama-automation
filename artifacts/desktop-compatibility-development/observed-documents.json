@@ -1,0 +1,163 @@
+{
+  "order": {
+    "number": "PO000001",
+    "kind": "Order",
+    "external_reference": "COMPAT-2026-0714-A17",
+    "currency": "EUR",
+    "order_date": "2026-07-14",
+    "document_date": "2026-07-14",
+    "service_date": "2026-07-14",
+    "price_mode": "Net",
+    "vat_mode": "With VAT",
+    "customer": {
+      "company": "Northstar Office GmbH",
+      "first_name": "Marta",
+      "last_name": "Klein",
+      "alias": "NORTHSTAR-BERLIN",
+      "email": "marta.klein@example.com",
+      "telephone": "+49 30 5550 1420",
+      "source_customer_id": null,
+      "billing": {
+        "recipient": "Northstar Office GmbH",
+        "additional_name": null,
+        "street": "Friedrichstrasse 88",
+        "postcode": "10117",
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "delivery": {
+        "recipient": "Northstar Office Warehouse",
+        "additional_name": null,
+        "street": "Beusselstrasse 44",
+        "postcode": "10553",
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    "items": [
+      {
+        "sku": "CHR-ERG-01",
+        "description": "Ergonomic Desk Chair",
+        "quantity": "2.00",
+        "unit": null,
+        "unit_net": "250",
+        "discount_percent": "10.0",
+        "vat_percent": "19.00",
+        "printed_net": "450"
+      },
+      {
+        "sku": "MAT-DESK-02",
+        "description": "Anti-Fatigue Desk Mat",
+        "quantity": "3.00",
+        "unit": null,
+        "unit_net": "40",
+        "discount_percent": "-0.0",
+        "vat_percent": "19.00",
+        "printed_net": "120"
+      }
+    ],
+    "totals": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "document_discount_percent": "0",
+    "shipping_net": "0.00",
+    "source_order_number": null,
+    "relationship_evidence": {},
+    "application_notices": [
+      "Northstar Office GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001\r\nTotal volume: 678,30 €",
+      "Northstar Office GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001\r\nTotal volume: 678,30 €",
+      "Northstar Office GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001\r\nTotal volume: 678,30 €"
+    ],
+    "state": "open",
+    "payment_method": null,
+    "paid": false,
+    "payment_date": null,
+    "payment_value": null,
+    "persisted": true
+  },
+  "invoice": {
+    "number": "INV000001",
+    "kind": "Invoice",
+    "external_reference": "COMPAT-2026-0714-A17",
+    "currency": "EUR",
+    "order_date": "2026-07-14",
+    "document_date": "2026-11-04",
+    "service_date": "2026-11-04",
+    "price_mode": "Net",
+    "vat_mode": "With VAT",
+    "customer": {
+      "company": "Northstar Office GmbH",
+      "first_name": "Marta",
+      "last_name": "Klein",
+      "alias": "NORTHSTAR-BERLIN",
+      "email": "marta.klein@example.com",
+      "telephone": "+49 30 5550 1420",
+      "source_customer_id": null,
+      "billing": {
+        "recipient": "Northstar Office GmbH",
+        "additional_name": null,
+        "street": "Friedrichstrasse 88",
+        "postcode": "10117",
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "delivery": {
+        "recipient": "Northstar Office Warehouse",
+        "additional_name": null,
+        "street": "Beusselstrasse 44",
+        "postcode": "10553",
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    "items": [
+      {
+        "sku": "CHR-ERG-01",
+        "description": "Ergonomic Desk Chair",
+        "quantity": "2.00",
+        "unit": null,
+        "unit_net": "250",
+        "discount_percent": "10.0",
+        "vat_percent": "19.00",
+        "printed_net": "450"
+      },
+      {
+        "sku": "MAT-DESK-02",
+        "description": "Anti-Fatigue Desk Mat",
+        "quantity": "3.00",
+        "unit": null,
+        "unit_net": "40",
+        "discount_percent": "-0.0",
+        "vat_percent": "19.00",
+        "printed_net": "120"
+      }
+    ],
+    "totals": {
+      "net": "570.00",
+      "vat": "108.30",
+      "gross": "678.30"
+    },
+    "document_discount_percent": "0",
+    "shipping_net": "0.00",
+    "source_order_number": "PO000001",
+    "relationship_evidence": {
+      "mechanism": "journal_of_observed_fakturama_follow_up",
+      "event_id": 178,
+      "order_number": "PO000001",
+      "invoice_number": "INV000001"
+    },
+    "application_notices": [
+      "Northstar Office GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001\r\nTotal volume: 678,30 €",
+      "Northstar Office GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000001\r\nTotal volume: 678,30 €"
+    ],
+    "state": "command_checked",
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "678.30",
+    "persisted": true
+  },
+  "mode": "live"
+}

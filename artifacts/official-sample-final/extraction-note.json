@@ -1,0 +1,16 @@
+{
+  "subject": "How the final official run's vision reading was obtained",
+  "first_reading": {
+    "response_id": "9Vjsas7rHe-cxN8Pl8usmQI",
+    "origin": "Real Gemini response for this same image, written to the job cache at 2026-11-05 12:22:52 local during an earlier attempt, and reused here (cache_hit true)."
+  },
+  "first_pass_result": "Every value matched the independent OCR reading. The response omitted its evidence path for customer.last_name, so evidence_findings raised FIELD_EVIDENCE_MISSING and the repair pass ran.",
+  "repair_reading": {
+    "response_id": "Q2LsauilILaP28oPlejO6A4",
+    "origin": "Fresh Gemini call during this run, HTTP 200."
+  },
+  "final_disagreements": 0,
+  "provider_retries": 2,
+  "provider_retry_reason": "Earlier attempts in this run returned HTTP 503 from Gemini before the repair call succeeded.",
+  "reconstructed_by": "Comparing the job's cached ocr.json and vision.json with compare_readings and evidence_findings. The published extraction.json keeps the final result only."
+}

@@ -1,0 +1,66 @@
+{
+  "mode": "measured live OCR + vision evaluations",
+  "independent_documents_total": 24,
+  "generated_ground_truth_human_review": "pending",
+  "variants_counted_as_independent": false,
+  "cost": {
+    "billed_amount": "not verified; no billing export collected",
+    "published_pricing_reference": "https://aistudio.google.com/docs/pricing#gemini-3.5-flash-lite",
+    "note": "This model has an eligible free tier; account tier and quota are external configuration. No automatic fallback to a different paid model."
+  },
+  "splits": [
+    {
+      "split": "development",
+      "distinct_documents": 12,
+      "supplied_non_null_fields": 500,
+      "correct_supplied_fields": 500,
+      "supplied_field_accuracy": 1.0,
+      "contract_fields_including_absent_values": 564,
+      "requests": 12,
+      "usage": {
+        "prompt_tokens": 15936,
+        "output_tokens": 28390,
+        "total_tokens": 44326
+      },
+      "pipeline_metrics": {
+        "documents_with_predictions": 12,
+        "exact_documents": 12,
+        "accepted_documents": 12,
+        "incorrect_acceptances": 0,
+        "review_documents": 0,
+        "technical_errors": 0,
+        "attempt_count": 12
+      },
+      "p50_seconds": 8.86174815000004,
+      "p95_seconds": 14.416585529999987,
+      "configuration_sha256": "9a3147643ec69f5787db255a8e739bb17045f7b580f3fc4f21b68eaa64df3ce7"
+    },
+    {
+      "split": "heldout",
+      "distinct_documents": 12,
+      "supplied_non_null_fields": 500,
+      "correct_supplied_fields": 500,
+      "supplied_field_accuracy": 1.0,
+      "contract_fields_including_absent_values": 564,
+      "requests": 13,
+      "usage": {
+        "prompt_tokens": 15936,
+        "output_tokens": 28420,
+        "total_tokens": 44356
+      },
+      "pipeline_metrics": {
+        "documents_with_predictions": 12,
+        "exact_documents": 12,
+        "accepted_documents": 12,
+        "incorrect_acceptances": 0,
+        "review_documents": 0,
+        "technical_errors": 0,
+        "attempt_count": 12
+      },
+      "p50_seconds": 9.216863849999982,
+      "p95_seconds": 11.661871950000025,
+      "configuration_sha256": "9a3147643ec69f5787db255a8e739bb17045f7b580f3fc4f21b68eaa64df3ce7"
+    }
+  ],
+  "latency_scope": "Evaluation wall time includes standalone OCR scoring plus the live pipeline; not HTTP or desktop end-to-end latency."
+}

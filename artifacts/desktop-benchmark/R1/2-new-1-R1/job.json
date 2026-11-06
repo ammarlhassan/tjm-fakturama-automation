@@ -1,0 +1,85 @@
+{
+  "id": "dd0f6d36-db50-4325-ad7e-c98128083709",
+  "workspace": "integration",
+  "mode": "reviewed-live",
+  "stage": "SUCCEEDED",
+  "last_verified_stage": "SUCCEEDED",
+  "external_reference": "BENCH-2-NEW-1-R1",
+  "revision": 0,
+  "review": null,
+  "validation": null,
+  "receipt": {
+    "job_id": "dd0f6d36-db50-4325-ad7e-c98128083709",
+    "workspace": "integration",
+    "mode": "reviewed-live",
+    "order_number": "PO000037",
+    "invoice_number": "INV000037",
+    "debtor_number": "CUST000009",
+    "order_date": "2026-07-14",
+    "invoice_date": "2026-11-05",
+    "invoice_service_date": "2026-11-05",
+    "source_order_state": "open",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000037",
+      "invoice_number": "INV000037",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000037",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Benchmark Office 2-new-1-R1",
+          "custref": "BENCH-2-NEW-1-R1",
+          "state": "COMMAND_CHECKED",
+          "total": "17.14",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000037",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Benchmark Office 2-new-1-R1",
+          "custref": "BENCH-2-NEW-1-R1",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "17.14",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000037",
+        "invoice_number": "INV000037"
+      }
+    },
+    "external_reference": "BENCH-2-NEW-1-R1",
+    "currency": "EUR",
+    "extraction_provenance": {
+      "attempts": [],
+      "source_revision": 0,
+      "desktop_adapter": "live"
+    },
+    "totals": {
+      "net": "14.40",
+      "vat": "2.74",
+      "gross": "17.14"
+    },
+    "payment_method": "Bank Transfer",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "17.14",
+    "verified_at": "2026-11-05T17:01:08.874251Z",
+    "evidence": [
+      "final-verification.png"
+    ],
+    "warnings": [],
+    "source_field_agreement": true,
+    "build": {
+      "package_version": "0.1.0",
+      "source_sha256": "99e0c8a21238221119da0c58ad1c5b21ecc54f1430e95eb1f23df6bdbc4ae437"
+    }
+  },
+  "created_at": "2026-11-05 16:54:18.048750",
+  "updated_at": "2026-11-05 17:01:08.889954"
+}

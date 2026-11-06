@@ -1,0 +1,210 @@
+{
+  "order": {
+    "number": "PO000032",
+    "kind": "Order",
+    "external_reference": "FRESH-MASTERS-2026-C17-R1X",
+    "currency": "EUR",
+    "displayed_item_subtotal": "570.00",
+    "net_is_derived": true,
+    "order_date": "2026-07-14",
+    "document_date": "2026-07-14",
+    "service_date": "2026-07-14",
+    "price_mode": "Net",
+    "vat_mode": "With VAT",
+    "customer": {
+      "company": "Acceptance Fresh Office R1X GmbH",
+      "first_name": "Ada",
+      "last_name": "Weber",
+      "alias": "ACCEPT-FRESH-R1X",
+      "email": "fresh-r1x@example.com",
+      "telephone": "+493055501420",
+      "source_customer_id": null,
+      "billing": {
+        "recipient": "Acceptance Fresh Office R1X GmbH",
+        "additional_name": null,
+        "street": "Altmarkt 1",
+        "postcode": "01067",
+        "city": "Dresden",
+        "country": "Germany"
+      },
+      "delivery": {
+        "recipient": "Acceptance Fresh Warehouse",
+        "additional_name": null,
+        "street": "Beusselstrasse 44",
+        "postcode": "10553",
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    "items": [
+      {
+        "sku": "FRESH-R1X-CHAIR",
+        "description": "Ergonomic Desk Chair",
+        "quantity": "2.00",
+        "unit": null,
+        "unit_net": "250",
+        "discount_percent": "10.0",
+        "vat_percent": "19.00",
+        "printed_net": "450"
+      },
+      {
+        "sku": "FRESH-R1X-MAT",
+        "description": "Anti-Fatigue Desk Mat",
+        "quantity": "3.00",
+        "unit": null,
+        "unit_net": "40",
+        "discount_percent": "-0.0",
+        "vat_percent": "9.00",
+        "printed_net": "120"
+      }
+    ],
+    "totals": {
+      "net": "541.50",
+      "vat": "91.49",
+      "gross": "632.99"
+    },
+    "document_discount_percent": "5",
+    "shipping_net": "0.00",
+    "source_order_number": null,
+    "relationship_evidence": {},
+    "application_notices": [
+      "Acceptance Fresh Office R1X GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000032\r\nTotal volume: 632,99 €"
+    ],
+    "state": "open",
+    "payment_method": null,
+    "paid": false,
+    "payment_date": null,
+    "payment_value": null,
+    "persisted": true,
+    "documents_row": {
+      "column0": "ICON_ORDER",
+      "document": "PO000032",
+      "date": "Tue Jul 14 00:00:00 EEST 2026",
+      "name": "Acceptance Fresh Office R1X GmbH",
+      "custref": "FRESH-MASTERS-2026-C17-R1X",
+      "state": "COMMAND_ORDER_PENDING",
+      "total": "632.99",
+      "printed": "null"
+    }
+  },
+  "invoice": {
+    "number": "INV000032",
+    "kind": "Invoice",
+    "external_reference": "FRESH-MASTERS-2026-C17-R1X",
+    "currency": "EUR",
+    "displayed_item_subtotal": "570.00",
+    "net_is_derived": true,
+    "order_date": "2026-07-14",
+    "document_date": "2026-11-05",
+    "service_date": "2026-11-05",
+    "price_mode": "Net",
+    "vat_mode": "With VAT",
+    "customer": {
+      "company": "Acceptance Fresh Office R1X GmbH",
+      "first_name": "Ada",
+      "last_name": "Weber",
+      "alias": "ACCEPT-FRESH-R1X",
+      "email": "fresh-r1x@example.com",
+      "telephone": "+493055501420",
+      "source_customer_id": null,
+      "billing": {
+        "recipient": "Acceptance Fresh Office R1X GmbH",
+        "additional_name": null,
+        "street": "Altmarkt 1",
+        "postcode": "01067",
+        "city": "Dresden",
+        "country": "Germany"
+      },
+      "delivery": {
+        "recipient": "Acceptance Fresh Warehouse",
+        "additional_name": null,
+        "street": "Beusselstrasse 44",
+        "postcode": "10553",
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    },
+    "items": [
+      {
+        "sku": "FRESH-R1X-CHAIR",
+        "description": "Ergonomic Desk Chair",
+        "quantity": "2.00",
+        "unit": null,
+        "unit_net": "250",
+        "discount_percent": "10.0",
+        "vat_percent": "19.00",
+        "printed_net": "450"
+      },
+      {
+        "sku": "FRESH-R1X-MAT",
+        "description": "Anti-Fatigue Desk Mat",
+        "quantity": "3.00",
+        "unit": null,
+        "unit_net": "40",
+        "discount_percent": "-0.0",
+        "vat_percent": "9.00",
+        "printed_net": "120"
+      }
+    ],
+    "totals": {
+      "net": "541.50",
+      "vat": "91.49",
+      "gross": "632.99"
+    },
+    "document_discount_percent": "5",
+    "shipping_net": "0.00",
+    "source_order_number": "PO000032",
+    "relationship_evidence": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000032",
+      "invoice_number": "INV000032",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000032",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Acceptance Fresh Office R1X GmbH",
+          "custref": "FRESH-MASTERS-2026-C17-R1X",
+          "state": "COMMAND_CHECKED",
+          "total": "632.99",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000032",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Acceptance Fresh Office R1X GmbH",
+          "custref": "FRESH-MASTERS-2026-C17-R1X",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "632.99",
+          "printed": "null"
+        }
+      ],
+      "follow_up_observation": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000032",
+        "invoice_number": "INV000032"
+      }
+    },
+    "application_notices": [],
+    "state": "paid",
+    "payment_method": "SEPA Direct Debit",
+    "paid": true,
+    "payment_date": "2026-07-18",
+    "payment_value": "632.99",
+    "persisted": true,
+    "documents_row": {
+      "column0": "ICON_INVOICE",
+      "document": "INV000032",
+      "date": "Thu Nov 05 00:00:00 EET 2026",
+      "name": "Acceptance Fresh Office R1X GmbH",
+      "custref": "FRESH-MASTERS-2026-C17-R1X",
+      "state": "COMMAND_CHECKED",
+      "total": "632.99",
+      "printed": "null"
+    }
+  },
+  "mode": "live"
+}

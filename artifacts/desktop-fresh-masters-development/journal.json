@@ -1,0 +1,837 @@
+[
+  {
+    "id": 514,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:21:36.051661"
+  },
+  {
+    "id": 515,
+    "stage": "EXTRACTED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:21:42.411944"
+  },
+  {
+    "id": 516,
+    "stage": "VALIDATED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:21:42.442910"
+  },
+  {
+    "id": 517,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:21:43.041159"
+  },
+  {
+    "id": 518,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true
+    },
+    "timestamp": "2026-11-04T21:21:47.258778"
+  },
+  {
+    "id": 519,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:21:55.819467"
+  },
+  {
+    "id": 520,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000009",
+      "kind": "Order",
+      "external_reference": "FRESH-MASTERS-2026-A17",
+      "currency": null,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T21:22:09.684136"
+  },
+  {
+    "id": 521,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000009"
+    },
+    "timestamp": "2026-11-04T21:22:09.695129"
+  },
+  {
+    "id": 522,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:22:13.854973"
+  },
+  {
+    "id": 523,
+    "stage": "NEEDS_REVIEW",
+    "action": "review_required",
+    "status": "observed",
+    "data": {
+      "code": "UNRELATED_DEBTOR_EDITOR",
+      "message": "A different Debtor editor is already open"
+    },
+    "timestamp": "2026-11-04T21:22:18.836880"
+  },
+  {
+    "id": 524,
+    "stage": "NEEDS_REVIEW",
+    "action": "human_review",
+    "status": "observed",
+    "data": {
+      "revision": 1,
+      "reason": "Fixed clean existing-contact editor handling: close the unmodified inspected contact and open New Debtor; retain unrelated dirty-draft quarantine. Resume the existing owned Order; do not create another document.",
+      "before": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-A17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH",
+          "email": "fresh@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "Credit Card",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-CHAIR-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-MAT-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "7",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "93.90",
+          "gross": "663.90"
+        },
+        "document_discount_percent": null,
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "after": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-A17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH",
+          "email": "fresh@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "Credit Card",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-CHAIR-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-MAT-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "7",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "93.90",
+          "gross": "663.90"
+        },
+        "document_discount_percent": null,
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "prior_review": {
+        "code": "UNRELATED_DEBTOR_EDITOR",
+        "message": "A different Debtor editor is already open"
+      }
+    },
+    "timestamp": "2026-11-04T21:23:21.099573"
+  },
+  {
+    "id": 525,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:23:21.701364"
+  },
+  {
+    "id": 526,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true
+    },
+    "timestamp": "2026-11-04T21:23:25.991958"
+  },
+  {
+    "id": 527,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000009"
+    },
+    "timestamp": "2026-11-04T21:23:45.747567"
+  },
+  {
+    "id": 528,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:23:49.804767"
+  },
+  {
+    "id": 529,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:24:24.726503"
+  },
+  {
+    "id": 530,
+    "stage": "ORDER_OPEN",
+    "action": "create_payment",
+    "status": "intent",
+    "data": {
+      "name": "Credit Card"
+    },
+    "timestamp": "2026-11-04T21:24:27.979977"
+  },
+  {
+    "id": 531,
+    "stage": "ORDER_OPEN",
+    "action": "create_payment",
+    "status": "observed",
+    "data": {
+      "id": "Credit Card",
+      "name": "Credit Card",
+      "code": "Credit card"
+    },
+    "timestamp": "2026-11-04T21:24:40.338102"
+  },
+  {
+    "id": 532,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:24:40.349115"
+  },
+  {
+    "id": 533,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "observed",
+    "data": {
+      "id": "CUST000002",
+      "customer": {
+        "company": "Acceptance Fresh Office GmbH",
+        "first_name": "Ada",
+        "last_name": "Weber",
+        "alias": "ACCEPT-FRESH",
+        "email": "fresh@example.com",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": null,
+        "billing": {
+          "recipient": "Acceptance Fresh Office GmbH",
+          "additional_name": null,
+          "street": "Altmarkt 1",
+          "postcode": "01067",
+          "city": "Dresden",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Acceptance Fresh Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment_method": "Credit Card"
+    },
+    "timestamp": "2026-11-04T21:26:28.480707"
+  },
+  {
+    "id": 534,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000002"
+    },
+    "timestamp": "2026-11-04T21:26:34.536284"
+  },
+  {
+    "id": 535,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:26:50.752666"
+  },
+  {
+    "id": 536,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:26:50.760546"
+  },
+  {
+    "id": 537,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-CHAIR-01"
+    },
+    "timestamp": "2026-11-04T21:27:09.746648"
+  },
+  {
+    "id": 538,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "FRESH-CHAIR-01",
+      "sku": "FRESH-CHAIR-01",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-04T21:27:23.968100"
+  },
+  {
+    "id": 539,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-CHAIR-01"
+    },
+    "timestamp": "2026-11-04T21:27:29.683271"
+  },
+  {
+    "id": 540,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:27:36.012764"
+  },
+  {
+    "id": 541,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-CHAIR-01"
+    },
+    "timestamp": "2026-11-04T21:27:36.035236"
+  },
+  {
+    "id": 542,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:27:52.785878"
+  },
+  {
+    "id": 543,
+    "stage": "DEBTOR_READY",
+    "action": "create_vat",
+    "status": "intent",
+    "data": {
+      "name": "VAT 7%"
+    },
+    "timestamp": "2026-11-04T21:28:04.461072"
+  },
+  {
+    "id": 544,
+    "stage": "DEBTOR_READY",
+    "action": "create_vat",
+    "status": "observed",
+    "data": {
+      "id": "VAT 7%",
+      "name": "VAT 7%",
+      "rate": "7",
+      "code": "S (Standard rate)"
+    },
+    "timestamp": "2026-11-04T21:28:13.540010"
+  },
+  {
+    "id": 545,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-MAT-02"
+    },
+    "timestamp": "2026-11-04T21:28:13.545010"
+  },
+  {
+    "id": 546,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "FRESH-MAT-02",
+      "sku": "FRESH-MAT-02",
+      "vat_percent": "7"
+    },
+    "timestamp": "2026-11-04T21:28:35.025798"
+  },
+  {
+    "id": 547,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-MAT-02"
+    },
+    "timestamp": "2026-11-04T21:28:42.712198"
+  },
+  {
+    "id": 548,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:28:53.464299"
+  },
+  {
+    "id": 549,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-MAT-02"
+    },
+    "timestamp": "2026-11-04T21:28:53.476902"
+  },
+  {
+    "id": 550,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:29:05.505998"
+  },
+  {
+    "id": 551,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:29:05.520783"
+  },
+  {
+    "id": 552,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000009"
+    },
+    "timestamp": "2026-11-04T21:29:14.249244"
+  },
+  {
+    "id": 553,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:29:17.445636"
+  },
+  {
+    "id": 554,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000009"
+    },
+    "timestamp": "2026-11-04T21:29:46.869616"
+  },
+  {
+    "id": 555,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000009",
+        "kind": "Order",
+        "external_reference": "FRESH-MASTERS-2026-A17",
+        "currency": "EUR",
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Acceptance Fresh Office GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH",
+          "email": "fresh@example.com",
+          "telephone": "+49 30 5550 1420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Acceptance Fresh Office GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "FRESH-CHAIR-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "250",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "450"
+          },
+          {
+            "sku": "FRESH-MAT-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3.00",
+            "unit": null,
+            "unit_net": "40",
+            "discount_percent": "-0.0",
+            "vat_percent": "7.00",
+            "printed_net": "120"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "93.90",
+          "gross": "663.90"
+        },
+        "document_discount_percent": "0",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true
+      }
+    },
+    "timestamp": "2026-11-04T21:29:46.876581"
+  },
+  {
+    "id": 556,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000009"
+    },
+    "timestamp": "2026-11-04T21:30:20.978861"
+  },
+  {
+    "id": 557,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000009",
+      "kind": "Invoice",
+      "external_reference": "FRESH-MASTERS-2026-A17",
+      "currency": null,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-04",
+      "service_date": "2026-11-04",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "570.00",
+        "vat": "93.90",
+        "gross": "663.90"
+      },
+      "document_discount_percent": "0",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000009",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000009",
+        "invoice_number": "INV000009",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [],
+      "state": "open",
+      "payment_method": "Credit Card",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T21:30:44.688490"
+  },
+  {
+    "id": 558,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000009",
+      "document_date": "2026-11-04",
+      "service_date": "2026-11-04"
+    },
+    "timestamp": "2026-11-04T21:30:44.688490"
+  },
+  {
+    "id": 559,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T21:30:44.688490"
+  },
+  {
+    "id": 560,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:30:52.283755"
+  },
+  {
+    "id": 561,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000009"
+    },
+    "timestamp": "2026-11-04T21:31:10.455247"
+  },
+  {
+    "id": 562,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T21:31:12.341390"
+  },
+  {
+    "id": 563,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000009"
+    },
+    "timestamp": "2026-11-04T23:32:23.761933"
+  },
+  {
+    "id": 564,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:32:23.862375"
+  }
+]

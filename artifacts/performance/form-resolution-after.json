@@ -1,0 +1,20 @@
+{
+  "operation": "read-only document-form resolution",
+  "samples_seconds": [
+    1.5999480000000403,
+    0.6585814999998547,
+    0.6524035000002186,
+    0.6539560999999594,
+    0.6541213000000425,
+    0.6541191000001163,
+    0.6483787000001939,
+    0.6508902000000489
+  ],
+  "median_seconds": 0.6540376000000379,
+  "document_number": "PO000003",
+  "profile": "Windows 1920x1200 at 125% DPI",
+  "writes_to_fakturama": false,
+  "cache": "pane scope handle/name only; fresh visibility, enabled state, name and every business field; unknown modals reject",
+  "selected": false,
+  "reason": "Candidate rejected after cross-editor acceptance failure; pane scope cache was removed. This microbenchmark is not evidence of supported end-to-end throughput."
+}

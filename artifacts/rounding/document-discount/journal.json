@@ -1,0 +1,403 @@
+[
+  {
+    "id": 621,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:44:08.452879"
+  },
+  {
+    "id": 622,
+    "stage": "ORDER_OPEN",
+    "action": "prepare_probe",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:44:08.898608"
+  },
+  {
+    "id": 623,
+    "stage": "ORDER_OPEN",
+    "action": "prepare_probe",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true
+    },
+    "timestamp": "2026-11-04T23:44:13.217329"
+  },
+  {
+    "id": 624,
+    "stage": "ORDER_OPEN",
+    "action": "open_probe",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:44:19.148885"
+  },
+  {
+    "id": 625,
+    "stage": "FAILED",
+    "action": "reconciled_interrupted_probe",
+    "status": "observed",
+    "data": {
+      "owned_draft": "PO000010",
+      "discarded": true,
+      "saved_financial_documents": 0,
+      "reason": "Document-discount display sign conversion fixed; rerun measurement in a new owned draft."
+    },
+    "timestamp": "2026-11-04T23:47:20.939205"
+  },
+  {
+    "id": 626,
+    "stage": "ORDER_OPEN",
+    "action": "prepare_probe",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:47:48.057133"
+  },
+  {
+    "id": 627,
+    "stage": "ORDER_OPEN",
+    "action": "prepare_probe",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "INV000002",
+        "PO000002",
+        "INV000003",
+        "PO000003",
+        "INV000004",
+        "PO000004",
+        "INV000005",
+        "PO000005",
+        "INV000006",
+        "PO000006",
+        "INV000007",
+        "PO000007",
+        "INV000008",
+        "PO000008",
+        "Credit Card",
+        "Acceptance Fresh Office GmbH, Ada Weber",
+        "VAT 19%",
+        "VAT 7%",
+        "INV000009",
+        "PO000009",
+        "Northstar Office GmbH, Marta Klein"
+      ],
+      "preserved_drafts": []
+    },
+    "timestamp": "2026-11-04T23:48:43.500973"
+  },
+  {
+    "id": 628,
+    "stage": "ORDER_OPEN",
+    "action": "open_probe",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:48:48.831227"
+  },
+  {
+    "id": 629,
+    "stage": "ORDER_OPEN",
+    "action": "open_probe",
+    "status": "observed",
+    "data": {
+      "number": "PO000010",
+      "kind": "Order",
+      "external_reference": "PROBE-DOCUMENT-DISCOUNT",
+      "currency": null,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "5",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T23:49:01.121103"
+  },
+  {
+    "id": 630,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:49:05.643631"
+  },
+  {
+    "id": 631,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:49:48.751762"
+  },
+  {
+    "id": 632,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_product:0",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:49:52.955592"
+  },
+  {
+    "id": 633,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:49:59.234783"
+  },
+  {
+    "id": 634,
+    "stage": "ORDER_OPEN",
+    "action": "set_probe_line:0",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:49:59.254103"
+  },
+  {
+    "id": 635,
+    "stage": "ORDER_OPEN",
+    "action": "set_probe_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:50:11.193831"
+  },
+  {
+    "id": 636,
+    "stage": "ORDER_OPEN",
+    "action": "discard_owned_probe_draft",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:50:19.554792"
+  },
+  {
+    "id": 637,
+    "stage": "ORDER_OPEN",
+    "action": "discard_owned_probe_draft",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:50:23.568503"
+  },
+  {
+    "id": 638,
+    "stage": "ORDER_OPEN",
+    "action": "prepare_probe",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:52:02.855078"
+  },
+  {
+    "id": 639,
+    "stage": "ORDER_OPEN",
+    "action": "prepare_probe",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Northstar Office GmbH, Marta Klein"
+      ],
+      "preserved_drafts": []
+    },
+    "timestamp": "2026-11-04T23:52:09.257071"
+  },
+  {
+    "id": 640,
+    "stage": "ORDER_OPEN",
+    "action": "open_probe",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:52:14.496038"
+  },
+  {
+    "id": 641,
+    "stage": "ORDER_OPEN",
+    "action": "open_probe",
+    "status": "observed",
+    "data": {
+      "number": "PO000010",
+      "kind": "Order",
+      "external_reference": "PROBE-DOCUMENT-DISCOUNT",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": true,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "5",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-04T23:52:26.737442"
+  },
+  {
+    "id": 642,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:52:31.334513"
+  },
+  {
+    "id": 643,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:53:15.084062"
+  },
+  {
+    "id": 644,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_product:0",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:53:19.407065"
+  },
+  {
+    "id": 645,
+    "stage": "ORDER_OPEN",
+    "action": "select_probe_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:53:26.128471"
+  },
+  {
+    "id": 646,
+    "stage": "ORDER_OPEN",
+    "action": "set_probe_line:0",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:53:26.132114"
+  },
+  {
+    "id": 647,
+    "stage": "ORDER_OPEN",
+    "action": "set_probe_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:53:38.191272"
+  },
+  {
+    "id": 648,
+    "stage": "ORDER_OPEN",
+    "action": "discard_owned_probe_draft",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-04T23:53:46.639235"
+  },
+  {
+    "id": 649,
+    "stage": "ORDER_OPEN",
+    "action": "discard_owned_probe_draft",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-04T23:53:50.751229"
+  }
+]

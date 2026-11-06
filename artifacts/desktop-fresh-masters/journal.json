@@ -1,0 +1,1517 @@
+[
+  {
+    "id": 653,
+    "stage": "RECEIVED",
+    "action": "submit",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T07:54:20.102797"
+  },
+  {
+    "id": 654,
+    "stage": "EXTRACTED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T07:54:32.225867"
+  },
+  {
+    "id": 655,
+    "stage": "VALIDATED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T07:54:32.236107"
+  },
+  {
+    "id": 656,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T07:54:32.902417"
+  },
+  {
+    "id": 657,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Northstar Office GmbH, Marta Klein",
+        "PO000004"
+      ],
+      "preserved_drafts": []
+    },
+    "timestamp": "2026-11-05T07:54:42.146306"
+  },
+  {
+    "id": 658,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T07:54:49.807484"
+  },
+  {
+    "id": 659,
+    "stage": "ORDER_OPEN",
+    "action": "open_order",
+    "status": "observed",
+    "data": {
+      "number": "PO000010",
+      "kind": "Order",
+      "external_reference": "FRESH-MASTERS-2026-C17",
+      "currency": null,
+      "displayed_item_subtotal": "0.00",
+      "net_is_derived": true,
+      "order_date": "2026-07-14",
+      "document_date": "2026-07-14",
+      "service_date": "2026-07-14",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "0.00",
+        "vat": "0.00",
+        "gross": "0.00"
+      },
+      "document_discount_percent": "5",
+      "shipping_net": "0.00",
+      "source_order_number": null,
+      "relationship_evidence": {},
+      "application_notices": [],
+      "state": "open",
+      "payment_method": null,
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-05T07:55:01.982719"
+  },
+  {
+    "id": 660,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000010"
+    },
+    "timestamp": "2026-11-05T07:55:02.011779"
+  },
+  {
+    "id": 661,
+    "stage": "NEEDS_REVIEW",
+    "action": "review_required",
+    "status": "observed",
+    "data": {
+      "code": "DEBTOR_AMBIGUOUS",
+      "message": "Debtor selector has duplicate or conflicting results"
+    },
+    "timestamp": "2026-11-05T07:55:06.517524"
+  },
+  {
+    "id": 662,
+    "stage": "NEEDS_REVIEW",
+    "action": "human_review",
+    "status": "observed",
+    "data": {
+      "revision": 1,
+      "reason": "Fixed fuzzy-search discovery handling: a returned different company does not establish a conflicting exact party. Exact five-field selection still required; same-party ZIP/City conflicts still stop. Continue the existing owned Order, without changing source data.",
+      "before": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "SEPA Direct Debit",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "9",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "after": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "SEPA Direct Debit",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "9",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "prior_review": {
+        "code": "DEBTOR_AMBIGUOUS",
+        "message": "Debtor selector has duplicate or conflicting results"
+      }
+    },
+    "timestamp": "2026-11-05T07:59:00.536213"
+  },
+  {
+    "id": 663,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T07:59:01.075853"
+  },
+  {
+    "id": 664,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [],
+      "preserved_drafts": [
+        "*New Order"
+      ]
+    },
+    "timestamp": "2026-11-05T07:59:05.907032"
+  },
+  {
+    "id": 665,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000010"
+    },
+    "timestamp": "2026-11-05T07:59:23.711403"
+  },
+  {
+    "id": 666,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T07:59:28.226409"
+  },
+  {
+    "id": 667,
+    "stage": "ORDER_OPEN",
+    "action": "begin_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T07:59:58.763645"
+  },
+  {
+    "id": 668,
+    "stage": "ORDER_OPEN",
+    "action": "create_payment",
+    "status": "intent",
+    "data": {
+      "name": "SEPA Direct Debit"
+    },
+    "timestamp": "2026-11-05T08:00:01.625165"
+  },
+  {
+    "id": 669,
+    "stage": "ORDER_OPEN",
+    "action": "create_payment",
+    "status": "observed",
+    "data": {
+      "id": "SEPA Direct Debit",
+      "name": "SEPA Direct Debit",
+      "code": "SEPA direct debit"
+    },
+    "timestamp": "2026-11-05T08:00:13.465558"
+  },
+  {
+    "id": 670,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T08:00:13.474835"
+  },
+  {
+    "id": 671,
+    "stage": "ORDER_OPEN",
+    "action": "create_debtor",
+    "status": "observed",
+    "data": {
+      "id": "CUST000003",
+      "customer": {
+        "company": "Acceptance Fresh Office C GmbH",
+        "first_name": "Ada",
+        "last_name": "Weber",
+        "alias": "ACCEPT-FRESH-C",
+        "email": "fresh-c@example.com",
+        "telephone": "+493055501420",
+        "source_customer_id": null,
+        "billing": {
+          "recipient": "Acceptance Fresh Office C GmbH",
+          "additional_name": null,
+          "street": "Altmarkt 1",
+          "postcode": "01067",
+          "city": "Dresden",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Acceptance Fresh Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment_method": "SEPA Direct Debit"
+    },
+    "timestamp": "2026-11-05T08:01:32.291639"
+  },
+  {
+    "id": 672,
+    "stage": "NEEDS_REVIEW",
+    "action": "review_required",
+    "status": "observed",
+    "data": {
+      "code": "TABLE_COLUMN_UNAVAILABLE",
+      "message": "Expected one observed column among ('Company',); found 0"
+    },
+    "timestamp": "2026-11-05T08:01:38.122375"
+  },
+  {
+    "id": 673,
+    "stage": "NEEDS_REVIEW",
+    "action": "human_review",
+    "status": "observed",
+    "data": {
+      "revision": 2,
+      "reason": "Fixed selected-header text polarity and complete list reading. This selector copied only one selected row under Ctrl+A. End-row numbers and bounded per-row enumeration now establish the complete candidate list, preserving duplicate rows. The saved CUST000003 is reselected; no master creation is retried blindly.",
+      "before": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "SEPA Direct Debit",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "9",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "after": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "SEPA Direct Debit",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "9",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "prior_review": {
+        "code": "TABLE_COLUMN_UNAVAILABLE",
+        "message": "Expected one observed column among ('Company',); found 0"
+      }
+    },
+    "timestamp": "2026-11-05T08:16:07.794353"
+  },
+  {
+    "id": 674,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T08:16:08.366166"
+  },
+  {
+    "id": 675,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "SEPA Direct Debit",
+        "Acceptance Fresh Office C GmbH, Ada Weber"
+      ],
+      "preserved_drafts": [
+        "*New Order"
+      ],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T08:16:16.864493"
+  },
+  {
+    "id": 676,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000010"
+    },
+    "timestamp": "2026-11-05T08:16:34.732793"
+  },
+  {
+    "id": 677,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000003"
+    },
+    "timestamp": "2026-11-05T08:16:40.401213"
+  },
+  {
+    "id": 678,
+    "stage": "NEEDS_REVIEW",
+    "action": "review_required",
+    "status": "observed",
+    "data": {
+      "code": "ROW_NUMBER_COLUMN_UNAVAILABLE",
+      "message": "Cannot establish the row-number column"
+    },
+    "timestamp": "2026-11-05T08:16:43.774979"
+  },
+  {
+    "id": 679,
+    "stage": "NEEDS_REVIEW",
+    "action": "human_review",
+    "status": "observed",
+    "data": {
+      "revision": 3,
+      "reason": "Scoped numbered-row enumeration to selection dialogs. The main Debtors data view has no row-number header and supports complete multi-row Ctrl+A copy; verified both CUST000002 and CUST000003 in that view. Resume with the existing saved CUST000003 and existing owned Order.",
+      "before": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "SEPA Direct Debit",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "9",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "after": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "SEPA Direct Debit",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "9",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "prior_review": {
+        "code": "ROW_NUMBER_COLUMN_UNAVAILABLE",
+        "message": "Cannot establish the row-number column"
+      }
+    },
+    "timestamp": "2026-11-05T08:19:53.563390"
+  },
+  {
+    "id": 680,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T08:19:54.159716"
+  },
+  {
+    "id": 681,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [],
+      "preserved_drafts": [
+        "*New Order"
+      ],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T08:19:58.766893"
+  },
+  {
+    "id": 682,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000010"
+    },
+    "timestamp": "2026-11-05T08:20:16.392413"
+  },
+  {
+    "id": 683,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000003"
+    },
+    "timestamp": "2026-11-05T08:20:22.218600"
+  },
+  {
+    "id": 684,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:21:06.836437"
+  },
+  {
+    "id": 685,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:21:06.854909"
+  },
+  {
+    "id": 686,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-C-CHAIR"
+    },
+    "timestamp": "2026-11-05T08:21:24.308920"
+  },
+  {
+    "id": 687,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "FRESH-C-CHAIR",
+      "sku": "FRESH-C-CHAIR",
+      "vat_percent": "19"
+    },
+    "timestamp": "2026-11-05T08:21:37.233023"
+  },
+  {
+    "id": 688,
+    "stage": "NEEDS_REVIEW",
+    "action": "review_required",
+    "status": "observed",
+    "data": {
+      "code": "ROW_NUMBER_COLUMN_UNAVAILABLE",
+      "message": "Cannot establish the row-number column"
+    },
+    "timestamp": "2026-11-05T08:21:42.613037"
+  },
+  {
+    "id": 689,
+    "stage": "NEEDS_REVIEW",
+    "action": "human_review",
+    "status": "observed",
+    "data": {
+      "revision": 4,
+      "reason": "Restricted numbered-row enumeration to the address picker. The Product selector uses the main multi-row grid with no numbered gutter. Its exact-SKU clipboard data was inspected; the existing saved FRESH-C-CHAIR is reused, not recreated.",
+      "before": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "SEPA Direct Debit",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "9",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "after": {
+        "order_date": "2026-07-14",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": "CUST-1007",
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "payment": {
+          "method": "SEPA Direct Debit",
+          "status": "PAID",
+          "payment_date": "2026-07-18"
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit": "pcs",
+            "unit_net": "250.00",
+            "discount_percent": "10",
+            "vat_percent": "19",
+            "printed_net": "450.00"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit": "pcs",
+            "unit_net": "40.00",
+            "discount_percent": "0",
+            "vat_percent": "9",
+            "printed_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": null,
+        "shipping_vat_percent": null
+      },
+      "prior_review": {
+        "code": "ROW_NUMBER_COLUMN_UNAVAILABLE",
+        "message": "Cannot establish the row-number column"
+      }
+    },
+    "timestamp": "2026-11-05T08:25:33.886332"
+  },
+  {
+    "id": 690,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T08:25:34.510385"
+  },
+  {
+    "id": 691,
+    "stage": "VALIDATED",
+    "action": "prepare_desktop",
+    "status": "observed",
+    "data": {
+      "preference": "immediately take over a clearly found item number",
+      "original_enabled": false,
+      "configured_enabled": false,
+      "reason": "Product searches must not insert rows before explicit selection",
+      "currency_locale_before": "Germany",
+      "currency_locale_configured": "Germany",
+      "cash_rounding_before": false,
+      "currency_decimal_places": 2,
+      "defer_order_reopen_during_invoice_draft": true,
+      "closed_saved_editors": [
+        "Acceptance Fresh Office C GmbH, Ada Weber",
+        "VAT 19%"
+      ],
+      "preserved_drafts": [
+        "*New Order"
+      ],
+      "cancelled_read_only_selectors": []
+    },
+    "timestamp": "2026-11-05T08:25:42.803391"
+  },
+  {
+    "id": 692,
+    "stage": "ORDER_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000010"
+    },
+    "timestamp": "2026-11-05T08:26:01.409338"
+  },
+  {
+    "id": 693,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "intent",
+    "data": {
+      "customer_id": "CUST000003"
+    },
+    "timestamp": "2026-11-05T08:26:07.190694"
+  },
+  {
+    "id": 694,
+    "stage": "ORDER_OPEN",
+    "action": "select_debtor",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:26:51.939917"
+  },
+  {
+    "id": 695,
+    "stage": "DEBTOR_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:26:51.951294"
+  },
+  {
+    "id": 696,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-C-CHAIR"
+    },
+    "timestamp": "2026-11-05T08:27:04.000994"
+  },
+  {
+    "id": 697,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:27:10.147502"
+  },
+  {
+    "id": 698,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-C-CHAIR"
+    },
+    "timestamp": "2026-11-05T08:27:10.147502"
+  },
+  {
+    "id": 699,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:0",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:27:26.603475"
+  },
+  {
+    "id": 700,
+    "stage": "DEBTOR_READY",
+    "action": "create_vat",
+    "status": "intent",
+    "data": {
+      "name": "VAT 9%"
+    },
+    "timestamp": "2026-11-05T08:27:38.212320"
+  },
+  {
+    "id": 701,
+    "stage": "DEBTOR_READY",
+    "action": "create_vat",
+    "status": "observed",
+    "data": {
+      "id": "VAT 9%",
+      "name": "VAT 9%",
+      "rate": "9",
+      "code": "S (Standard rate)"
+    },
+    "timestamp": "2026-11-05T08:27:46.839822"
+  },
+  {
+    "id": 702,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-C-MAT"
+    },
+    "timestamp": "2026-11-05T08:27:46.839822"
+  },
+  {
+    "id": 703,
+    "stage": "DEBTOR_READY",
+    "action": "create_product",
+    "status": "observed",
+    "data": {
+      "id": "FRESH-C-MAT",
+      "sku": "FRESH-C-MAT",
+      "vat_percent": "9"
+    },
+    "timestamp": "2026-11-05T08:28:06.762524"
+  },
+  {
+    "id": 704,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-C-MAT"
+    },
+    "timestamp": "2026-11-05T08:28:13.871690"
+  },
+  {
+    "id": 705,
+    "stage": "DEBTOR_READY",
+    "action": "select_product:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:28:24.535446"
+  },
+  {
+    "id": 706,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "intent",
+    "data": {
+      "sku": "FRESH-C-MAT"
+    },
+    "timestamp": "2026-11-05T08:28:24.549870"
+  },
+  {
+    "id": 707,
+    "stage": "DEBTOR_READY",
+    "action": "set_line:1",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:28:36.340748"
+  },
+  {
+    "id": 708,
+    "stage": "ITEMS_READY",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:28:36.364483"
+  },
+  {
+    "id": 709,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "intent",
+    "data": {
+      "number": "PO000010"
+    },
+    "timestamp": "2026-11-05T08:28:44.769022"
+  },
+  {
+    "id": 710,
+    "stage": "ITEMS_READY",
+    "action": "save_order",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:28:47.699769"
+  },
+  {
+    "id": 711,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "PO000010"
+    },
+    "timestamp": "2026-11-05T08:29:14.834930"
+  },
+  {
+    "id": 712,
+    "stage": "ORDER_SAVED_VERIFIED",
+    "action": "verified_order",
+    "status": "observed",
+    "data": {
+      "document": {
+        "number": "PO000010",
+        "kind": "Order",
+        "external_reference": "FRESH-MASTERS-2026-C17",
+        "currency": "EUR",
+        "displayed_item_subtotal": "570.00",
+        "net_is_derived": true,
+        "order_date": "2026-07-14",
+        "document_date": "2026-07-14",
+        "service_date": "2026-07-14",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "customer": {
+          "company": "Acceptance Fresh Office C GmbH",
+          "first_name": "Ada",
+          "last_name": "Weber",
+          "alias": "ACCEPT-FRESH-C",
+          "email": "fresh-c@example.com",
+          "telephone": "+493055501420",
+          "source_customer_id": null,
+          "billing": {
+            "recipient": "Acceptance Fresh Office C GmbH",
+            "additional_name": null,
+            "street": "Altmarkt 1",
+            "postcode": "01067",
+            "city": "Dresden",
+            "country": "Germany"
+          },
+          "delivery": {
+            "recipient": "Acceptance Fresh Warehouse",
+            "additional_name": null,
+            "street": "Beusselstrasse 44",
+            "postcode": "10553",
+            "city": "Berlin",
+            "country": "Germany"
+          }
+        },
+        "items": [
+          {
+            "sku": "FRESH-C-CHAIR",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2.00",
+            "unit": null,
+            "unit_net": "250",
+            "discount_percent": "10.0",
+            "vat_percent": "19.00",
+            "printed_net": "450"
+          },
+          {
+            "sku": "FRESH-C-MAT",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3.00",
+            "unit": null,
+            "unit_net": "40",
+            "discount_percent": "-0.0",
+            "vat_percent": "9.00",
+            "printed_net": "120"
+          }
+        ],
+        "totals": {
+          "net": "541.50",
+          "vat": "91.49",
+          "gross": "632.99"
+        },
+        "document_discount_percent": "5",
+        "shipping_net": "0.00",
+        "source_order_number": null,
+        "relationship_evidence": {},
+        "application_notices": [
+          "Acceptance Fresh Office C GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000009\r\nTotal volume: 663,90 €"
+        ],
+        "state": "open",
+        "payment_method": null,
+        "paid": false,
+        "payment_date": null,
+        "payment_value": null,
+        "persisted": true
+      }
+    },
+    "timestamp": "2026-11-05T08:29:14.834930"
+  },
+  {
+    "id": 713,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "intent",
+    "data": {
+      "order_number": "PO000010"
+    },
+    "timestamp": "2026-11-05T08:29:19.828290"
+  },
+  {
+    "id": 714,
+    "stage": "INVOICE_OPEN",
+    "action": "follow_up_invoice",
+    "status": "observed",
+    "data": {
+      "number": "INV000010",
+      "kind": "Invoice",
+      "external_reference": "FRESH-MASTERS-2026-C17",
+      "currency": null,
+      "displayed_item_subtotal": "570.00",
+      "net_is_derived": true,
+      "order_date": "2026-07-14",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05",
+      "price_mode": "Net",
+      "vat_mode": "With VAT",
+      "customer": {
+        "company": null,
+        "first_name": null,
+        "last_name": null,
+        "alias": null,
+        "email": null,
+        "telephone": null,
+        "source_customer_id": null,
+        "billing": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        },
+        "delivery": {
+          "recipient": null,
+          "additional_name": null,
+          "street": null,
+          "postcode": null,
+          "city": null,
+          "country": null
+        }
+      },
+      "items": [],
+      "totals": {
+        "net": "541.50",
+        "vat": "91.49",
+        "gross": "632.99"
+      },
+      "document_discount_percent": "5",
+      "shipping_net": "0.00",
+      "source_order_number": "PO000010",
+      "relationship_evidence": {
+        "mechanism": "observed_fakturama_follow_up_action",
+        "order_number": "PO000010",
+        "invoice_number": "INV000010",
+        "editor_caption": "*New Invoice",
+        "editor_dirty": true,
+        "editor_new": true
+      },
+      "application_notices": [
+        "Acceptance Fresh Office C GmbH has already ordered 1 times in the past.\r\nLast time: 13 Jul 2026\r\nInvoice numbers: INV000009\r\nTotal volume: 663,90 €"
+      ],
+      "state": "open",
+      "payment_method": "Credit Card",
+      "paid": false,
+      "payment_date": null,
+      "payment_value": null,
+      "persisted": false
+    },
+    "timestamp": "2026-11-05T08:29:41.913777"
+  },
+  {
+    "id": 715,
+    "stage": "INVOICE_OPEN",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000010",
+      "document_date": "2026-11-05",
+      "service_date": "2026-11-05"
+    },
+    "timestamp": "2026-11-05T08:29:41.932213"
+  },
+  {
+    "id": 716,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "intent",
+    "data": {},
+    "timestamp": "2026-11-05T08:29:41.932213"
+  },
+  {
+    "id": 717,
+    "stage": "INVOICE_OPEN",
+    "action": "set_payment",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:29:49.487832"
+  },
+  {
+    "id": 718,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "intent",
+    "data": {
+      "number": "INV000010"
+    },
+    "timestamp": "2026-11-05T08:30:07.465676"
+  },
+  {
+    "id": 719,
+    "stage": "INVOICE_OPEN",
+    "action": "save_invoice",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:30:09.245726"
+  },
+  {
+    "id": 720,
+    "stage": "INVOICE_OPEN",
+    "action": "verified_saved_relationship",
+    "status": "observed",
+    "data": {
+      "mechanism": "saved_fakturama_transaction_group",
+      "scope": "This transaction",
+      "search": "",
+      "order_number": "PO000010",
+      "invoice_number": "INV000010",
+      "observed_documents": [
+        {
+          "column0": "ICON_INVOICE",
+          "document": "INV000010",
+          "date": "Thu Nov 05 00:00:00 EET 2026",
+          "name": "Acceptance Fresh Office C GmbH",
+          "custref": "FRESH-MASTERS-2026-C17",
+          "state": "COMMAND_CHECKED",
+          "total": "632.99",
+          "printed": "null"
+        },
+        {
+          "column0": "ICON_ORDER",
+          "document": "PO000010",
+          "date": "Tue Jul 14 00:00:00 EEST 2026",
+          "name": "Acceptance Fresh Office C GmbH",
+          "custref": "FRESH-MASTERS-2026-C17",
+          "state": "COMMAND_ORDER_PENDING",
+          "total": "632.99",
+          "printed": "null"
+        }
+      ]
+    },
+    "timestamp": "2026-11-05T08:31:22.551777"
+  },
+  {
+    "id": 721,
+    "stage": "INVOICE_SAVED_VERIFIED",
+    "action": "transition",
+    "status": "observed",
+    "data": {
+      "number": "INV000010"
+    },
+    "timestamp": "2026-11-05T08:31:22.574536"
+  },
+  {
+    "id": 722,
+    "stage": "SUCCEEDED",
+    "action": "transition",
+    "status": "observed",
+    "data": {},
+    "timestamp": "2026-11-05T08:31:22.681302"
+  }
+]

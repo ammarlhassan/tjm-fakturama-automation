@@ -1,0 +1,7 @@
+{
+  "controlled_interruption": "after Order Save before observed checkpoint",
+  "operator_review_revisions": 2,
+  "status": "SUCCEEDED",
+  "unattended_recovery": false,
+  "notes": "The saved Order and its single Invoice were recovered. Reduced viewport and transient clipboard contention were fixed during engineering; a fresh controlled case follows."
+}

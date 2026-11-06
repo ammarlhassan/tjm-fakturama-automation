@@ -1,0 +1,52 @@
+{
+  "final_source_sha256": "020e1135a436145c5d5324c270d9af30c0577c4b9b97c950fb27577b49845d36",
+  "before_ci_source_sha256": "639d8e100a17c4490b02f23a7257da33186ece29f667e7c046681daf69fe27eb",
+  "before_independent_review_source_sha256": "0a032b46ee00170f52e171c958ae99469844fa2dc5acc12f7546897ca120de37",
+  "official_run_source_sha256": "516446076577e165acde7fe269d55ef62bc41a41b7a51d9b9643a47b7ed0f205",
+  "r1_suite_source_sha256": "99e0c8a21238221119da0c58ad1c5b21ecc54f1430e95eb1f23df6bdbc4ae437",
+  "changed_files": {
+    "between_r1_suite_and_official_run": [
+      "src/image_to_cash/extraction.py"
+    ],
+    "between_official_run_and_independent_review": [
+      "src/image_to_cash/reporting.py",
+      "src/image_to_cash/templates/report.html"
+    ],
+    "after_independent_review": [
+      "src/image_to_cash/store.py",
+      "src/image_to_cash/cli.py"
+    ],
+    "ci_platform_guards": [
+      "src/image_to_cash/extraction.py",
+      "src/image_to_cash/doctor.py",
+      "src/image_to_cash/cli.py"
+    ],
+    "follow_up_recovery_review": [
+      "src/image_to_cash/workflow.py",
+      "src/image_to_cash/validation.py",
+      "src/image_to_cash/service.py",
+      "src/image_to_cash/store.py"
+    ]
+  },
+  "diff": "source-change-after-r1.diff",
+  "why": {
+    "extraction.py": "The R1 official run reused both cached Gemini responses, and the reused repair reading was not marked as cached. A provider 503 also advised checking the API key.",
+    "reporting.py and report.html": "The report banner counted provider retries as operator review, contradicting the journal.",
+    "store.py": "Independent review: a key first seen on a duplicate image was not recorded, so it could later be reused for another image. Every accepted key is now bound to its job. Keys already stored on older jobs are still honoured.",
+    "cli.py": "Independent review: itc resume after a provider failure stopped at VALIDATED instead of continuing into the workflow.",
+    "ci_platform_guards": "The first GitHub Actions run exposed Linux mypy errors around Windows-only APIs. Equivalent sys.platform guards made these branches visible to the type checker. Both platform targets are checked. That platform-guard patch left the driver and workflow unchanged at that stage.",
+    "follow_up_recovery_review": "Resume accepted changed generated identifiers; unpaid verification accepted unknown states; reviewed duplicates ignored an existing receipt; reference changes could create a second Order after Save or retain obsolete reservations before desktop execution. Each path now has a regression test."
+  },
+  "desktop_code_changed": true,
+  "effect_on_recorded_runs": "Recorded GUI runs and receipts retain their original source hashes. Earlier changes covered CLI resume, idempotency, metadata and platform guards. Follow-up changes now affect workflow recovery, saved Invoice state validation, reviewed duplicate handling and source-reference reservations. The Fakturama driver is unchanged. The new paths have simulator and temporary-database coverage, with no additional real-desktop acceptance run.",
+  "how_this_was_checked": "Earlier source substitutions reproduced the historical recorded hashes. The diff retains those changes and appends normalized diffs from the pre-follow-up-review source to the current package. Regression tests reproduce the new defects before their fixes; current full checks identify the new source hash. The recorded journals, receipts and acceptance checks were not rewritten.",
+  "reports_regenerated_after_the_banner_fix": [
+    "official-sample-live/report.html",
+    "final-acceptance/R1/clean/report.html",
+    "final-acceptance/R1/invoice-draft/report.html",
+    "final-acceptance/R1/api/report.html"
+  ],
+  "regeneration_check": "Compared with the reports as first written, only the banner text differs and every embedded image is identical. Journals, receipts and verification files were not touched.",
+  "before_follow_up_review_source_sha256": "23223486a92a496e322fd625a60fb80d82dd4f54bfd971660cfaf04a7fc41b75",
+  "fakturama_driver_changed": false
+}
