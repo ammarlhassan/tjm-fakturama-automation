@@ -4,6 +4,7 @@ import pytest
 
 from image_to_cash.adapters import InjectedCrash, SimulatedAdapter
 from image_to_cash.models import ReviewRequired, Stage
+from image_to_cash.service import Application
 from image_to_cash.store import ConflictError
 from image_to_cash.workflow import ABANDONED_DRAFT, Workflow
 
@@ -284,6 +285,17 @@ def test_abandon_discards_identified_draft_and_releases_quarantine(store, settin
     assert record["review"]["prior_review"]["code"] == "TABLE_EXPORT_PROFILE_UNKNOWN"
     actions = [(e["action"], e["status"]) for e in store.events(job)]
     assert actions[-2:] == [("abandon_owned_draft", "intent"), ("abandon_owned_draft", "observed")]
+
+
+def test_abandoned_job_cannot_be_resumed(settings, source):
+    service = Application(settings)
+    try:
+        job, adapter = stopped_on_open_draft(service.store, settings, source)
+        Workflow(settings, service.store, adapter).abandon_draft(job, "No Save occurred")
+        with pytest.raises(ConflictError, match="abandoned"):
+            service.queue_resume(job)
+    finally:
+        service.store.engine.dispose()
 
 
 def test_abandon_refuses_a_job_with_any_save_intent(store, settings, source):
