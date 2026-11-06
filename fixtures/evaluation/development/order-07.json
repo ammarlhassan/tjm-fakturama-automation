@@ -1,0 +1,65 @@
+{
+  "order_date": "2026-07-07",
+  "external_reference": "SYN-2026-0007",
+  "currency": "EUR",
+  "customer": {
+    "company": "Example Office 07 GmbH",
+    "first_name": "Ada",
+    "last_name": "Weber",
+    "alias": "EXAMPLE-07",
+    "email": "orders07@example.test",
+    "telephone": "+49 30 5550 1420",
+    "source_customer_id": "SRC-0007",
+    "billing": {
+      "recipient": "Example Office 07 GmbH",
+      "additional_name": null,
+      "street": "Friedrichstrasse 88",
+      "postcode": "01006",
+      "city": "Berlin",
+      "country": "Germany"
+    },
+    "delivery": {
+      "recipient": "Example Warehouse 07",
+      "additional_name": null,
+      "street": "Beusselstrasse 44",
+      "postcode": "10553",
+      "city": "Berlin",
+      "country": "Germany"
+    }
+  },
+  "payment": {
+    "method": "Bank Transfer",
+    "status": "UNPAID",
+    "payment_date": null
+  },
+  "items": [
+    {
+      "sku": "SKU-07-01",
+      "description": "Office Chair",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "37.95",
+      "discount_percent": "0",
+      "vat_percent": "19",
+      "printed_net": "75.90"
+    },
+    {
+      "sku": "SKU-07-02",
+      "description": "Desk Mat",
+      "quantity": "3",
+      "unit": "pcs",
+      "unit_net": "38.95",
+      "discount_percent": "5",
+      "vat_percent": "19",
+      "printed_net": "111.01"
+    }
+  ],
+  "totals": {
+    "net": "186.91",
+    "vat": "35.51",
+    "gross": "222.42"
+  },
+  "document_discount_percent": null,
+  "shipping_net": null,
+  "shipping_vat_percent": null
+}

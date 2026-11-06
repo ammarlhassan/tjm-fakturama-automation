@@ -1,0 +1,409 @@
+{
+  "origin": "ENGINEERING COMPATIBILITY FIXTURE; original sample email .test changed to .com and reference prefixed COMPAT. Not the official sample or an API response.",
+  "extraction": {
+    "order": {
+      "order_date": "2026-07-14",
+      "external_reference": "COMPAT-2026-0714-A17",
+      "currency": "EUR",
+      "customer": {
+        "company": "Northstar Office GmbH",
+        "first_name": "Marta",
+        "last_name": "Klein",
+        "alias": "NORTHSTAR-BERLIN",
+        "email": "marta.klein@example.com",
+        "telephone": "+49 30 5550 1420",
+        "source_customer_id": "CUST-1007",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "additional_name": null,
+          "street": "Friedrichstrasse 88",
+          "postcode": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "additional_name": null,
+          "street": "Beusselstrasse 44",
+          "postcode": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        }
+      },
+      "payment": {
+        "method": "Bank Transfer",
+        "status": "PAID",
+        "payment_date": "2026-07-18"
+      },
+      "items": [
+        {
+          "sku": "CHR-ERG-01",
+          "description": "Ergonomic Desk Chair",
+          "quantity": "2",
+          "unit": "pcs",
+          "unit_net": "250.00",
+          "discount_percent": "10",
+          "vat_percent": "19",
+          "printed_net": "450.00"
+        },
+        {
+          "sku": "MAT-DESK-02",
+          "description": "Anti-Fatigue Desk Mat",
+          "quantity": "3",
+          "unit": "pcs",
+          "unit_net": "40.00",
+          "discount_percent": "0",
+          "vat_percent": "19",
+          "printed_net": "120.00"
+        }
+      ],
+      "totals": {
+        "net": "570.00",
+        "vat": "108.30",
+        "gross": "678.30"
+      },
+      "document_discount_percent": null,
+      "shipping_net": null,
+      "shipping_vat_percent": null
+    },
+    "evidence": [
+      {
+        "field": "order_date",
+        "raw_text": "2026-07-14",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "external_reference",
+        "raw_text": "COMPAT-2026-0714-A17",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "currency",
+        "raw_text": "EUR",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.company",
+        "raw_text": "Northstar Office GmbH",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.first_name",
+        "raw_text": "Marta",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.last_name",
+        "raw_text": "Klein",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.alias",
+        "raw_text": "NORTHSTAR-BERLIN",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.email",
+        "raw_text": "marta.klein@example.com",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.telephone",
+        "raw_text": "+49 30 5550 1420",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.source_customer_id",
+        "raw_text": "CUST-1007",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.recipient",
+        "raw_text": "Northstar Office GmbH",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.street",
+        "raw_text": "Friedrichstrasse 88",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.postcode",
+        "raw_text": "10117",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.city",
+        "raw_text": "Berlin",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.billing.country",
+        "raw_text": "Germany",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.recipient",
+        "raw_text": "Northstar Office Warehouse",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.street",
+        "raw_text": "Beusselstrasse 44",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.postcode",
+        "raw_text": "10553",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.city",
+        "raw_text": "Berlin",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "customer.delivery.country",
+        "raw_text": "Germany",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "payment.method",
+        "raw_text": "Bank Transfer",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "payment.status",
+        "raw_text": "PAID",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "payment.payment_date",
+        "raw_text": "2026-07-18",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.sku",
+        "raw_text": "CHR-ERG-01",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.description",
+        "raw_text": "Ergonomic Desk Chair",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.quantity",
+        "raw_text": "2",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.unit",
+        "raw_text": "pcs",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.unit_net",
+        "raw_text": "250.00",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.discount_percent",
+        "raw_text": "10",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.vat_percent",
+        "raw_text": "19",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.0.printed_net",
+        "raw_text": "450.00",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.sku",
+        "raw_text": "MAT-DESK-02",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.description",
+        "raw_text": "Anti-Fatigue Desk Mat",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.quantity",
+        "raw_text": "3",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.unit",
+        "raw_text": "pcs",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.unit_net",
+        "raw_text": "40.00",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.discount_percent",
+        "raw_text": "0",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.vat_percent",
+        "raw_text": "19",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "items.1.printed_net",
+        "raw_text": "120.00",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "totals.net",
+        "raw_text": "570.00",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "totals.vat",
+        "raw_text": "108.30",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      },
+      {
+        "field": "totals.gross",
+        "raw_text": "678.30",
+        "engine": "reviewed-fixture",
+        "boxes": [],
+        "confidence": null,
+        "artifact": null
+      }
+    ],
+    "issues": []
+  }
+}

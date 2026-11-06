@@ -1,0 +1,7 @@
+{
+  "type": "synthetic desktop acceptance",
+  "official_sample": false,
+  "derived_from": "visible sample, with .com email and distinct ACCEPT reference",
+  "extraction": "live vision plus independent local OCR",
+  "master_profile": "existing Debtor, payment, VAT and two products"
+}

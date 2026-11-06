@@ -1,0 +1,3 @@
+*.pdf binary
+# Unified patches contain a space on unchanged blank lines.
+*.diff text eol=lf whitespace=-blank-at-eol

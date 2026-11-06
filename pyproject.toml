@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tjm-image-to-cash"
+version = "0.1.0"
+description = "Evidence-driven order-image to Fakturama Order and Invoice automation"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "pydantic>=2.10,<3", "sqlalchemy>=2.0,<2.1", "fastapi>=0.115,<1",
+  "uvicorn>=0.34,<1", "python-multipart>=0.0.20,<1", "openai>=2,<3",
+  "pillow>=11,<13", "pytesseract>=0.3.13,<0.4", "typer>=0.15,<1",
+  "jinja2>=3.1,<4", "platformdirs>=4,<5", "httpx>=0.28,<1",
+  "filelock>=3.17,<4", "numpy>=2,<3", "opencv-python-headless>=4.11,<5",
+]
+
+[project.optional-dependencies]
+windows = ["pywinauto>=0.6.9,<0.7; sys_platform == 'win32'", "pywin32>=308; sys_platform == 'win32'"]
+rapidocr = ["rapidocr>=3,<4", "onnxruntime>=1.20,<2"]
+postgres = ["psycopg[binary]>=3.2,<4"]
+
+[dependency-groups]
+dev = ["pytest>=8.3,<10", "pytest-cov>=6,<8", "ruff>=0.11,<1", "mypy>=1.15,<2", "reportlab>=4,<5", "build>=1.2,<2", "pypdfium2>=5,<6"]
+
+[project.scripts]
+itc = "image_to_cash.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/image_to_cash"]
+
+[tool.hatch.build.targets.sdist]
+exclude = ["artifacts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["desktop: requires an interactive Fakturama test workspace", "live: consumes hosted API credits"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+check_untyped_defs = true
+ignore_missing_imports = true
+

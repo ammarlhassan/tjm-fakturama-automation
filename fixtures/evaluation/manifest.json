@@ -1,0 +1,198 @@
+{
+  "ground_truth": "Generated from explicit source data; visual review status is separate",
+  "human_visual_review": "pending",
+  "documents": [
+    {
+      "id": "order-01",
+      "split": "development",
+      "layout": 0,
+      "image": "development/order-01.png",
+      "truth": "development/order-01.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-02",
+      "split": "development",
+      "layout": 1,
+      "image": "development/order-02.png",
+      "truth": "development/order-02.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-03",
+      "split": "development",
+      "layout": 2,
+      "image": "development/order-03.png",
+      "truth": "development/order-03.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-04",
+      "split": "development",
+      "layout": 0,
+      "image": "development/order-04.png",
+      "truth": "development/order-04.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-05",
+      "split": "development",
+      "layout": 1,
+      "image": "development/order-05.png",
+      "truth": "development/order-05.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-06",
+      "split": "development",
+      "layout": 2,
+      "image": "development/order-06.png",
+      "truth": "development/order-06.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-07",
+      "split": "development",
+      "layout": 0,
+      "image": "development/order-07.png",
+      "truth": "development/order-07.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-08",
+      "split": "development",
+      "layout": 1,
+      "image": "development/order-08.png",
+      "truth": "development/order-08.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-09",
+      "split": "development",
+      "layout": 2,
+      "image": "development/order-09.png",
+      "truth": "development/order-09.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-10",
+      "split": "development",
+      "layout": 0,
+      "image": "development/order-10.png",
+      "truth": "development/order-10.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-11",
+      "split": "development",
+      "layout": 1,
+      "image": "development/order-11.png",
+      "truth": "development/order-11.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-12",
+      "split": "development",
+      "layout": 2,
+      "image": "development/order-12.png",
+      "truth": "development/order-12.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-13",
+      "split": "heldout",
+      "layout": 0,
+      "image": "heldout/order-13.png",
+      "truth": "heldout/order-13.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-14",
+      "split": "heldout",
+      "layout": 1,
+      "image": "heldout/order-14.png",
+      "truth": "heldout/order-14.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-15",
+      "split": "heldout",
+      "layout": 2,
+      "image": "heldout/order-15.png",
+      "truth": "heldout/order-15.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-16",
+      "split": "heldout",
+      "layout": 0,
+      "image": "heldout/order-16.png",
+      "truth": "heldout/order-16.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-17",
+      "split": "heldout",
+      "layout": 1,
+      "image": "heldout/order-17.png",
+      "truth": "heldout/order-17.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-18",
+      "split": "heldout",
+      "layout": 2,
+      "image": "heldout/order-18.png",
+      "truth": "heldout/order-18.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-19",
+      "split": "heldout",
+      "layout": 0,
+      "image": "heldout/order-19.png",
+      "truth": "heldout/order-19.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-20",
+      "split": "heldout",
+      "layout": 1,
+      "image": "heldout/order-20.png",
+      "truth": "heldout/order-20.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-21",
+      "split": "heldout",
+      "layout": 2,
+      "image": "heldout/order-21.png",
+      "truth": "heldout/order-21.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-22",
+      "split": "heldout",
+      "layout": 0,
+      "image": "heldout/order-22.png",
+      "truth": "heldout/order-22.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-23",
+      "split": "heldout",
+      "layout": 1,
+      "image": "heldout/order-23.png",
+      "truth": "heldout/order-23.json",
+      "synthetic": true
+    },
+    {
+      "id": "order-24",
+      "split": "heldout",
+      "layout": 2,
+      "image": "heldout/order-24.png",
+      "truth": "heldout/order-24.json",
+      "synthetic": true
+    }
+  ]
+}
